@@ -27,7 +27,7 @@ blazegraph-runner load --journal=blazegraph.jnl --informat=turtle --graph='http:
 ### Load the RosettaStone mapped transcripts in turtle format (mapping.ttl)
 blazegraph-runner load --journal=blazegraph.jnl --informat=turtle --graph='http://planosphere.stowers.org/data' mapping.ttl
 
-### Load Planarian Anatomy Ontology [PLANA)(https://www.ebi.ac.uk/ols/ontologies/plana)
+### Load Planarian Anatomy Ontology [PLANA](https://www.ebi.ac.uk/ols/ontologies/plana)
 ```
 blazegraph-runner load --journal=blazegraph.jnl --informat=rdfxml --graph='http://purl.obolibrary.org/obo/plana.owl' ~/src/ontology/master-obophenotype/20190802/planaria-ontology/src/ontology/plana.owl
 ```
