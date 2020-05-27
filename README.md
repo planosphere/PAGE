@@ -13,7 +13,8 @@ perl curations2ttl.pl term_annotations.txt > page.ttl
 
 ### transform mapping into turtle format
 ```
-perl mapping2ttl.pl smed_20140614_mapping_table_with_aliases.txt > mapping.ttl 
+perl mapping2ttl.pl smed_20140614_mapping_table_with_aliases.txt smed_20140614 > smed_20140614_mapping.ttl 
+perl mapping2ttl.pl  SMESG_dd_Smes_v2 > smesg_mapping.ttl 
 ```
 
 ## data storage: triple store
