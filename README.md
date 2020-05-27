@@ -1,4 +1,4 @@
-## PAGE: web code
+## PAGE: Web Code
 PHP and HTML for PAGE searches on Planosphere 
 
 ## PAGE: Make RDF Triplestore
