@@ -1,0 +1,76 @@
+{
+    "obo" : "plana.obo.gz"  ,
+    "inputs" : [
+
+     {
+
+        "field_id": "ECO:0000295",
+        "field": "experimental evidence",
+        "values": {
+            "ECO:0001839": "colorimetric in situ hybridization evidence",
+            "ECO:0001047": "fluorescence in situ hybridization evidence",
+            "ECO:0000295": "RNA-sequencing evidence",
+            "ECO:0001560": "single-cell RNA sequencing evidence",
+            "ECO:0000097": "cDNA to DNA expression microarray"
+        },
+        "default":"ECO:000183",
+        "create":false,
+        "type":"dropdown"
+     },
+     {
+        "field_id": "PLANA:0000021",
+        "field":"biotype", 
+        "values": {
+            "PLANA:0000024":"Smed asexual biotype",
+            "PLANA:0000027":"Smed sexual biotype"
+        },
+        "default":"PLANA:0000024",
+        "create":false,
+        "type":"dropdown"
+     },
+     {
+        "field_id": "UBERON:0000105",
+        "field":"life cycle stage", 
+        "values": {
+            "PLANA:0000098" : "zygote" ,
+            "PLANA:0000001" : "Stage 1",
+            "PLANA:0000002" : "Stage 2",
+            "PLANA:0000003" : "Stage 3",
+            "PLANA:0000004" : "Stage 4",
+            "PLANA:0000005" : "Stage 5",
+            "PLANA:0000006" : "Stage 6",
+            "PLANA:0000007" : "Stage 7",
+            "PLANA:0000008" : "Stage 8",
+            "PLANA:0000214" : "juvenile",
+            "PLANA:0004503" : "sexually mature adult",
+            "PLANA:0004504" : "asexual adult"
+        },
+        "default":"PLANA:0004504",
+        "create":false,
+        "type":"dropdown"
+     },
+     
+    {
+        "field_id": "description",
+        "field":"Sample Type", 
+        "values": {
+            "PLANA:0000136" : "whole organism",
+            "PLANA:0002138" : "FACS sorted cell population"
+
+        },
+        "default":"PLANA:0000136",
+        "create":false,
+        "type":"dropdown"
+     },
+                  {
+        "field_id": "ORCID",
+        "field":"Curator (SIMR id)", 
+        "type":"textbox"
+     },
+     {
+        "field_id":"PMID",
+        "field":"PMID",
+        "type":"textbox"
+     }
+    ]
+}
