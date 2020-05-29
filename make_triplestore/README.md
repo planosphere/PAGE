@@ -2,7 +2,7 @@
 Code for transforming curation and mapping data into a tripal store.
 ## data transformation (tab -> ttl)
 
-Our curations were collected with a shiny app, [Shiny Annotator](../curation/shiny_annotator). The curations are in tab delimited format. A perl script curations2ttl.pl transforms the tab-delimited curations from the Shiny Annotator output into turtle format (ttl) following guidelines from [Open Biomedical Associations (OBAN)](https://github.com/EBISPOT/OBAN). Turtle format is a common format to store triples that are used to load into a triple store.
+Our curations were collected with a shiny app, [Shiny Annotator](../curation/shiny_annotator). The curations are in tab delimited format. A perl script curations2ttl.pl transforms the tab-delimited curations from the Shiny Annotator output into a triplestore in turtle format (ttl) following guidelines from [Open Biomedical Associations (OBAN)](https://github.com/EBISPOT/OBAN). Turtle format is a common format to store triples. Our ttl files were loaded into the  triplestore/graphdatabase, [Blazegraph](https://github.com/blazegraph/database).
 
 We mapped all transciptomes we came across in our reading of the plananrian literature to the SMED300XXXXX transcripts (smed_20140614) and to the dd_smes_v2 gene model transcripts (smest). This mapping was performed using our [Rosetta Stone Tramscript Mapping code](https://github.com/planosphere/RosettaStone). The mappings were transformed into turtle format with a perl script, mappings2ttl.pl to be loaded into our triple store.
 
