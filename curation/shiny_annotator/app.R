@@ -134,9 +134,9 @@ server <- function(input, output) {
                 shiny::validate(
                   need(input$PMID, message="missing PMID"),
                   need(input$Accessions, message="missing Accesssions"),
-                  need(input$"Curator (SIMR id)", message="missing Curator"),
+                  need(input$"Curator (ORCID)", message="missing Curator"),
                   need(str_detect(input$PMID, "^\\d+$") , message="Invalid PUBMED ID"),
-                  need(str_detect(input$"Curator (SIMR id)", "^...$") , message="Invalid curator ID")
+                  need(str_detect(input$"Curator (ORCID)", "^\\d\\d\\d\\d-\\d\\d\\d\\d-\\d\\d\\d\\d-\\d\\d\\d\\d$") , message="Invalid curator ID")
                 )
 
                   
@@ -156,9 +156,9 @@ server <- function(input, output) {
       shiny::validate(
         need(input$PMID, message="missing PMID"),
         need(input$Accessions, message="missing Accesssions"),
-        need(input$"Curator (SIMR id)", message="missing Curator"),
+        need(input$"Curator (ORCID)", message="missing Curator"),
         need(str_detect(input$PMID, "^\\d+$") , message="Invalid PUBMED ID"),
-        need(str_detect(input$"Curator (SIMR id)", "^...$") , message="Invalid curator ID")
+        need(str_detect(input$"Curator (ORCID)", "^\\d\\d\\d\\d-\\d\\d\\d\\d-\\d\\d\\d\\d-\\d\\d\\d\\d$") , message="Invalid curator ID")
       )
       values$df_data 
     })
@@ -168,7 +168,7 @@ server <- function(input, output) {
     })
     
     getORCID <- reactive({
-      input$"Curator (SIMR id)"
+      input$"Curator (ORDID)"
     })
     
     # Download dataframe

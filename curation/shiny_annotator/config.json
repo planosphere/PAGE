@@ -64,7 +64,7 @@
      },
                   {
         "field_id": "ORCID",
-        "field":"Curator (SIMR id)", 
+        "field":"Curator (ORCID)", 
         "type":"textbox"
      },
      {
