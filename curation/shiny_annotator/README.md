@@ -1,6 +1,6 @@
-# App to annotate genes with ontology terms
-# PROJECT PKP
-# ejr - 20191113
+#  App to annotate genes with ontology terms
+##  SIMR SCI-PROJECT PKP
+##  created by ejr - 20191113
 
 - Configuration is by config.json
 - App needs to be set up on a shiny server
