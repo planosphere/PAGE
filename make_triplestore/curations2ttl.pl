@@ -37,7 +37,7 @@ while (my $line = <CURATIONS>){
 #OBO:PLANA_0000021 biotype
 print "PAGE:$md5 a OBAN:association;
   OBAN:association_has_object OBO:$term_id;
-  OBAN:association_has_predicate OBO:RO_0002200;
+  OBAN:association_has_object_property OBO:RO_0002200;
   OBAN:association_has_subject \"$accession\";
   OBO:OBI_0100051 OBO:$specimen_id;
   OBO:RO_0002490 OBO:$life_stage_id;

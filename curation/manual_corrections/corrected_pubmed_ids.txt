@@ -1,0 +1,2 @@
+Accession	new_PMID
+Smed-slc24a-3	26057828

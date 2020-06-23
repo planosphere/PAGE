@@ -1,0 +1,2 @@
+Accession	Term	experimental evidence	biotype	life cycle stage	Sample Type	Curator (SIMR id)	PMID	Date
+JX174182	BSPO:0000082: lateral region	ECO:0001839	PLANA:0000024	PLANA:0004504	PLANA:0000136	stn	23250205	Mon Nov 25 15:38:45 2019

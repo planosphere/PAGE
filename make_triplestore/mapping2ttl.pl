@@ -30,7 +30,7 @@ while (my $line = <MAP>){
 
 print "PAGE:$md5 a OBAN:association;
   OBAN:association_has_subject \"$acc\";
-  OBAN:association_has_predicate PAGE:has_mapping_reference_id;
+  OBAN:association_has_object_property PAGE:has_mapping_reference_id;
   OBAN:association_has_object \"$ref\";
   PAGE:has_reference_source \"$mapping_source\";
   dc:source \"$accSource\" .

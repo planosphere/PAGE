@@ -1,0 +1,15 @@
+old_term	new_term
+BSPO:0000072: posterior region	PLANA:0000142
+BSPO:0000056: posterior side	PLANA:0000142
+BSPO:0000079: dorsal region	PLANA:0000141
+BSPO:0000084: ventral region	PLANA:0000143
+BSPO:0000082: lateral region	PLANA:0003001
+BSPO:0000071: anterior region	PLANA:0000140
+BSPO:0000068: ventral side (Synonym = ventral	PLANA:0000143
+BSPO:0000068: ventral side	PLANA:0000143
+BSPO:0000063: dorsal side	PLANA:0000141
+BSPO:0000016: dorsal-ventral axis (Synonym = dorsoventral axis	PLANA:0007520
+BSPO:0000066: lateral side	PLANA:0003001
+BSPO:0000055: anterior side	PLANA:0000140
+BSPO:0000094: dorsal/ventral compartment boundary	PLANA:0000043
+BFO:0000001: entity	PLANA:0000044

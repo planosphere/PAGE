@@ -1,0 +1,5 @@
+Accession	Term	experimental evidence	biotype	life cycle stage	Sample Type	Curator (SIMR id)	PMID	Date
+tph	PLANA:0000075: optic cup (Synonym = pigment cup	ECO:0001839	PLANA:0000024	PLANA:0004504	PLANA:0000136	stn	26017970	Mon Dec 16 12:25:54 2019
+tph	PLANA:0000420: parapharyngeal region (Synonym = peripharyngeal region	ECO:0001839	PLANA:0000024	PLANA:0004504	PLANA:0000136	stn	26017970	Mon Dec 16 12:25:54 2019
+tph	PLANA:0000103: central nervous system	ECO:0001839	PLANA:0000024	PLANA:0004504	PLANA:0000136	stn	26017970	Mon Dec 16 12:25:54 2019
+tph	PLANA:0000080: peripheral nervous system	ECO:0001839	PLANA:0000024	PLANA:0004504	PLANA:0000136	stn	26017970	Mon Dec 16 12:25:54 2019

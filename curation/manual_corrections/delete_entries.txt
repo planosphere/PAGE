@@ -1,0 +1,143 @@
+Accession 	 Term 	 PMID
+F633690 	 PLANA:0000103: central nervous system 	 17905225
+F633690 	 PLANA:0000043: dorsal ventral margin of the whole animal 	 17905225
+F633690 	 PLANA:0000016: pharynx 	 17905225
+F633690 	 PLANA:0000072: mouth 	 17905225
+F633690 	 PLANA:0000032: dorsal midline 	 17905225
+Smed-EphA 	 PLANA:0000032: dorsal midline 	 17905225
+Smed-EphA 	 PLANA:0000043: dorsal ventral margin of the whole animal 	 17905225
+EU29663 	 PLANA:0000420: parapharyngeal region 	 18063755
+EU29663 	 BSPO:0000072: posterior region 	 18063755
+Smed-fz-3 	 PLANA:0000062: esophagus 	 18063757
+Smed-fz-8 	 PLANA:0000062: esophagus 	 18063757
+Smed-fz-10 	 PLANA:0000062: esophagus 	 18063757
+Smed-fz-1 	 PLANA:0000044: cephalic ganglia 	 18063757
+Smed-fz-2 	 PLANA:0000044: cephalic ganglia 	 18063757
+Smed-fz-3 	 PLANA:0000044: cephalic ganglia 	 18063757
+Smed-fz-5 	 PLANA:0000044: cephalic ganglia 	 18063757
+Smed-fz-7 	 PLANA:0000044: cephalic ganglia 	 18063757
+Smed-fz-8 	 PLANA:0000044: cephalic ganglia 	 18063757
+Smed-fz-9 	 PLANA:0000044: cephalic ganglia 	 18063757
+Smed-fz-10 	 PLANA:0000044: cephalic ganglia 	 18063757
+Smed-fz-10 	 PLANA:0000097: ventral nerve cord (Synonym = VNC 	 18063757
+Smed-fz-8 	 PLANA:0000097: ventral nerve cord (Synonym = VNC 	 18063757
+Smed-fz-7 	 PLANA:0000097: ventral nerve cord (Synonym = VNC 	 18063757
+Smed-fz-7 	 PLANA:0000097: ventral nerve cord 	 18063757
+Smed-fz-5 	 PLANA:0000097: ventral nerve cord 	 18063757
+Smed-fz-1 	 PLANA:0000097: ventral nerve cord 	 18063757
+Smed-wnt6 	 PLANA:0000140: anterior region (Synonym = anterior region of whole organism 	 18063757
+Smed-fz-1 	 PLANA:0000140: anterior region (Synonym = anterior region of whole organism 	 18063757
+Smed-fz-3 	 PLANA:0000140: anterior region (Synonym = anterior region of whole organism 	 18063757
+Smed-fz-5 	 PLANA:0000140: anterior region (Synonym = anterior region of whole organism 	 18063757
+Smed-fz-6 	 PLANA:0000140: anterior region (Synonym = anterior region of whole organism 	 18063757
+Smed-sFRP1 	 PLANA:0000140: anterior region (Synonym = anterior region of whole organism 	 18063757
+Smed-sFRP-a 	 PLANA:0000140: anterior region (Synonym = anterior region of whole organism 	 18063757
+Smed-sFRP2 	 PLANA:0000140: anterior region (Synonym = anterior region of whole organism 	 18063757
+Smed-fz-3 	 PLANA:0000016: pharynx 	 18063757
+Smed-fz-5 	 PLANA:0000016: pharynx 	 18063757
+Smed-fz-9 	 PLANA:0000016: pharynx 	 18063757
+Smed-fz-10 	 PLANA:0000072: mouth 	 18063757
+Smed-fz-8 	 PLANA:0000072: mouth 	 18063757
+Smed-GluR 	 PLANA:0000461: lateral branch 	 18287199
+septin 	 PLANA:0000141: dorsal region (Synonym = dorsal region of whole organism 	 18287199
+Smed-GluR 	 PLANA:0000044: cephalic ganglia 	 20422023
+EU1130790.1 	 PLANA:0007561: head margin 	 20707997
+EU1130790.1 	 PLANA:0000016: pharynx 	 20707997
+EU1130790.1 	 PLANA:0002005: anterior tip 	 20707997
+PL06017A2A06_SE3 	 PLANA:0003304: testis primordium 	 20844018
+Smed-otp 	 PLANA:0000044: cephalic ganglia 	 21282632
+Smed-GluR 	 PLANA:0000044: cephalic ganglia 	 21295481
+madt 	 PLANA:0000026: gut 	 21566195
+Smed-otp 	 PLANA:0000044: cephalic ganglia 	 21806978
+Smed-septin 	 PLANA:0000141: dorsal region (Synonym = dorsal region of whole organism 	 21806978
+GluR 	 PLANA:0000044: cephalic ganglia 	 22125640
+de_novo.1766.1 	 PLANA:0000418: head 	 22223737
+de_novo.1766.1 	 PLANA:0002074: pharynx tip 	 22223737
+lcl|mk4.002031.05 	 Sorry I inadvertently deleted the annotation at some point 	 22318224
+SMED_06179_V2_1 	 PLANA:0000429: neoblast 	 22385657
+Smed-gucy-1 	 PLANA:0000017: photoreceptor neuron 	 22884275
+Smed-gucy-1 	 PLANA:0002075: pigment cell 	 22884275
+Smed-tfr 	 PLANA:0002075: pigment cell 	 22884275
+septin 	 PLANA:0000043: dorsal ventral margin of the whole animal (Synonym = dorsal/ventral compartment boundary of whole organism 	 23318635
+septin 	 PLANA:0000141: dorsal region of the whole animal 	 23318635
+madt 	 PLANA:0000026: gut 	 23318641
+Baf53a 	 BSPO:0000071: anterior region 	 23629965
+p48 	 BSPO:0000071: anterior region 	 23629965
+Mbd3 	 BSPO:0000071: anterior region 	 23629965
+p150 	 PLANA:0002109: X1 cell 	 23629965
+p60 	 PLANA:0002109: X1 cell 	 23629965
+Mcm3 	 PLANA:0002109: X1 cell 	 23629965
+Mcm4 	 PLANA:0002109: X1 cell 	 23629965
+Mnat1 	 PLANA:0002109: X1 cell 	 23629965
+Baf53a 	 PLANA:0002109: X1 cell 	 23629965
+p48 	 PLANA:0002109: X1 cell 	 23629965
+Mbd3 	 PLANA:0002109: X1 cell 	 23629965
+p150 	 PLANA:0000429: neoblast 	 23629965
+SL1/2 	 PLANA:0000044: cephalic ganglia (Synonym = brain 	 24120894
+SL1/2 	 PLANA:0000097: ventral nerve cord 	 24120894
+SL1/2 	 PLANA:0002142: parenchyma (Synonym = mesenchyme 	 24120894
+SL1/2 	 PLANA:0000034: epidermis 	 24120894
+SL1/2 	 PLANA:0000429: neoblast 	 24120894
+madt 	 PLANA:0000026: gut 	 24415944
+ephR1 	 PLANA:0007561: head margin 	 24415944
+ephR1 	 PLANA:0000032: dorsal midline 	 24415944
+KF75121 	 PLANA:0007524: anterior pole 	 24704339
+KF75121 	 PLANA:0000016: pharynx 	 24704339
+MN.44.4b 	 PLANA:0000043: dorsal ventral margin of the whole animal (Synonym = DV border 	 25017721
+ston2 	 PLANA:0000103: central nervous system 	 26525673
+ptprd9 	 PLANA:0000103: central nervous system 	 26525673
+elav-2 	 PLANA:0000103: central nervous system 	 26525673
+msi-1 	 PLANA:0000103: central nervous system 	 26525673
+elav3-11 	 PLANA:0000103: central nervous system 	 26525673
+elav3-16 	 PLANA:0000103: central nervous system 	 26525673
+glrb 	 PLANA:0000103: central nervous system 	 26525673
+grm-3 	 PLANA:0000103: central nervous system 	 26525673
+msi-2 	 PLANA:0000103: central nervous system 	 26525673
+sec14-l2 	 PLANA:0000103: central nervous system 	 26525673
+syt-11 	 PLANA:0000103: central nervous system 	 26525673
+KU852676 	 PLANA:0000228: male germ cell 	 27330085
+KU852676 	 PLANA:0000208: testis 	 27330085
+mf8 	 PLANA:0000429: neoblast 	 27523733
+ercc6-like 	 PLANA:0000429: neoblast 	 27523733
+aurora-1 	 PLANA:0000429: neoblast 	 27523733
+aurora-2 	 PLANA:0000429: neoblast 	 27523733
+kinase 	 PLANA:0000429: neoblast 	 27523733
+apex1 	 PLANA:0000429: neoblast 	 27523733
+gfpd01113597 	 PLANA:0000208: testis 	 279364
+gfpd01113597 	 PLANA:0000204: ovary 	 279364
+gfpd01078062 	 PLANA:0000208: testis 	 279364
+gfpd01078062 	 PLANA:0000204: ovary 	 279364
+dnahc10 	 PLANA:0000208: testis 	 279364
+gfpd01083686 	 PLANA:0000208: testis 	 279364
+h.119.12f 	 PLANA:0000208: testis 	 279364
+gfpd01036002 	 PLANA:0000208: testis 	 279364
+gfpd01098960 	 PLANA:0000208: testis 	 279364
+h.105.12f 	 PLANA:0000208: testis 	 279364
+h.105.12f 	 PLANA:0000224: cement gland 	 279364
+gfpd01061169 	 PLANA:0000208: testis 	 279364
+gfpd01061169 	 PLANA:0000224: cement gland 	 279364
+SMED20015313 	 PLANA:0000023: embryonic pharynx 	 28072387
+SMED20015313 	 PLANA:0000023: embryonic pharynx 	 28072387
+SMED20015313 	 PLANA:0000023: embryonic pharynx 	 28072387
+SMED20015313 	 PLANA:0000023: embryonic pharynx 	 28072387
+PL04022B1F07 	 PLANA:0000232: copulatory apparatus 	 28434803
+PL04022B2A04 	 PLANA:0000232: copulatory apparatus 	 28434803
+PL06015A2C08 	 PLANA:0000420: parapharyngeal region 	 28434803
+PL04006A2B04 	 PLANA:0000208: testis 	 28434803
+PL08007B1B01 	 PLANA:0000208: testis 	 28434803
+PL030017B20H10 	 PLANA:0000231: vitelline gland (Synonym = yolk gland 	 28434803
+PL04012A1B12 	 PLANA:0000231: vitelline gland (Synonym = yolk gland 	 28434803
+PL030017B20H10 	 PLANA:0000231: vitelline gland (Synonym = yolk gland 	 28434803
+PL04020A2D09 	 PLANA:0000231: vitelline gland (Synonym = yolk gland 	 28434803
+bantam-a 	 PLANA:0000429: neoblast 	 29124009
+pk1 	 PLANA:0000026: gut 	 29357350
+nb32 	 PLANA:0000028: Category 2 cell 	 29357350
+1G9.2 	 PLANA:0000062: esophagus 	 29674431
+1G9.2 	 PLANA:0002074: pharynx tip 	 29674431
+1G9.2 	 PLANA:0000062: esophagus 	 29674431
+1G9.2 	 PLANA:0002074: pharynx tip 	 29674431
+1G9.2 	 PLANA:0000062: esophagus 	 29674431
+1G9.2 	 PLANA:0002074: pharynx tip 	 29674431
+1G9.2 	 PLANA:0000062: esophagus 	 29674431
+1G9.2 	 PLANA:0002074: pharynx tip 	 29674431
+hypothetical-37385 	 PLANA:0000099: neuron 	 30399335

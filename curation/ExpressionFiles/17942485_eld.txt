@@ -1,0 +1,8 @@
+Accession	Term	experimental evidence	biotype	life cycle stage	Sample Type	Curator (SIMR id)	PMID	Date
+smedolloid-1	PLANA:0000141: dorsal region (Synonym = dorsal region of whole organism	ECO:0001839	PLANA:0000024	PLANA:0004504	PLANA:0000136	eld	17942485	Fri Nov 15 12:38:41 2019
+H.14.4a	PLANA:0000141: dorsal region (Synonym = dorsal region of whole organism	ECO:0001839	PLANA:0000024	PLANA:0004504	PLANA:0000136	eld	17942485	Fri Nov 15 12:38:41 2019
+smedbmp4-1	PLANA:0000032: dorsal midline (Synonym = dorsal region of midline	ECO:0001839	PLANA:0000024	PLANA:0004504	PLANA:0000136	eld	17942485	Fri Nov 15 12:39:58 2019
+H.17.9e	PLANA:0000032: dorsal midline (Synonym = dorsal region of midline	ECO:0001839	PLANA:0000024	PLANA:0004504	PLANA:0000136	eld	17942485	Fri Nov 15 12:42:54 2019
+D.21.6	PLANA:0000043: dorsal ventral margin	ECO:0001839	PLANA:0000024	PLANA:0004504	PLANA:0000136	eld	17942485	Fri Nov 15 12:43:21 2019
+H.1.3B	PLANA:0000043: dorsal ventral margin	ECO:0001839	PLANA:0000024	PLANA:0004504	PLANA:0000136	eld	17942485	Fri Nov 15 12:45:41 2019
+H.1.3B	PLANA:0000419: prepharyngeal region	ECO:0001839	PLANA:0000024	PLANA:0004504	PLANA:0000136	eld	17942485	Fri Nov 15 12:45:41 2019

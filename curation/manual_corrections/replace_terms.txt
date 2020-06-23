@@ -1,0 +1,3 @@
+Accession	Term	new_term
+Smed-beta-catenin-1	BFO:0000001: entity	PLANA:0000044: cephalic ganglia
+dd_Smed_v6_6353_0_1	BFO:0000001: entity	PLANA:0000044: cephalic ganglia
