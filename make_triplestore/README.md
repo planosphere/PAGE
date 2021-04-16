@@ -37,8 +37,8 @@ blazegraph-runner load --journal=blazegraph.jnl --informat=turtle --graph='http:
 
 ### Get sequence descriptions and convert to ttl
 ```
-perl getPlanmineDesc.pl > planmine.desc.txt
-perl planmineDesc2ttl.pl planmine_desc.txt > planmine.descriptions.ttl
+perl getPlanmineGeneInfo.pl > planmine_geneinfo.txt
+perl planmineDesc2ttl.pl planmine_geneinfo.txt > planmine.descriptions.ttl
 curl -OL https://planosphere.stowers.org/pub/gff/smed_20140614.ontology.dbxref.ahrd.page.gff
 perl gffName2ttl.pl smed_20140614.ontology.dbxref.ahrd.page.gff  > smed_20140614.descriptions.ttl
 ```
