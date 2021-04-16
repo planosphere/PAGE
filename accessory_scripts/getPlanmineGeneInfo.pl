@@ -34,22 +34,23 @@ no warnings ('uninitialized');
 # The following import statement sets PlanMine as your default
 use Webservice::InterMine 0.9904 'http://planmine.mpi-cbg.de/planmine';
 
-my $query = new_query(class => 'Contig');
+my $query = new_query(class => 'Gene');
 
 # The view specifies the output columns
 $query->add_view(qw/
-    gene.primaryIdentifier
-    gene.transcripts.primaryIdentifier
-    gene.description
+    primaryIdentifier
+    symbol
+    transcripts.primaryIdentifier
+    description
 /);
 
-# Your custom sort order is specified with the following code:
-$query->add_sort_order('gene.description', 'ASC');
+# edit the line below to change the sort order:
+# $query->add_sort_order('primaryIdentifier', 'ASC');
 
 
 # Use an iterator to avoid having all rows in memory at once.
 my $it = $query->iterator();
 while (my $row = <$it>) {
-    print $row->{'gene.primaryIdentifier'}, $row->{'gene.transcripts.primaryIdentifier'},
-        $row->{'gene.description'}, "\n";
+    print $row->{'primaryIdentifier'}, $row->{'symbol'}, $row->{'transcripts.primaryIdentifier'},
+        $row->{'description'}, "\n";
 }
