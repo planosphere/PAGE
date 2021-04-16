@@ -15,6 +15,8 @@ __What was beyond the scope:__ wildtype regeneration time course expression data
      - **Do NOT** look at figure panels and try to describe an in situ pattern of your own accord as we are relying on authors expertise reporting their data rather than introducing external bias.  
      - If a figure uses text to highlight an area of expression, it should be included, as in PMID 2070997 Fig2, where the abbreviated structures in the middle panel were included because they are elaborated on in the figure legend. Specifically drs midline = dorsal midline and wnt1 was then noted as being expressed in the dorsal midline by colorimetric WISH. 
 
+![figure](rules_fig2.png)
+
 4. __Vague descriptions of expression patterns in the text may be omitted if there isn't clear information about what the anatomical structure is.__
     - e.g., "discrete cells" or "discrete subepidermal cells" cannot be annotated. 
     - “Neoblast-like cell” was annotated as “parenchymal cell”
