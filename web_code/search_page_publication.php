@@ -307,7 +307,7 @@ if ($_SERVER['REQUEST_METHOD'] == 'GET'){
 </div>
                   </fieldset>
                 </form>
-    <em>Note: Planarian Anatomy Gene Expression searches are built using the <a style="color:#32821f;" href="/anatomyontology" target="_blank">Planarian Anatomy Ontology</a></em>
+        <em>Note: Planarian Anatomy Gene Expression searches are built using the <a style="color:#32821f;" target=\"_blank\" href="/anatomyontology">Planarian Anatomy Ontology</a>. Read about the <a style="color:#32821f;" target=\"_blank\" href="https://github.com/planosphere/PAGE/blob/master/curation_rules.md">rules</a> on how papers were curated for PAGE. </em>
                 
 </div>
 
