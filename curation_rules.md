@@ -1,5 +1,5 @@
 # PAGE Curation Rules 
-__What we curated:__ wildtype intact expression data
+__What we curated:__ wildtype intact expression data  
 __What was beyond the scope:__ wildtype regeneration time course expression data; gene expression in RNAi backgrounds or other experimental perturbations, any antibody data
 1.  __Only record expression in homeostatic, wildtype animals__
      - Example: PMID 26525673 only uses trpA and serT + neurons in figure S10, however all panels in this figure are for animals that were amputated so they are not included because of the experimental perturbation.   
