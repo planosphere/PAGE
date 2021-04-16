@@ -1,4 +1,4 @@
-Accession	Term	experimental evidence	biotype	life cycle stage	Sample Type	Curator (SIMR id)	PMID	Date
+Accession	Term	experimental evidence	biotype	life cycle stage	Sample Type	Curator (ORCID)	PMID	Date
 DN301487	PLANA:0002142: parenchyma (Synonym = mesenchyme	ECO:0001839	PLANA:0000024	PLANA:0004504	PLANA:0000136	stn	23235145	Tue Nov 26 10:16:29 2019
 DN301487	PLANA:0000026: gut	ECO:0001839	PLANA:0000024	PLANA:0004504	PLANA:0000136	stn	23235145	Tue Nov 26 10:16:29 2019
 DN301487	PLANA:0000429: neoblast	ECO:0001839	PLANA:0000024	PLANA:0004504	PLANA:0000136	stn	23235145	Tue Nov 26 10:16:29 2019

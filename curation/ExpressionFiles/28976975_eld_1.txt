@@ -1,4 +1,4 @@
-Accession	Term	experimental evidence	biotype	life cycle stage	Sample Type	Curator (SIMR id)	PMID	Date
+Accession	Term	experimental evidence	biotype	life cycle stage	Sample Type	Curator (ORCID)	PMID	Date
 Beta-catenin-4	PLANA:0000017: photoreceptor neuron	ECO:0001047	PLANA:0000024	PLANA:0004504	PLANA:0000136	eld	28976975	Sun Dec  1 16:13:05 2019
 opsin-1	PLANA:0000017: photoreceptor neuron	ECO:0001047	PLANA:0000024	PLANA:0004504	PLANA:0000136	eld	28976975	Sun Dec  1 16:13:05 2019
 tph	PLANA:0000075: optic cup (Synonym = pigment cup	ECO:0001047	PLANA:0000024	PLANA:0004504	PLANA:0000136	eld	28976975	Sun Dec  1 16:13:35 2019

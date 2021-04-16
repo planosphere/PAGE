@@ -1,4 +1,4 @@
-Accession	Term	experimental evidence	biotype	life cycle stage	Sample Type	Curator (SIMR id)	PMID	Date
+Accession	Term	experimental evidence	biotype	life cycle stage	Sample Type	Curator (ORCID)	PMID	Date
 admp-1b	PLANA:0000043: dorsal ventral margin of the whole animal	ECO:0001839	PLANA:0000024	PLANA:0004504	PLANA:0000136	eld	21295483	Fri Nov 15 13:17:40 2019
 admp-1b	PLANA:0000038: ventral midline	ECO:0001839	PLANA:0000024	PLANA:0004504	PLANA:0000136	eld	21295483	Fri Nov 15 13:17:40 2019
 Smed-admp	PLANA:0000043: dorsal ventral margin of the whole animal	ECO:0001839	PLANA:0000024	PLANA:0004504	PLANA:0000136	eld	21295483	Fri Nov 15 13:17:40 2019

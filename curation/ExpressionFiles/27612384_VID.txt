@@ -1,4 +1,4 @@
-Accession	Term	experimental evidence	biotype	life cycle stage	Sample Type	Curator (SIMR id)	PMID	Date
+Accession	Term	experimental evidence	biotype	life cycle stage	Sample Type	Curator (ORCID)	PMID	Date
 Contig08899	PLANA:0000099: neuron	ECO:0001839	PLANA:0000024	PLANA:0004504	PLANA:0000136	VID	27612384	Fri Dec 20 15:33:46 2019
 Contig08899	PLANA:0000461: lateral branch (Synonym = brain branch	ECO:0001839	PLANA:0000024	PLANA:0004504	PLANA:0000136	VID	27612384	Fri Dec 20 15:33:46 2019
 Contig16482	PLANA:0000099: neuron	ECO:0001839	PLANA:0000024	PLANA:0004504	PLANA:0000136	VID	27612384	Fri Dec 20 15:33:46 2019

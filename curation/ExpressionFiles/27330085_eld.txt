@@ -1,4 +1,4 @@
-Accession	Term	experimental evidence	biotype	life cycle stage	Sample Type	Curator (SIMR id)	PMID	Date
+Accession	Term	experimental evidence	biotype	life cycle stage	Sample Type	Curator (ORCID)	PMID	Date
 Smed-boule-1	PLANA:0000208: testis	ECO:0001839	PLANA:0000027	PLANA:0004503	PLANA:0000136	eld	27330085	Wed Nov 13 13:08:39 2019
 KU519616	PLANA:0000208: testis	ECO:0001839	PLANA:0000027	PLANA:0004503	PLANA:0000136	eld	27330085	Wed Nov 13 13:08:39 2019
 Smed-boule-1	PLANA:0000208: testis	ECO:0001047	PLANA:0000027	PLANA:0004503	PLANA:0000136	eld	27330085	Wed Nov 13 13:09:34 2019

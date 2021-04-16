@@ -1,2 +1,2 @@
-Accession	Term	experimental evidence	biotype	life cycle stage	Sample Type	Curator (SIMR id)	PMID	Date
+Accession	Term	experimental evidence	biotype	life cycle stage	Sample Type	Curator (ORCID)	PMID	Date
 DQ336176	PLANA:0000030: midline	ECO:0001839	PLANA:0000024	PLANA:0004504	PLANA:0000136	VID	17553481	Thu Nov 21 13:33:26 2019

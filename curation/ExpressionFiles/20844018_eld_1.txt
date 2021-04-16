@@ -1,4 +1,4 @@
-Accession	Term	experimental evidence	biotype	life cycle stage	Sample Type	Curator (SIMR id)	PMID	Date
+Accession	Term	experimental evidence	biotype	life cycle stage	Sample Type	Curator (ORCID)	PMID	Date
 Contig6300_SE3	PLANA:0002030: early male germ cell	ECO:0000104	PLANA:0000024	PLANA:0004504	PLANA:0000136	eld	20844018	Mon Nov 11 14:43:35 2019
 Contig4229_SE3	PLANA:0002030: early male germ cell	ECO:0000104	PLANA:0000024	PLANA:0004504	PLANA:0000136	eld	20844018	Mon Nov 11 14:43:35 2019
 PL06011A2G07_SE3	PLANA:0002030: early male germ cell	ECO:0000104	PLANA:0000024	PLANA:0004504	PLANA:0000136	eld	20844018	Mon Nov 11 14:43:35 2019

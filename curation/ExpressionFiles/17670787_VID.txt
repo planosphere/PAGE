@@ -1,4 +1,4 @@
-Accession	Term	experimental evidence	biotype	life cycle stage	Sample Type	Curator (SIMR id)	PMID	Date
+Accession	Term	experimental evidence	biotype	life cycle stage	Sample Type	Curator (ORCID)	PMID	Date
 AY067167	PLANA:0000025: nervous system	ECO:0001839	PLANA:0000024	PLANA:0004504	PLANA:0000136	VID	17670787	Thu Nov 21 11:16:12 2019
 AY067877	PLANA:0000025: nervous system	ECO:0001839	PLANA:0000024	PLANA:0004504	PLANA:0000136	VID	17670787	Thu Nov 21 11:16:12 2019
 NB.39.10e	PLANA:0000025: nervous system	ECO:0001839	PLANA:0000024	PLANA:0004504	PLANA:0000136	VID	17670787	Thu Nov 21 11:16:12 2019

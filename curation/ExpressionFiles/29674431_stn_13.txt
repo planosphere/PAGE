@@ -1,4 +1,4 @@
-Accession	Term	experimental evidence	biotype	life cycle stage	Sample Type	Curator (SIMR id)	PMID	Date
+Accession	Term	experimental evidence	biotype	life cycle stage	Sample Type	Curator (ORCID)	PMID	Date
 dd_Smed_v4_907_0_1	PLANA:0000026: gut	ECO:0001047	PLANA:0000024	PLANA:0004504	PLANA:0000136	stn	29674431	Tue Jan 14 14:10:52 2020
 dd_357	PLANA:0000034: epidermis	ECO:0001047	PLANA:0000024	PLANA:0004504	PLANA:0000136	stn	29674431	Tue Jan 14 14:11:08 2020
 dd_175	PLANA:0003116: parenchymal cell	ECO:0001047	PLANA:0000024	PLANA:0004504	PLANA:0000136	stn	29674431	Tue Jan 14 14:11:21 2020

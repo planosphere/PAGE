@@ -1,4 +1,4 @@
-Accession	Term	experimental evidence	biotype	life cycle stage	Sample Type	Curator (SIMR id)	PMID	Date
+Accession	Term	experimental evidence	biotype	life cycle stage	Sample Type	Curator (ORCID)	PMID	Date
 AY067542	PLANA:0007561: head margin	ECO:0001047	PLANA:0000024	PLANA:0004504	PLANA:0000136	stn	30485821	Wed Jan 15 14:42:20 2020
 HM803280	BSPO:0000094: dorsal/ventral compartment boundary	ECO:0001047	PLANA:0000024	PLANA:0004504	PLANA:0000136	stn	30485821	Wed Jan 15 14:42:37 2020
 KT983961	PLANA:0000418: head	ECO:0001047	PLANA:0000024	PLANA:0004504	PLANA:0000136	stn	30485821	Wed Jan 15 14:42:46 2020

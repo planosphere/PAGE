@@ -1,4 +1,4 @@
-Accession	Term	experimental evidence	biotype	life cycle stage	Sample Type	Curator (SIMR id)	PMID	Date
+Accession	Term	experimental evidence	biotype	life cycle stage	Sample Type	Curator (ORCID)	PMID	Date
 dd_Smed_v4_11650_0_1	PLANA:0000142: posterior compartment of the whole animal	ECO:0001839	PLANA:0000024	PLANA:0004504	PLANA:0000136	stn	27063937	Fri Jan 17 11:30:05 2020
 dd_Smed_v4_16227_0_1	PLANA:0000142: posterior compartment of the whole animal	ECO:0001839	PLANA:0000024	PLANA:0004504	PLANA:0000136	stn	27063937	Fri Jan 17 11:30:05 2020
 dd_Smed_v4_13065_0_1	PLANA:0000142: posterior compartment of the whole animal	ECO:0001839	PLANA:0000024	PLANA:0004504	PLANA:0000136	stn	27063937	Fri Jan 17 11:30:05 2020

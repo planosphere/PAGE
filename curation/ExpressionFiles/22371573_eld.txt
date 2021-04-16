@@ -1,4 +1,4 @@
-Accession	Term	experimental evidence	biotype	life cycle stage	Sample Type	Curator (SIMR id)	PMID	Date
+Accession	Term	experimental evidence	biotype	life cycle stage	Sample Type	Curator (ORCID)	PMID	Date
 Smed-tert	PLANA:0003116: parenchymal cell	ECO:0001839	PLANA:0000024	PLANA:0004504	PLANA:0000136	eld	22371573	Sun Nov 17 18:06:35 2019
 Smed-tert	PLANA:0000429: neoblast	ECO:0001839	PLANA:0000024	PLANA:0004504	PLANA:0000136	eld	22371573	Sun Nov 17 18:06:35 2019
 SMED30031978	PLANA:0003116: parenchymal cell	ECO:0001839	PLANA:0000024	PLANA:0004504	PLANA:0000136	eld	22371573	Sun Nov 17 18:06:35 2019

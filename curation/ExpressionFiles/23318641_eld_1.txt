@@ -1,4 +1,4 @@
-Accession	Term	experimental evidence	biotype	life cycle stage	Sample Type	Curator (SIMR id)	PMID	Date
+Accession	Term	experimental evidence	biotype	life cycle stage	Sample Type	Curator (ORCID)	PMID	Date
 cubulin	PLANA:0000020: protonephridia	ECO:0001839	PLANA:0000024	PLANA:0004504	PLANA:0000136	eld	23318641	Mon Dec  2 07:03:34 2019
 chat	PLANA:0000025: nervous system	ECO:0001839	PLANA:0000024	PLANA:0004504	PLANA:0000136	eld	23318641	Mon Dec  2 07:03:49 2019
 mag-1	PLANA:0007538: adhesion gland (Synonym = marginal adhesive gland	ECO:0001839	PLANA:0000024	PLANA:0004504	PLANA:0000136	eld	23318641	Mon Dec  2 07:04:26 2019

@@ -1,4 +1,4 @@
-Accession	Term	experimental evidence	biotype	life cycle stage	Sample Type	Curator (SIMR id)	PMID	Date
+Accession	Term	experimental evidence	biotype	life cycle stage	Sample Type	Curator (ORCID)	PMID	Date
 ABD72512	PLANA:0000044: cephalic ganglia	ECO:0001839	PLANA:0000024	PLANA:0004504	PLANA:0000136	VID	18202849	Thu Nov 14 12:16:32 2019
 ABD72512	PLANA:0000097: ventral nerve cord (Synonym = VNC	ECO:0001839	PLANA:0000024	PLANA:0004504	PLANA:0000136	VID	18202849	Thu Nov 14 12:16:32 2019
 ABD72512	PLANA:0000103: central nervous system	ECO:0001839	PLANA:0000024	PLANA:0004504	PLANA:0000136	VID	18202849	Thu Nov 14 12:16:32 2019

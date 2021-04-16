@@ -1,4 +1,4 @@
-Accession	Term	experimental evidence	biotype	life cycle stage	Sample Type	Curator (SIMR id)	PMID	Date
+Accession	Term	experimental evidence	biotype	life cycle stage	Sample Type	Curator (ORCID)	PMID	Date
 GAKN01004003.1	PLANA:0000016: pharynx	ECO:0001839	PLANA:0000024	PLANA:0004504	PLANA:0000136	stn	25956527	Mon Nov 25 14:49:05 2019
 GAKN01005514.1	PLANA:0000016: pharynx	ECO:0001839	PLANA:0000024	PLANA:0004504	PLANA:0000136	stn	25956527	Mon Nov 25 14:49:05 2019
 GAKN01017574.1	PLANA:0000420: parapharyngeal region	ECO:0001839	PLANA:0000024	PLANA:0004504	PLANA:0000136	stn	25956527	Mon Nov 25 14:49:24 2019

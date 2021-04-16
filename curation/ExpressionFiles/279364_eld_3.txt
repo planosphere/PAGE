@@ -1,4 +1,4 @@
-Accession	Term	experimental evidence	biotype	life cycle stage	Sample Type	Curator (SIMR id)	PMID	Date
+Accession	Term	experimental evidence	biotype	life cycle stage	Sample Type	Curator (ORCID)	PMID	Date
 gdag01019077.1	PLANA:0000231: vitelline gland	ECO:0001839	PLANA:0000027	PLANA:0004503	PLANA:0000136	eld	279364	Mon Nov 25 10:32:43 2019
 gdag01028718.1	PLANA:0000231: vitelline gland	ECO:0001839	PLANA:0000027	PLANA:0004503	PLANA:0000136	eld	279364	Mon Nov 25 10:32:43 2019
 gdag01007492.1	PLANA:0000205: oviduct	ECO:0001839	PLANA:0000027	PLANA:0004503	PLANA:0000136	eld	279364	Mon Nov 25 10:33:05 2019

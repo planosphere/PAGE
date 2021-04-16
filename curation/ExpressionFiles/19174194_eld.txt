@@ -1,4 +1,4 @@
-Accession	Term	experimental evidence	biotype	life cycle stage	Sample Type	Curator (SIMR id)	PMID	Date
+Accession	Term	experimental evidence	biotype	life cycle stage	Sample Type	Curator (ORCID)	PMID	Date
 Smed-nog1	PLANA:0000044: cephalic ganglia	ECO:0001839	PLANA:0000024	PLANA:0004504	PLANA:0000136	eld	19174194	Mon Nov 18 00:31:11 2019
 Smed-nog1	PLANA:0000097: ventral nerve cord	ECO:0001839	PLANA:0000024	PLANA:0004504	PLANA:0000136	eld	19174194	Mon Nov 18 00:31:11 2019
 Smed-nog1	PLANA:0000016: pharynx	ECO:0001839	PLANA:0000024	PLANA:0004504	PLANA:0000136	eld	19174194	Mon Nov 18 00:31:11 2019

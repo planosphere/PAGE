@@ -1,4 +1,4 @@
-Accession	Term	experimental evidence	biotype	life cycle stage	Sample Type	Curator (SIMR id)	PMID	Date
+Accession	Term	experimental evidence	biotype	life cycle stage	Sample Type	Curator (ORCID)	PMID	Date
 dd_Smed_v4_6811_0_1	PLANA:0003104: enteric muscle cell (Synonym = gut muscle cell	ECO:0001839	PLANA:0000024	PLANA:0004504	PLANA:0000136	stn	30471994	Wed Jan  8 14:24:44 2020
 dd_Smed_v4_6811_0_1	PLANA:0002028: dorsal-ventral muscle cell	ECO:0001839	PLANA:0000024	PLANA:0004504	PLANA:0000136	stn	30471994	Wed Jan  8 14:24:44 2020
 dd_Smed_v4_6811_0_1	PLANA:0003104: enteric muscle cell (Synonym = gut muscle cell	ECO:0001560	PLANA:0000024	PLANA:0004504	PLANA:0002138	stn	30471994	Wed Jan  8 14:25:16 2020

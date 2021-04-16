@@ -168,7 +168,7 @@ server <- function(input, output) {
     })
     
     getORCID <- reactive({
-      input$"Curator (ORDID)"
+      input$"Curator (ORCID)"
     })
     
     # Download dataframe

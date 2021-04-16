@@ -1,4 +1,4 @@
-Accession	Term	experimental evidence	biotype	life cycle stage	Sample Type	Curator (SIMR id)	PMID	Date
+Accession	Term	experimental evidence	biotype	life cycle stage	Sample Type	Curator (ORCID)	PMID	Date
 dd_Smed_v6_181_0	PLANA:0000034: epidermis	ECO:0001839	PLANA:0000024	PLANA:0004504	PLANA:0000136	stn	29674432	Thu Jan  9 12:20:24 2020
 dd_Smed_v6_5204_0	PLANA:0000034: epidermis	ECO:0001839	PLANA:0000024	PLANA:0004504	PLANA:0000136	stn	29674432	Thu Jan  9 12:20:45 2020
 dd_Smed_v6_5204_0	PLANA:0000043: dorsal ventral margin of the whole animal (Synonym = DV boundary	ECO:0001839	PLANA:0000024	PLANA:0004504	PLANA:0000136	stn	29674432	Thu Jan  9 12:20:45 2020

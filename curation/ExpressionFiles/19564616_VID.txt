@@ -1,4 +1,4 @@
-Accession	Term	experimental evidence	biotype	life cycle stage	Sample Type	Curator (SIMR id)	PMID	Date
+Accession	Term	experimental evidence	biotype	life cycle stage	Sample Type	Curator (ORCID)	PMID	Date
 let-7a	PLANA:0000429: neoblast	ECO:0000295	PLANA:0000024	PLANA:0004504	PLANA:0000136	VID	19564616	Thu Nov 14 12:25:22 2019
 let-7b	PLANA:0000429: neoblast	ECO:0000295	PLANA:0000024	PLANA:0004504	PLANA:0000136	VID	19564616	Thu Nov 14 12:25:22 2019
 miR-36b	PLANA:0000429: neoblast	ECO:0000295	PLANA:0000024	PLANA:0004504	PLANA:0000136	VID	19564616	Thu Nov 14 12:25:22 2019

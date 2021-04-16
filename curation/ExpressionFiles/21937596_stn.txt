@@ -1,4 +1,4 @@
-Accession	Term	experimental evidence	biotype	life cycle stage	Sample Type	Curator (SIMR id)	PMID	Date
+Accession	Term	experimental evidence	biotype	life cycle stage	Sample Type	Curator (ORCID)	PMID	Date
 hunchback	PLANA:0000136: whole organism	ECO:0001839	PLANA:0000024	PLANA:0004504	PLANA:0000136	stn	21937596	Fri Nov 15 16:28:14 2019
 POU2/3	PLANA:0000053: distal tubule	ECO:0001047	PLANA:0000024	PLANA:0004504	PLANA:0000136	stn	21937596	Fri Nov 15 16:29:11 2019
 POU2/3	PLANA:0000087: proximal tubule	ECO:0001047	PLANA:0000024	PLANA:0004504	PLANA:0000136	stn	21937596	Fri Nov 15 16:29:11 2019

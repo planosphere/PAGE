@@ -1,4 +1,4 @@
-Accession	Term	experimental evidence	biotype	life cycle stage	Sample Type	Curator (SIMR id)	PMID	Date
+Accession	Term	experimental evidence	biotype	life cycle stage	Sample Type	Curator (ORCID)	PMID	Date
 KF134112	BSPO:0000068: ventral side (Synonym = ventral	ECO:0001047	PLANA:0000024	PLANA:0004504	PLANA:0000136	VID	23903188	Thu Nov 14 13:41:37 2019
 KF134112	PLANA:0000481: serotonergic neuron	ECO:0001047	PLANA:0000024	PLANA:0004504	PLANA:0000136	VID	23903188	Thu Nov 14 13:41:37 2019
 KF134112	PLANA:0000463: cholinergic neuron	ECO:0001047	PLANA:0000024	PLANA:0004504	PLANA:0000136	VID	23903188	Thu Nov 14 13:41:37 2019

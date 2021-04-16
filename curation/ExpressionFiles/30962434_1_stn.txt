@@ -1,4 +1,4 @@
-Accession	Term	experimental evidence	biotype	life cycle stage	Sample Type	Curator (SIMR id)	PMID	Date
+Accession	Term	experimental evidence	biotype	life cycle stage	Sample Type	Curator (ORCID)	PMID	Date
 dd_Smed_v4_6811_0_1	PLANA:0000101: muscle cell	ECO:0001047	PLANA:0000024	PLANA:0004504	PLANA:0000136	stn	30962434	Fri Jan  3 12:35:16 2020
 dd_Smed_v4_9030_0_1	PLANA:0000101: muscle cell	ECO:0001047	PLANA:0000024	PLANA:0004504	PLANA:0000136	stn	30962434	Fri Jan  3 12:35:16 2020
 dd_Smed_v4_9030_0_1	PLANA:0000101: muscle cell	ECO:0001047	PLANA:0000024	PLANA:0004504	PLANA:0000136	stn	30962434	Fri Jan  3 12:35:16 2020

@@ -1,4 +1,4 @@
-Accession	Term	experimental evidence	biotype	life cycle stage	Sample Type	Curator (SIMR id)	PMID	Date
+Accession	Term	experimental evidence	biotype	life cycle stage	Sample Type	Curator (ORCID)	PMID	Date
 dd_Smed_v4_10673_0_1	PLANA:0000032: dorsal midline	ECO:0001047	PLANA:0000024	PLANA:0004504	PLANA:0000136	stn	28292427	Thu Dec 19 14:56:34 2019
 dd_Smed_v4_12689_0_1	PLANA:0003503: ventral epidermis progenitor cell	ECO:0001047	PLANA:0000024	PLANA:0004504	PLANA:0000136	stn	28292427	Thu Dec 19 15:04:50 2019
 dd_Smed_v4_6567_0_1	PLANA:0003101: ventral epidermis cell (Synonym = ventral ciliated cell	ECO:0001047	PLANA:0000024	PLANA:0004504	PLANA:0000136	stn	28292427	Thu Dec 19 15:06:31 2019

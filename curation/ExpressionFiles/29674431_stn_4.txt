@@ -1,4 +1,4 @@
-Accession	Term	experimental evidence	biotype	life cycle stage	Sample Type	Curator (SIMR id)	PMID	Date
+Accession	Term	experimental evidence	biotype	life cycle stage	Sample Type	Curator (ORCID)	PMID	Date
 dd_Smed_v4_12939_2_1	PLANA:0002056: medial muscle cell	ECO:0001560	PLANA:0000024	PLANA:0004504	PLANA:0000136	stn	29674431	Mon Feb 24 15:14:13 2020
 dd_Smed_v4_17402_0_1	PLANA:0002056: medial muscle cell	ECO:0001560	PLANA:0000024	PLANA:0004504	PLANA:0000136	stn	29674431	Mon Feb 24 15:14:13 2020
 dd_Smed_v4_14852_0_1	PLANA:0002056: medial muscle cell	ECO:0001560	PLANA:0000024	PLANA:0004504	PLANA:0000136	stn	29674431	Mon Feb 24 15:14:13 2020

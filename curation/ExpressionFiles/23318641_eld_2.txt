@@ -1,4 +1,4 @@
-Accession	Term	experimental evidence	biotype	life cycle stage	Sample Type	Curator (SIMR id)	PMID	Date
+Accession	Term	experimental evidence	biotype	life cycle stage	Sample Type	Curator (ORCID)	PMID	Date
 wntP-2	PLANA:0000142: posterior compartment of the whole animal	ECO:0001839	PLANA:0000024	PLANA:0004504	PLANA:0000136	eld	23318641	Mon Dec  2 17:47:53 2019
 wntP-2	PLANA:0000016: pharynx	ECO:0001839	PLANA:0000024	PLANA:0004504	PLANA:0000136	eld	23318641	Mon Dec  2 17:47:53 2019
 bmp4	PLANA:0000141: dorsal region of the whole animal (Synonym = dorsal region of whole organism	ECO:0001839	PLANA:0000024	PLANA:0004504	PLANA:0000136	eld	23318641	Mon Dec  2 17:48:40 2019

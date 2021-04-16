@@ -1,4 +1,4 @@
-Accession	Term	experimental evidence	biotype	life cycle stage	Sample Type	Curator (SIMR id)	PMID	Date
+Accession	Term	experimental evidence	biotype	life cycle stage	Sample Type	Curator (ORCID)	PMID	Date
 CAVII	PLANA:0000020: protonephridia	ECO:0001839	PLANA:0000024	PLANA:0004504	PLANA:0000136	eld	24523458	Thu Nov 21 14:38:51 2019
 inx10	PLANA:0000020: protonephridia	ECO:0001839	PLANA:0000024	PLANA:0004504	PLANA:0000136	eld	24523458	Thu Nov 21 14:38:51 2019
 pou2/3	PLANA:0000020: protonephridia	ECO:0001839	PLANA:0000024	PLANA:0004504	PLANA:0000136	eld	24523458	Thu Nov 21 14:38:51 2019

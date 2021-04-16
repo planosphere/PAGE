@@ -30,14 +30,16 @@ while (my $line = <CURATIONS>){
   $specimen_id =~ s/:/_/;
   next if $accession eq 'Accession';
   my $md5 = (md5_hex($line));
-
+# curator is ORCID but not full url
 #OBO:OBI_0100051 specimen
 #OBO:RO_0002490 existence overlaps
 #OBO:RO_0002558 has evidence
 #OBO:PLANA_0000021 biotype
+#OBO:RO_0002292  expresses
+#OBO:RO_0002206  expressed in
 print "PAGE:$md5 a OBAN:association;
   OBAN:association_has_object OBO:$term_id;
-  OBAN:association_has_object_property OBO:RO_0002200;
+  OBAN:association_has_object_property OBO:RO_0002206;
   OBAN:association_has_subject \"$accession\";
   OBO:OBI_0100051 OBO:$specimen_id;
   OBO:RO_0002490 OBO:$life_stage_id;

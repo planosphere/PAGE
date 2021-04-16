@@ -1,4 +1,4 @@
-Accession	Term	experimental evidence	biotype	life cycle stage	Sample Type	Curator (SIMR id)	PMID	Date
+Accession	Term	experimental evidence	biotype	life cycle stage	Sample Type	Curator (ORCID)	PMID	Date
 DQ086493	PLANA:0000103: central nervous system (Synonym = CNS	ECO:0001839	PLANA:0000024	PLANA:0004504	PLANA:0000136	VID	16033796	Thu Nov 21 13:47:05 2019
 DQ086493	PLANA:0003110: pharynx neuron (Synonym = pharyngeal neuron	ECO:0001839	PLANA:0000024	PLANA:0004504	PLANA:0000136	VID	16033796	Thu Nov 21 13:47:05 2019
 DQ086493	PLANA:0000467: submuscular nerve plexus	ECO:0001839	PLANA:0000024	PLANA:0004504	PLANA:0000136	VID	16033796	Thu Nov 21 13:47:05 2019

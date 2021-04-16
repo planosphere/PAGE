@@ -1,4 +1,4 @@
-Accession	Term	experimental evidence	biotype	life cycle stage	Sample Type	Curator (SIMR id)	PMID	Date
+Accession	Term	experimental evidence	biotype	life cycle stage	Sample Type	Curator (ORCID)	PMID	Date
 pc-2	PLANA:0000025: nervous system	ECO:0001047	PLANA:0000024	PLANA:0004504	PLANA:0000136	eld	25558068	Mon Nov 25 20:47:21 2019
 tsh	PLANA:0000025: nervous system	ECO:0001047	PLANA:0000024	PLANA:0004504	PLANA:0000136	eld	25558068	Mon Nov 25 20:49:48 2019
 tsh	PLANA:0003116: parenchymal cell	ECO:0001047	PLANA:0000024	PLANA:0004504	PLANA:0000136	eld	25558068	Mon Nov 25 20:49:48 2019

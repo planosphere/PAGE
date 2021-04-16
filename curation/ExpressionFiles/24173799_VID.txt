@@ -1,4 +1,4 @@
-Accession	Term	experimental evidence	biotype	life cycle stage	Sample Type	Curator (SIMR id)	PMID	Date
+Accession	Term	experimental evidence	biotype	life cycle stage	Sample Type	Curator (ORCID)	PMID	Date
 KF487096	PLANA:0002142: parenchyma (Synonym = mesenchyme	ECO:0001839	PLANA:0000024	PLANA:0004504	PLANA:0000136	VID	24173799	Mon Nov 11 17:08:41 2019
 KF487102	PLANA:0002142: parenchyma (Synonym = mesenchyme	ECO:0001839	PLANA:0000024	PLANA:0004504	PLANA:0000136	VID	24173799	Mon Nov 11 17:08:41 2019
 KF487105	PLANA:0002142: parenchyma (Synonym = mesenchyme	ECO:0001839	PLANA:0000024	PLANA:0004504	PLANA:0000136	VID	24173799	Mon Nov 11 17:08:41 2019

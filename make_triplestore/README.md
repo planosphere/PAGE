@@ -8,7 +8,8 @@ We mapped all transciptomes we came across in our reading of the plananrian lite
 
 ### transform curations into turtle format
 ```
-perl curations2ttl.pl term_annotations.txt > page.ttl 
+TERM_ANNOTATIONS=../curation/OUTPUT/term_annotations.txt
+perl curations2ttl.pl $TERM_ANNOTATIONS > page.ttl 
 ```
 
 ### transform mapping into turtle format

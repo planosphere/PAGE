@@ -1,4 +1,4 @@
-Accession	Term	experimental evidence	biotype	life cycle stage	Sample Type	Curator (SIMR id)	PMID	Date
+Accession	Term	experimental evidence	biotype	life cycle stage	Sample Type	Curator (ORCID)	PMID	Date
 Contig40636	PLANA:0000074: oocyte	ECO:0000295	PLANA:0000027	PLANA:0004503	PLANA:0000136	eld	28434803	Tue Nov 12 22:57:06 2019
 Contig40636	PLANA:0000231: vitelline gland (Synonym = yolk gland	ECO:0000295	PLANA:0000027	PLANA:0004503	PLANA:0000136	eld	28434803	Tue Nov 12 22:57:06 2019
 Contig14447	PLANA:0000074: oocyte	ECO:0000295	PLANA:0000027	PLANA:0004503	PLANA:0000136	eld	28434803	Tue Nov 12 22:57:06 2019

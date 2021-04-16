@@ -1,3 +1,3 @@
-Accession	Term	experimental evidence	biotype	life cycle stage	Sample Type	Curator (SIMR id)	PMID	Date
+Accession	Term	experimental evidence	biotype	life cycle stage	Sample Type	Curator (ORCID)	PMID	Date
 JF263459	PLANA:0000136: whole organism	ECO:0001839	PLANA:0000024	PLANA:0004504	PLANA:0000136	stn	21894189	Thu Nov 14 13:37:03 2019
 ago1	PLANA:0000136: whole organism	ECO:0001839	PLANA:0000024	PLANA:0004504	PLANA:0000136	stn	21894189	Thu Nov 14 13:37:03 2019

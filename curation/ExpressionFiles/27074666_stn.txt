@@ -1,4 +1,4 @@
-Accession	Term	experimental evidence	biotype	life cycle stage	Sample Type	Curator (SIMR id)	PMID	Date
+Accession	Term	experimental evidence	biotype	life cycle stage	Sample Type	Curator (ORCID)	PMID	Date
 dd_Smed_v6_6999_0_1	PLANA:0000420: parapharyngeal region	ECO:0001047	PLANA:0000024	PLANA:0004504	PLANA:0000136	stn	27074666	Fri Jan 17 10:05:55 2020
 SMU15014980	PLANA:0000419: prepharyngeal region	ECO:0001839	PLANA:0000024	PLANA:0004504	PLANA:0000136	stn	27074666	Fri Jan 17 10:06:19 2020
 SMU15007112	PLANA:0000072: mouth	ECO:0001839	PLANA:0000024	PLANA:0004504	PLANA:0000136	stn	27074666	Fri Jan 17 10:06:35 2020

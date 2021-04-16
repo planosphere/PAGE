@@ -1,4 +1,4 @@
-Accession	Term	experimental evidence	biotype	life cycle stage	Sample Type	Curator (SIMR id)	PMID	Date
+Accession	Term	experimental evidence	biotype	life cycle stage	Sample Type	Curator (ORCID)	PMID	Date
 dd_Smed_v4_10216_0_1	PLANA:0000240: body wall musculature	ECO:0001560	PLANA:0000024	PLANA:0004504	PLANA:0002138	stn	30471994	Wed Jan  8 14:20:44 2020
 dd_Smed_v4_11876_0_1	PLANA:0000240: body wall musculature	ECO:0001560	PLANA:0000024	PLANA:0004504	PLANA:0002138	stn	30471994	Wed Jan  8 14:20:44 2020
 dd_Smed_v4_12634_0_1	PLANA:0000240: body wall musculature	ECO:0001560	PLANA:0000024	PLANA:0004504	PLANA:0002138	stn	30471994	Wed Jan  8 14:20:44 2020

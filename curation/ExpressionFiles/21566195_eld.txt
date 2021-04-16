@@ -1,4 +1,4 @@
-Accession	Term	experimental evidence	biotype	life cycle stage	Sample Type	Curator (SIMR id)	PMID	Date
+Accession	Term	experimental evidence	biotype	life cycle stage	Sample Type	Curator (ORCID)	PMID	Date
 notum	PLANA:0007524: anterior pole	ECO:0001839	PLANA:0000024	PLANA:0004504	PLANA:0000136	eld	21566195	Thu Nov 21 07:21:36 2019
 JF725701.1	PLANA:0007524: anterior pole	ECO:0001839	PLANA:0000024	PLANA:0004504	PLANA:0000136	eld	21566195	Thu Nov 21 07:21:36 2019
 notum	PLANA:0007524: anterior pole	ECO:0001047	PLANA:0000024	PLANA:0004504	PLANA:0000136	eld	21566195	Thu Nov 21 07:21:39 2019

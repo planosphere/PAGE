@@ -1,4 +1,4 @@
-Accession	Term	experimental evidence	biotype	life cycle stage	Sample Type	Curator (SIMR id)	PMID	Date
+Accession	Term	experimental evidence	biotype	life cycle stage	Sample Type	Curator (ORCID)	PMID	Date
 SmedASXL_006380	PLANA:0000103: central nervous system (Synonym = CNS	ECO:0001839	PLANA:0000024	PLANA:0004504	PLANA:0000136	stn	26114597	Mon Dec 16 11:37:05 2019
 Prog-1	PLANA:0002142: parenchyma	ECO:0001839	PLANA:0000024	PLANA:0004504	PLANA:0000136	stn	26114597	Mon Dec 16 11:37:48 2019
 Prog-2	PLANA:0002142: parenchyma	ECO:0001839	PLANA:0000024	PLANA:0004504	PLANA:0000136	stn	26114597	Mon Dec 16 11:37:48 2019

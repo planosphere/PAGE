@@ -1,4 +1,4 @@
-Accession	Term	experimental evidence	biotype	life cycle stage	Sample Type	Curator (SIMR id)	PMID	Date
+Accession	Term	experimental evidence	biotype	life cycle stage	Sample Type	Curator (ORCID)	PMID	Date
 chd4	PLANA:0000035: Category 3 cell (Synonym = Smed-AGAT-1+ cell	ECO:0001047	PLANA:0000024	PLANA:0004504	PLANA:0000136	auk	26457503	Mon Nov 11 16:23:59 2019
 chd4	PLANA:0002142: parenchyma	ECO:0001047	PLANA:0000024	PLANA:0004504	PLANA:0000136	auk	26457503	Mon Nov 11 16:23:59 2019
 chd4	PLANA:0000044: cephalic ganglia (Synonym = brain	ECO:0001047	PLANA:0000024	PLANA:0004504	PLANA:0000136	auk	26457503	Mon Nov 11 16:23:59 2019

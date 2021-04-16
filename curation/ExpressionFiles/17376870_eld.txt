@@ -1,4 +1,4 @@
-Accession	Term	experimental evidence	biotype	life cycle stage	Sample Type	Curator (SIMR id)	PMID	Date
+Accession	Term	experimental evidence	biotype	life cycle stage	Sample Type	Curator (ORCID)	PMID	Date
 EF035555.1	PLANA:0000204: ovary	ECO:0001839	PLANA:0000027	PLANA:0004503	PLANA:0000136	eld	17376870	Mon Nov 11 15:39:33 2019
 EF035555.1	PLANA:0000208: testis	ECO:0001839	PLANA:0000027	PLANA:0004503	PLANA:0000136	eld	17376870	Mon Nov 11 15:39:33 2019
 EF035555.1	PLANA:0003304: testis primordium	ECO:0001839	PLANA:0000027	PLANA:0000214	PLANA:0000136	eld	17376870	Mon Nov 11 15:41:33 2019

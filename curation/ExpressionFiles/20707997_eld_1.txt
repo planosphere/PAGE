@@ -1,4 +1,4 @@
-Accession	Term	experimental evidence	biotype	life cycle stage	Sample Type	Curator (SIMR id)	PMID	Date
+Accession	Term	experimental evidence	biotype	life cycle stage	Sample Type	Curator (ORCID)	PMID	Date
 wnt1	PLANA:0000032: dorsal midline	ECO:0001839	PLANA:0000024	PLANA:0004504	PLANA:0000136	eld	20707997	Tue Nov 19 18:43:19 2019
 wnt1	PLANA:0007525: posterior pole (Synonym = posterior regeneration pole	ECO:0001839	PLANA:0000024	PLANA:0004504	PLANA:0000136	eld	20707997	Tue Nov 19 18:43:19 2019
 ABY85207.1	PLANA:0000032: dorsal midline	ECO:0001839	PLANA:0000024	PLANA:0004504	PLANA:0000136	eld	20707997	Tue Nov 19 18:43:19 2019

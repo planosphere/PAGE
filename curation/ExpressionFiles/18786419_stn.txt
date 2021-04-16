@@ -1,4 +1,4 @@
-Accession	Term	experimental evidence	biotype	life cycle stage	Sample Type	Curator (SIMR id)	PMID	Date
+Accession	Term	experimental evidence	biotype	life cycle stage	Sample Type	Curator (ORCID)	PMID	Date
 H.2.12c	PLANA:0002013: Category 1 cell	ECO:0000104	PLANA:0000024	PLANA:0004504	PLANA:0000136	stn	18786419	Mon Dec 16 12:07:07 2019
 H.39.11e	PLANA:0002013: Category 1 cell	ECO:0000104	PLANA:0000024	PLANA:0004504	PLANA:0000136	stn	18786419	Mon Dec 16 12:07:07 2019
 H.56.5g	PLANA:0002013: Category 1 cell	ECO:0000104	PLANA:0000024	PLANA:0004504	PLANA:0000136	stn	18786419	Mon Dec 16 12:07:07 2019

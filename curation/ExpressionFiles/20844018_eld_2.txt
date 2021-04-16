@@ -1,4 +1,4 @@
-Accession	Term	experimental evidence	biotype	life cycle stage	Sample Type	Curator (SIMR id)	PMID	Date
+Accession	Term	experimental evidence	biotype	life cycle stage	Sample Type	Curator (ORCID)	PMID	Date
 Contig4037_SE3	PLANA:0003304: testis primordium	ECO:0000104	PLANA:0000027	PLANA:0000214	PLANA:0000136	eld	20844018	Mon Nov 11 15:05:36 2019
 PL08001B2D05_SE3	PLANA:0003304: testis primordium	ECO:0000104	PLANA:0000027	PLANA:0000214	PLANA:0000136	eld	20844018	Mon Nov 11 15:05:36 2019
 Contig4966_SE3	PLANA:0003304: testis primordium	ECO:0000104	PLANA:0000027	PLANA:0000214	PLANA:0000136	eld	20844018	Mon Nov 11 15:05:36 2019

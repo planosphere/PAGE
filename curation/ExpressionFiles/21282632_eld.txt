@@ -1,4 +1,4 @@
-Accession	Term	experimental evidence	biotype	life cycle stage	Sample Type	Curator (SIMR id)	PMID	Date
+Accession	Term	experimental evidence	biotype	life cycle stage	Sample Type	Curator (ORCID)	PMID	Date
 Smed-otxB	PLANA:0000044: cephalic ganglia	ECO:0001839	PLANA:0000024	PLANA:0004504	PLANA:0000136	eld	21282632	Fri Nov 15 10:45:35 2019
 Smed-otp	PLANA:0000044: cephalic ganglia	ECO:0001839	PLANA:0000024	PLANA:0004504	PLANA:0000136	eld	21282632	Fri Nov 15 10:45:35 2019
 Smed-cintillo	PLANA:0002019: chemosensory neuron	ECO:0001839	PLANA:0000024	PLANA:0004504	PLANA:0000136	eld	21282632	Fri Nov 15 10:46:00 2019

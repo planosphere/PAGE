@@ -1,4 +1,4 @@
-Accession	Term	experimental evidence	biotype	life cycle stage	Sample Type	Curator (SIMR id)	PMID	Date
+Accession	Term	experimental evidence	biotype	life cycle stage	Sample Type	Curator (ORCID)	PMID	Date
 FoxJ1-4	PLANA:0000096: ventral epidermis (Synonym = ventral epidermin	ECO:0001839	PLANA:0000024	PLANA:0004504	PLANA:0000136	stn	23144623	Mon Dec 16 10:13:33 2019
 foxJ1-1	PLANA:0000055: dorsal stripe (Synonym = racing stripe	ECO:0001839	PLANA:0000024	PLANA:0004504	PLANA:0000136	stn	23144623	Mon Dec 16 10:14:53 2019
 foxJ1-2	PLANA:0000055: dorsal stripe (Synonym = racing stripe	ECO:0001839	PLANA:0000024	PLANA:0004504	PLANA:0000136	stn	23144623	Mon Dec 16 10:14:53 2019

@@ -1,0 +1,2 @@
+Accession	Term	experimental evidence	biotype	life cycle stage	Sample Type	Curator (ORCID)	PMID	Date
+DQ186985	PLANA:0000429: neoblast	ECO:0001047	PLANA:0000024	PLANA:0004504	PLANA:0000136	0000-0003-2569-1939	23629965	Tue Feb 23 17:40:58 2021

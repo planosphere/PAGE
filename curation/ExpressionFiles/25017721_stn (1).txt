@@ -1,4 +1,4 @@
-Accession	Term	experimental evidence	biotype	life cycle stage	Sample Type	Curator (SIMR id)	PMID	Date
+Accession	Term	experimental evidence	biotype	life cycle stage	Sample Type	Curator (ORCID)	PMID	Date
 JQ425154 	PLANA:0000014: zeta neoblast	ECO:0001560	PLANA:0000024	PLANA:0004504	PLANA:0002138	stn	25017721	Wed Dec 18 12:36:31 2019
 comp1187_c0_seq1	PLANA:0000014: zeta neoblast	ECO:0001560	PLANA:0000024	PLANA:0004504	PLANA:0002138	stn	25017721	Wed Dec 18 12:36:31 2019
 JQ425160	PLANA:0000014: zeta neoblast	ECO:0001560	PLANA:0000024	PLANA:0004504	PLANA:0002138	stn	25017721	Wed Dec 18 12:36:31 2019

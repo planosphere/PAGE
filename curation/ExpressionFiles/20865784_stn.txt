@@ -1,4 +1,4 @@
-Accession	Term	experimental evidence	biotype	life cycle stage	Sample Type	Curator (SIMR id)	PMID	Date
+Accession	Term	experimental evidence	biotype	life cycle stage	Sample Type	Curator (ORCID)	PMID	Date
 AY067799	PLANA:0002054: marginal adhesive zone	ECO:0001839	PLANA:0000024	PLANA:0004504	PLANA:0000136	stn	20865784	Wed Dec 11 17:44:21 2019
 AY067799	PLANA:0000418: head	ECO:0001839	PLANA:0000024	PLANA:0004504	PLANA:0000136	stn	20865784	Wed Dec 11 17:44:21 2019
 AY067799	PLANA:0000105: secretory cell	ECO:0001839	PLANA:0000024	PLANA:0004504	PLANA:0000136	stn	20865784	Wed Dec 11 17:44:21 2019

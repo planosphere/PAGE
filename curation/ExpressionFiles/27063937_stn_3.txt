@@ -1,4 +1,4 @@
-Accession	Term	experimental evidence	biotype	life cycle stage	Sample Type	Curator (SIMR id)	PMID	Date
+Accession	Term	experimental evidence	biotype	life cycle stage	Sample Type	Curator (ORCID)	PMID	Date
 dd_Smed_v4_24180_0_1	PLANA:0000103: central nervous system	ECO:0001839	PLANA:0000024	PLANA:0004504	PLANA:0000136	stn	27063937	Fri Jan 17 11:43:30 2020
 dd_Smed_v4_11823_0_1	PLANA:0000103: central nervous system	ECO:0001839	PLANA:0000024	PLANA:0004504	PLANA:0000136	stn	27063937	Fri Jan 17 11:43:30 2020
 dd_Smed_v4_11285_0_1	PLANA:0000103: central nervous system	ECO:0001839	PLANA:0000024	PLANA:0004504	PLANA:0000136	stn	27063937	Fri Jan 17 11:43:30 2020

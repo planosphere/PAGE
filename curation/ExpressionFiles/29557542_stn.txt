@@ -1,4 +1,4 @@
-Accession	Term	experimental evidence	biotype	life cycle stage	Sample Type	Curator (SIMR id)	PMID	Date
+Accession	Term	experimental evidence	biotype	life cycle stage	Sample Type	Curator (ORCID)	PMID	Date
 MF411144	PLANA:0000419: prepharyngeal region (Synonym = neck	ECO:0001839	PLANA:0000024	PLANA:0004504	PLANA:0000136	stn	29557542	Thu Nov 21 17:04:22 2019
 EU130791.1	PLANA:0000026: gut	ECO:0001839	PLANA:0000024	PLANA:0004504	PLANA:0000136	stn	29557542	Thu Nov 21 17:04:39 2019
 BK007043.1	PLANA:0000025: nervous system	ECO:0001839	PLANA:0000024	PLANA:0004504	PLANA:0000136	stn	29557542	Thu Nov 21 17:05:07 2019

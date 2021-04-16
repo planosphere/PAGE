@@ -1,4 +1,4 @@
-Accession	Term	experimental evidence	biotype	life cycle stage	Sample Type	Curator (SIMR id)	PMID	Date
+Accession	Term	experimental evidence	biotype	life cycle stage	Sample Type	Curator (ORCID)	PMID	Date
 DN293863	PLANA:0003108: gastrodermal cell (Synonym = gut cell	ECO:0001839	PLANA:0000024	PLANA:0004504	PLANA:0000136	stn	16890156	Mon Nov 11 15:05:59 2019
 DN293419	PLANA:0000026: gut	ECO:0001839	PLANA:0000024	PLANA:0004504	PLANA:0000136	stn	16890156	Mon Nov 11 15:07:42 2019
 DN316513	PLANA:0000103: central nervous system	ECO:0001839	PLANA:0000024	PLANA:0004504	PLANA:0000136	stn	16890156	Mon Nov 11 15:09:28 2019

@@ -1,4 +1,4 @@
-Accession	Term	experimental evidence	biotype	life cycle stage	Sample Type	Curator (SIMR id)	PMID	Date
+Accession	Term	experimental evidence	biotype	life cycle stage	Sample Type	Curator (ORCID)	PMID	Date
 SMED30003202	PLANA:0004517: blastomere	ECO:0001839	PLANA:0000027	PLANA:0000002	PLANA:0000136	eld	28072387	Tue Dec 17 13:58:02 2019
 SMED30003202	PLANA:0000023: embryonic pharynx	ECO:0001839	PLANA:0000027	PLANA:0000002	PLANA:0000136	eld	28072387	Tue Dec 17 13:58:02 2019
 SMED30003202	PLANA:0000029: primitive ectoderm	ECO:0001839	PLANA:0000027	PLANA:0000002	PLANA:0000136	eld	28072387	Tue Dec 17 13:58:02 2019

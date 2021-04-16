@@ -1,4 +1,4 @@
-Accession	Term	experimental evidence	biotype	life cycle stage	Sample Type	Curator (SIMR id)	PMID	Date
+Accession	Term	experimental evidence	biotype	life cycle stage	Sample Type	Curator (ORCID)	PMID	Date
 chat	PLANA:0000025: nervous system	ECO:0001839	PLANA:0000024	PLANA:0004504	PLANA:0000136	eld	25725068	Mon Nov 25 11:37:41 2019
 sFRP-1	PLANA:0007561: head margin	ECO:0001839	PLANA:0000024	PLANA:0004504	PLANA:0000136	eld	25725068	Mon Nov 25 11:37:57 2019
 cintillo	PLANA:0000133: mechanoreceptor cell	ECO:0001047	PLANA:0000024	PLANA:0004504	PLANA:0000136	eld	25725068	Mon Nov 25 11:39:47 2019

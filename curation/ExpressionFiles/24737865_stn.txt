@@ -1,4 +1,4 @@
-Accession	Term	experimental evidence	biotype	life cycle stage	Sample Type	Curator (SIMR id)	PMID	Date
+Accession	Term	experimental evidence	biotype	life cycle stage	Sample Type	Curator (ORCID)	PMID	Date
 FoxA	PLANA:0000016: pharynx	ECO:0001839	PLANA:0000024	PLANA:0004504	PLANA:0000136	stn	24737865	Wed Nov 13 14:15:40 2019
 FoxA	PLANA:0004528: pharynx epithelium	ECO:0001047	PLANA:0000024	PLANA:0004504	PLANA:0000136	stn	24737865	Wed Nov 13 14:18:16 2019
 FoxA	PLANA:0000465: obsolete pharynx nerve plexus	ECO:0001047	PLANA:0000024	PLANA:0004504	PLANA:0000136	stn	24737865	Wed Nov 13 14:18:16 2019

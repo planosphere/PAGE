@@ -1,4 +1,4 @@
-Accession	Term	experimental evidence	biotype	life cycle stage	Sample Type	Curator (SIMR id)	PMID	Date
+Accession	Term	experimental evidence	biotype	life cycle stage	Sample Type	Curator (ORCID)	PMID	Date
 dd_Smed_v4_12254_0_1	PLANA:0000470: neuropil	ECO:0001839	PLANA:0000024	PLANA:0004504	PLANA:0000136	VID	27612382	Thu Nov 14 11:27:23 2019
 dd_Smed_v4_12254_0_1	PLANA:0007528: glial cell	ECO:0001839	PLANA:0000024	PLANA:0004504	PLANA:0000136	VID	27612382	Thu Nov 14 11:27:23 2019
 dd_Smed_v4_9961_0_1	PLANA:0000470: neuropil	ECO:0001839	PLANA:0000024	PLANA:0004504	PLANA:0000136	VID	27612382	Thu Nov 14 11:27:23 2019

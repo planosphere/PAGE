@@ -1,4 +1,4 @@
-Accession	Term	experimental evidence	biotype	life cycle stage	Sample Type	Curator (SIMR id)	PMID	Date
+Accession	Term	experimental evidence	biotype	life cycle stage	Sample Type	Curator (ORCID)	PMID	Date
 TOR	PLANA:0000136: whole organism	ECO:0001839	PLANA:0000024	PLANA:0004504	PLANA:0000136	auk	22451003	Thu Nov 14 11:06:16 2019
 TOR	PLANA:0000026: gut	ECO:0001839	PLANA:0000024	PLANA:0004504	PLANA:0000136	auk	22451003	Thu Nov 14 11:06:16 2019
 TOR	PLANA:0000044: cephalic ganglia (Synonym = brain	ECO:0001839	PLANA:0000024	PLANA:0004504	PLANA:0000136	auk	22451003	Thu Nov 14 11:06:16 2019

@@ -1,4 +1,4 @@
-Accession	Term	experimental evidence	biotype	life cycle stage	Sample Type	Curator (SIMR id)	PMID	Date
+Accession	Term	experimental evidence	biotype	life cycle stage	Sample Type	Curator (ORCID)	PMID	Date
 GCR099	PLANA:0000044: cephalic ganglia	ECO:0001839	PLANA:0000027	PLANA:0004503	PLANA:0000136	eld	27163480	Tue Dec 17 17:14:09 2019
 GCR114	PLANA:0000044: cephalic ganglia	ECO:0001839	PLANA:0000027	PLANA:0004503	PLANA:0000136	eld	27163480	Tue Dec 17 17:14:09 2019
 GCR230	PLANA:0000044: cephalic ganglia	ECO:0001839	PLANA:0000027	PLANA:0004503	PLANA:0000136	eld	27163480	Tue Dec 17 17:14:09 2019

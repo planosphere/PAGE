@@ -25,14 +25,15 @@ while (my $line = <MAP>){
   #dd_Smed_v4_10001_0_1	SMED30030721	dd_Smed_v4	original
   my ($acc,$ref,$accSource) = split "\t", $line;
   next if $ref eq '"NA"';
-#  $ref=~s/;/|/g;
   my $md5 = (md5_hex($line));
+  my $lowercase = lc $acc;
 
 print "PAGE:$md5 a OBAN:association;
   OBAN:association_has_subject \"$acc\";
   OBAN:association_has_object_property PAGE:has_mapping_reference_id;
   OBAN:association_has_object \"$ref\";
   PAGE:has_reference_source \"$mapping_source\";
+  PAGE:lc_accession \"$lowercase\";
   dc:source \"$accSource\" .
 \n";
 }

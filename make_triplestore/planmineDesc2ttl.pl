@@ -18,17 +18,21 @@ print '@prefix OBAN: <http://oban.org/oban/> .
 
 my %desc;
 open DESC, $desc_file or die "Can't open mapping file: $desc_file $!\n";
+#SMESG000000001.1	INHBE	SMEST000001001.1	inhibin beta E
+#SMESG000000003.1	NARS2	SMEST000003001.1	asparaginyl-tRNA synthetase 2 (mitochondrial)(putative)
+#SMESG000000010.1		SMEST000010001.1
+#SMESG000000013.1	UBE4B	SMEST000013001.1	ubiquitination factor E4B
+#SMESG000000017.1		SMEST000017001.1
+#SMESG000000022.1	SVOP	SMEST000022001.1	SV2 related protein homolog (rat)
+#SMESG000000023.1		SMEST000023001.1
+#SMESG000000025.1	ACP6	SMEST000025001.1	acid phosphatase 6, lysophosphatidic
 
 while (my $line = <DESC>){
   chomp $line;
-#SMESG000000001.1	SMEST000001001.1	inhibin beta E
-#SMESG000000003.1	SMEST000003001.1	asparaginyl-tRNA synthetase 2 (mitochondrial)(putative)
-#SMESG000000010.1	SMEST000010001.1
-#SMESG000000013.1	SMEST000013001.1	ubiquitination factor E4B
   my @line = split "\t", $line;
   my $gene = $line[0];
-  my $transcript = $line[1];
-  my $desc = $line[2] ? $line[2] : 'none';
+  my $transcript = $line[2];
+  my $desc = $line[3] ? $line[3] : 'none';
   $desc{$gene}=$desc;
   $desc{$transcript}=$desc;
 }
@@ -42,6 +46,8 @@ print "PAGE:$md5 a OBAN:association;
   OBAN:association_has_object_property description: ; 
   OBAN:association_has_object \"$desc\";
   dc:source \"Planmine\" ;
-  <http://www.geneontology.org/formats/oboInOwl#create_date> \"2020-05-20\" .
+  <http://www.geneontology.org/formats/oboInOwl#create_date> \"2021-04-08\" .
 \n";
 }
+# creation times
+#  <http://www.geneontology.org/formats/oboInOwl#create_date> \"2020-05-20\" .

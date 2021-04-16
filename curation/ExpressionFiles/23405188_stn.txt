@@ -1,4 +1,4 @@
-Accession	Term	experimental evidence	biotype	life cycle stage	Sample Type	Curator (SIMR id)	PMID	Date
+Accession	Term	experimental evidence	biotype	life cycle stage	Sample Type	Curator (ORCID)	PMID	Date
 HE577118.1	PLANA:0000420: parapharyngeal region	ECO:0001839	PLANA:0000024	PLANA:0004504	PLANA:0000136	stn	23405188	Thu Nov 14 13:13:17 2019
 HE577118.1	PLANA:0000488: basophilic gland cell (Synonym = cyanophilic gland cell	ECO:0001839	PLANA:0000024	PLANA:0004504	PLANA:0000136	stn	23405188	Thu Nov 14 13:13:17 2019
 HE577118.1	BSPO:0000079: dorsal region	ECO:0001839	PLANA:0000024	PLANA:0004504	PLANA:0000136	stn	23405188	Thu Nov 14 13:13:17 2019

@@ -5,6 +5,36 @@
   <title>PAGE</title>
 
 <style type="text/css">
+//loading icon
+.no-js #loader { display: none;  }
+.js #loader { display: block; position: absolute; left: 100px; top: 0; }
+.se-pre-con {
+	position: fixed;
+	left: 0px;
+	top: 0px;
+	width: 100%;
+	height: 100%;
+	z-index: 9999;
+  opacity: 0.25;
+	background: url(https://smallenvelop.com/wp-content/uploads/2014/08/Preloader_11.gif) center no-repeat #fff;
+}
+
+
+// datatable formating
+tbody tr.odd th, tbody tr.odd td {
+     border-bottom: none;
+}
+tbody td, tbody th {
+    border-bottom: none;
+}
+tbody tr.odd th, tbody tr.odd td {
+    border-bottom: none;
+}
+
+table.dataTable thead .sorting:before, table.dataTable thead .sorting:after, table.dataTable thead .sorting_asc:before, table.dataTable thead .sorting_asc:after, table.dataTable thead .sorting_desc:before, table.dataTable thead .sorting_desc:after, table.dataTable thead .sorting_asc_disabled:before, table.dataTable thead .sorting_asc_disabled:after, table.dataTable thead .sorting_desc_disabled:before, table.dataTable thead .sorting_desc_disabled:after {
+  bottom: 0.5em !important
+}
+
  .node-title {
     display: none;
 }
@@ -35,16 +65,76 @@
   display: table;
   clear: both;
 }
+
+
+.tt {
+  position: relative;
+  display: inline-block;
+  border-bottom: 1px dotted black;
+}
+
+.tt .ttt {
+  visibility: hidden;
+  width: auto;
+  background-color: black;
+  color: #fff;
+  text-align: center;
+  border-radius: 6px;
+  padding: 5px 10px;
+  
+  /* Position the tooltip */
+  position: absolute;
+  z-index: 1;
+  bottom: 100%;
+  left: 50%;
+  margin-left: -100px;
+}
+
+.tt:hover .ttt {
+  visibility: visible;
+}
+
+.button {
+  border: none;
+  color: white;
+  padding: 5px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 12px;
+  margin: 4px 2px;
+  cursor: pointer;
+  width: 150px;
+  height: 25px;
+}
+.button0 {background-color: #8EBB8E;} /* Green0 */
+.button1 {background-color: #6CBA61;} /* Green1 */
+.button2 {background-color: #3ead58;} /* Green2 */
+
 </style>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/handlebars.js/4.0.5/handlebars.min.js"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/corejs-typeahead/0.11.1/typeahead.bundle.min.js"></script>
 <script src="/pub/OLS/OLS-autocomplete/build/ols-autocomplete.js"></script>
 
+<link href="https://cdn.datatables.net/1.10.18/css/dataTables.bootstrap4.min.css" rel="stylesheet">
+<script src="https://cdn.datatables.net/1.10.18/js/jquery.dataTables.min.js"></script>
+<script src="https://cdn.datatables.net/1.10.18/js/dataTables.bootstrap4.min.js"></script>
 
+<script src="https://cdnjs.cloudflare.com/ajax/libs/modernizr/2.8.3/modernizr.js"></script>
+<script>
+//paste this code under the head tag or in a separate js file.
+	// Wait for window load
+	$(window).load(function() {
+		// Animate loader off screen
+		$(".se-pre-con").fadeOut("slow");;
+	});
+</script>
 </head>
 <body>
+<div class="se-pre-con"></div>
 <div id="searchform" class="row">
 <div class="first-column">
+<h2 style="color:#32821f;font-size:1.9em;font-family:oswaldregular">Search expression patterns in the literature using PAGE.</h2>
 <h2 style="color:#32821f;font-size:1.9em;font-family:oswaldregular">Identify anatomical structures and/or regions published by the planarian community as expressing your transcripts of interest.</h2> <hr>
 
 
@@ -53,14 +143,48 @@
 
 $c1 = '
 
-<div style="font-size:1.2em">Use transcript IDs to identify locations (anatomical structure or body region) of expression. All data were manually curated from planarian manuscripts published between 2005-2019. Browse the ontology here on <a style="color:#32821f" href="https://planosphere.stowers.org/ontology">Planosphere</a> or at EBI <a style="color:#32821f" href="https://www.ebi.ac.uk/ols/ontologies/plana">OLS</a>.
-<br><br><a style="color:#32821f" href="/search/page/about">Read more about PAGE</a></div>
+<div style="position: relative;left: 50px;font-size:1.2em"><br>
+<p>Search expression patterns in the literature using PAGE.</p>
+<p>PAGE is a database of published transcripts and expression patterns.</p>
+<p>All data were manually curated from planarian manuscripts published between 2005-2019.</p>
+<p>Locations of expression were collected from <a style="color:#32821f;" target="_blank" href="/search/plana/litreview">200 publications</a>.</p>
+<p>Locations are all standardized terms that are defined in the <a style="color:#32821f"  target="_blank"  href="/anatomyontology">Planarian Anatomy (PLANA) Ontology.</a></p>
+<p>Use transcript IDs to identify locations of expression.</p>
+<p>Browse the ontology here on <a style="color:#32821f"  target="_blank"  href="/ontology">Planosphere</a> or at EBI <a style="color:#32821f"  target="_blank"  href="https://www.ebi.ac.uk/ols/ontologies/plana">OLS</a>.</p>
+<br><br><a style="color:#32821f"  target="_blank"  href="/search/page/about">Read more about PAGE</a>
+
+<br>
+<h2>PAGE Transcript Query Video Tutorial</h2>
+<iframe title="vimeo-player" src="https://player.vimeo.com/video/490442237" width="640" height="359" frameborder="0" allowfullscreen>PAGESearchTranscript</iframe>
+<br>
+<p>Find more video tutorial help on our <a style="color:#32821f;" target="_blank"  href="allresources/tutorials">tutorials page</a>.</p>
+
+
+</div>
 <hr>
 ';
+$c2 = '
+
+<div style="position: relative;left: 10px;font-size:1.2em">
+<strong>General Tips</strong><br>
+&bull;&nbsp;Any published transcript identifier (published between 2005 - 2019) can be used to search for expression locations.<br>
+&bull;&nbsp;All published transcripts have been mapped to smed_20140614.<br>
+&bull;&nbsp;Searches can be limited to life cycle stage, whole animal or FACS sorted cells, and experimental platform.
+<br><br>
+<strong>How to find a transcript ID</strong><br>
+ &bull;&nbsp;Any transcript ID used in any planarian publication (2005-2019) that has reported associated expression information can be used in this search. <br>
+ &bull;&nbsp;Use our <a style="color:#32821f" target="_blank"   href="/find/genes">Gene Search</a> to find transcripts by BLAST hit keywords, associated GO terms or PFAM domains.<br>
+ &bull;&nbsp;Use out <a style="color:#32821f"  target="_blank"  href="/blast">BLAST</a> tool to identify a homologous <em>Schmidtea mediterranea</em> sequence.<br>
+ &bull;&nbsp;Visit <a style="color:#32821f"  target="_blank"  href="http://planmine.mpi-cbg.de/planmine/begin.do">Planmine</a> and use tools there to identify transcript IDs.<br>
+
+</div>
+';
+
+
 print theme(
   'ctools_collapsible',
   array(
-    'handle' => '<h2 style="font-size:1.2em;">Click for more information about this PAGE Search</h2>',
+ 'handle' => '<button class="button button1" type="button">About This Search</button>', 
     'content' => $c1,
     'collapsed' => TRUE
   )
@@ -69,22 +193,11 @@ print theme(
 print("<p></p>");
 
 
-$c2 = '
-
-<div style="position: relative;left: 10px;font-size:1.2em">
-
-&bull;&nbsp;Any published transcript identifier (published between 2005 - 2019) can be used to search for expression locations.<br>
-&bull;&nbsp;All published transcripts have been mapped to smed_20140614.<br>
-&bull;&nbsp;Searches can be limited to life cycle stage, whole animal or FACS sorted cells, and experimental platform.
-
-
-</div>
-';
 
 print theme(
   'ctools_collapsible',
   array(
-    'handle' => '<h2 style="font-size:1.2em">Click for search tips</h2>',
+      'handle' => '<button class="button button2" type="button">Search Tips</button>',
     'content' => $c2,
     'collapsed' => TRUE
   )
@@ -107,16 +220,20 @@ print("<p></p>");
         @import "/pub/OLS/OLS-autocomplete/css/typeaheadjs.css";
 
     </style>
-       <h2 style="font-size:1.9em;font-family:oswaldregular">Search Expression Data by transcript IDs:</h2>
+       <h2 style="font-size:1.9em;font-family:oswaldregular">Search expression data from publications by transcript IDs:</h2>
                 <form method="post">  
                     <fieldset>
                         <label>Enter one or more transcript ID separated by whitespace:<br>
  <textarea style="font-weight: normal" rows="4" cols="50"  name="q" placeholder="" ></textarea>
-<div style="font-family=Oswald;font-weight: 300;font-style: normal;">Example search: SmWIOct06_100018 JQ425152 SMED30008505 dd_Smed_v4_1757_0_1 dd_Smed_v6_2059_0</div>
+<div style="font-family=Oswald;font-weight: 300;font-style: normal;">Example search: SmWIOct06_100018 JQ425152 SMED30008505 dd_Smed_v4_1757_0_1 dd_Smed_v6_2059_0<br>
+&bull;&nbsp;Use <a  style="color:#32821f"  target="_blank"  href="/find/genes">Gene Search</a> or <a  style="color:#32821f"  target="_blank"  href="/blast">BLAST</a> to find Transcript IDs.<br>
+&bull;&nbsp;Try Any ID that you have from any transcriptome.
+</div>
 
                         </label>
                     
 <div>
+ <h2 style="font-size:1.9em;font-family:oswaldregular">Limit transcripts by experimental details:</h2> 
 <br><label for="specimenType">Specimen Type</label><br>
 <select id="specimenType" name="specimenType">
   <option value="any">any</option>
@@ -147,7 +264,7 @@ print("<p></p>");
 <br><label for="evidenceType">Evidence</label><br>
 <select id="evidenceType" name="evidenceType">
   <option value="any">any</option>
-  <option value="ECO_0000104">DNA to cDNA expression microarray evidence</option>
+  <option value="ECO_0000097">cDNA to DNA expression microarray evidence</option>
   <option value="ECO_0001836">in situ hybridization evidence</option>
   <option value="ECO_0001047">-- fluorescence in situ hybridization evidence</option>
   <option value="ECO_0001839">-- colorimetric in situ hybridization evidence</option>
@@ -166,7 +283,7 @@ print("<p></p>");
 </div>
                   </fieldset>
                 </form>
- <em>Note: Planarian Anatomy Gene Expression searches are built using the <a style="color:#32821f" href="/anatomyontology">Planarian Anatomy Ontology</a></em>
+ <em>Note: Planarian Anatomy Gene Expression searches are built using the <a style="color:#32821f"  target="_blank"  href="/anatomyontology">Planarian Anatomy Ontology</a></em>
 
 </div>
 
@@ -176,9 +293,11 @@ print("<p></p>");
             
     <div class="block-content clearfix">
 
-<div class="front-box bg-ltorange" style="height:175px; float:right;" onclick="document.location='/search/page/term'"><h4 class="gray" style="font-family:oswaldregular">Search Expression by Term</h4><h5 class="ltgray" style="font-family:oswaldregular">Find transcripts that are expressed in an anatomical structure using PAGE search</h3></div>
-<div class="front-box bg-ltyellow" style="height:175px; float:right; border-width: 5px;border-color: green;border-style: solid;"  onclick="document.location='/search/page/transcript'"><h4 class="gray" style="font-family:oswaldregular">Search Expression by Transcript</h4><h5 class="ltgray" style="font-family:oswaldregular">Find anatomical structures that express your transcript using PAGE search</h3></div>
-<div class="front-box bg-ltgreen" style="height:175px; float:right;"   onclick="document.location='/search/page/publication'"><h4 class="gray" style="font-family:oswaldregular">Search Expression by Publication</h4><h5 class="ltgray" style="font-family:oswaldregular">Find a manuscript’s transcripts and the structures they are expressed in using PAGE search</h3></div>
+<div class="front-box bg-ltorange" style="height:175px; float:right;" onclick="document.location='/search/page/term'"><h4 class="gray" style="font-family:oswaldregular">Search Expression by Term</h4><h5 class="ltgray" style="font-family:oswaldregular">Find transcripts that are expressed in an anatomical structure using PAGE search</h5></div>
+<div class="front-box bg-ltyellow" style="height:175px; float:right;border-width: 5px;border-color: green;border-style: solid; "   onclick="document.location='/search/page/transcript'"><h4 class="gray" style="font-family:oswaldregular">Search Expression by Transcript</h4><h5 class="ltgray" style="font-family:oswaldregular">Find anatomical structures that express your transcript using PAGE search</h5></div>
+<div class="front-box bg-ltgreen" style="height:175px; float:right;"   onclick="document.location='/search/page/publication'"><h4 class="gray" style="font-family:oswaldregular">Search Expression by Publication</h4><h5 class="ltgray" style="font-family:oswaldregular">Find a manuscript’s transcripts and the structures they are expressed in using PAGE search</h5></div>
+<div class="front-box bg-ltgreenteal" style="height:125px; float:right;" onclick="document.location='/search/page/about'"><h4 class="gray" style="font-family:oswaldregular">Search the Literature</h4><h5 class="ltgray" style="font-family:oswaldregular">Read about PAGE</h5></div>
+<div class="front-box bg-lttealgreen" style="height:125px; float:right;" onclick="document.location='/search/page/about#contribute'"><h4 class="gray" style="font-family:oswaldregular">Contibute</h4><h5 class="ltgray" style="font-family:oswaldregular">Add Your Data to PAGE</h5></div>
 
 
     </div>
@@ -195,8 +314,11 @@ if(empty($_POST["q"])){
   print '<div style="color:red;"><p>Please input at least one transcript ID</p></div>';
 }else{
 $q = $_POST["q"];
-$transcripts = preg_split('/[\s+\n\,]+/', $q);
-$userSearch_transcripts = " . VALUES ?g1 { '". implode("'^^string: '", $transcripts) . "'^^string:}";
+// lowercase user transcript input
+$lc_q = strtolower($q);
+$transcripts = preg_split('/[\s+\n\,]+/', $lc_q);
+$userSearch_transcripts = " . VALUES ?lc { '". implode("'^^string: '", $transcripts) . "'^^string:}";
+//$userSearch_transcripts = " . VALUES ?g1 { '". implode("'^^string: '", $transcripts) . "'^^string:}";
 
 $specimenType = $_POST["specimenType"];
 $lifecycleType = $_POST["lifecycleType"];
@@ -237,20 +359,21 @@ PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
 PREFIX oban: <http://oban.org/oban/> 
 PREFIX PAGE: <http://planosphere.stowers.org/page/>
 PREFIX dc: <http://purl.org/dc/elements/1.1/> 
-PREFIX ei: <http://purl.obolibrary.org/obo/RO_0002200> 
+PREFIX ei: <http://purl.obolibrary.org/obo/RO_0002206> 
 PREFIX desc: <http://purl.obolibrary.org/obo/IAO_0000115>
-SELECT DISTINCT ?tissue ?sc ?gene ?ref ?ref_gene ?source ?g1 ?src1 ?pub ?s ?s_id ?l ?l_id ?e ?e_id ?d
+SELECT DISTINCT ?tissue ?sc ?gene ?ref ?ref_gene ?source ?g1 ?src1 ?pub ?s ?s_id ?l ?l_id ?e ?e_id ?d ?c
 WHERE {  
  ?a dc:source ?pub ; 
-      oban:association_has_predicate  ei: ; 
+      oban:association_has_object_property  ei: ; 
       oban:association_has_subject  ?gene ;
       oban:association_has_object  ?sc . 
 ?sc rdfs:label ?tissue .
-?a1 oban:association_has_predicate  PAGE:has_mapping_reference_id ;
+?a1 oban:association_has_object_property  PAGE:has_mapping_reference_id ;
        oban:association_has_subject  ?g1 ; 
        oban:association_has_object  ?ref ; 
+       PAGE:lc_accession  ?lc ; 
        dc:source ?src1 .
-    ?a2    oban:association_has_predicate  PAGE:has_mapping_reference_id ;
+    ?a2    oban:association_has_object_property  PAGE:has_mapping_reference_id ;
            oban:association_has_subject  ?gene ;
            oban:association_has_object  ?ref ;
            dc:source             ?source   .
@@ -290,6 +413,10 @@ $expand_query = preg_replace('/}\s*$/', "$ref_gene_models }", $expand_query);
 //add description
 $description = " . OPTIONAL {?a4 oban:association_has_object_property desc: . ?a4 oban:association_has_subject ?ref . ?a4 oban:association_has_object ?d }";
 $expand_query = preg_replace('/}\s*$/', "$description}", $expand_query);
+//add citation
+$citation = " . OPTIONAL {?a5 oban:association_has_object_property OBO:IAO_0000301 . ?a5 oban:association_has_object ?pub . ?a5 oban:association_has_subject ?c}";
+$expand_query = preg_replace('/}\s*$/', "$citation}", $expand_query);
+
 
 //curl -X POST http://172.16.2.41:8889/page/sparql --data-urlencode 'query=$expand' --data-urlencode 'format=json'
 $sparql = array(
@@ -307,74 +434,184 @@ $expand_json = curl_exec($ch);
 curl_close ($ch);
 
 $expand= json_decode($expand_json,true);
-$to_print = "<table>";
-$to_print .=  "<thead><tr><th>Anatomy</th><th>Reference Transcript</th><th>Description</th><th>Gene Models</th><th>Published Transcript</th><th>Transcriptome</th><th>Publication</th><th>Specimen</th><th>Lifecycle</th><th>Evidence</th></tr></thead>";
-$to_print .= "<tbody>";
 
+
+
+$page_icons = array(
+"whole organism" => "wholeorganism.png",
+"FACS sorted cell population" => "FACSsortedcellpopulation.png",
+"adult hermaphrodite" => "adultsexual.png",
+"asexual adult" => "adultasexual.png",
+"juvenile" => "sexualjuvenile.png",
+"Stage 2" => "stage2.png",
+"Stage 3" => "stage3.png",
+"Stage 4" => "stage4.png", 
+"Stage 5" => "stage5.png", 
+"Stage 6" => "stage6.png", 
+"Stage 7" => "stage7.png", 
+"Stage 8" => "stage8.png", 
+"cDNA to DNA expression microarray evidence" => "cDNAtoDNAexpressionmicroarray.png", 
+"fluorescence in situ hybridization evidence" => "fluorescenceinsituhybridizationevidence.png", 
+"colorimetric in situ hybridization evidence" => "colorimetricinsituhybridizationevidence.png", 
+"RNA-sequencing evidence" => "RNA-sequencingevidence.png", 
+"single-cell RNA-sequencing evidence" => "single-cellRNA-sequencingevidence.png"
+);
+
+
+$header_1 = [];
+$header_2 = [];
+
+$header_1[] = "<th colspan=\"3\" style=\"text-align:left;background-color:#80bd88\"><div class=\"tt\">Reference Sequence Information<span class=\"ttt\">Sequence from publication observation was mapped to smed_20140614 and dd_smes_v2 gene models</span></div></th>";
+$header_1[]= "<th colspan=\"6\" style=\"text-align:left;background-color:#80bd88d1\"><div class=\"tt\">Observation Curated from Publication<span class=\"ttt\">Sequence and expression data was curated from the listed publication.</span></div></th>";
+
+$header_2[] = "<th><div class=\"tt\">ID<span class=\"ttt\">Transcript ID from smed_20140614 that maps to the published Seq ID</span></div></th>";
+$header_2[] = "<th><div class=\"tt\">Description<span class=\"ttt\">Sequence Description is the genbank name or if not available it was assigned by AHRD</span></div></th>";
+$header_2[] = "<th><div class=\"tt\">Gene Models<span class=\"ttt\">Gene Model ID from dd_smes_v2 that maps to the published Seq ID</span></div></th>";
+$header_2[] = "<th style=\"text-align:left;background-color:#CFCFCF\"><div class=\"tt\" >Seq ID<span class=\"ttt\">Seq ID used in publication</span></div></th>";
+$header_2[] = "<th style=\"text-align:left;background-color:#CFCFCF\"><div class=\"tt\">Expressed In<span class=\"ttt\">Published location of expression.<br>Best fitting PLANA Ontology term was used.</span></div></th>";
+$header_2[] = "<th colspan=\"3\" style=\"text-align:left;background-color:#CFCFCF\"><div class=\"tt\">Experimental Details<span class=\"ttt\">Specimen type, Lifecycle stage, and Evidence type</span></div></th>";
+$header_2[]= "<th style=\"text-align:left;background-color:#CFCFCF\"><div class=\"tt\" >PMID<span class=\"ttt\">Observation Citation (Pubmed ID)</span></div></th>";
+
+
+$table = "
+<div class=\"container\">
+<table id='pageResults'>";
+$table .=  "<thead><tr>" . implode("",$header_1) . "</tr><tr>" .   implode("",$header_2) . "</tr></thead></table></div>";
+$rows=[];
+
+
+
+$uniquenames=[];
 $result_count = 0;
+if(!empty($expand)){
+
 foreach ($expand as $result){
+ if (array_key_exists('bindings', $result)){
  $r = $result['bindings'];
  foreach($r as $each){
-   $result_count++;
+   $uniquenames[]=htmlspecialchars($each['ref']['value']);
+   $result_count++; 
    $pub_link='';
    $publication_url = $each['pub']['value'] ;
    if (preg_match('/pubmed\/(\S+)/', $publication_url, $match)){
-
-      $pub_link = "<a href=\"$publication_url\">PMID:$match[1]</a>";
+      $pub_link = "<a  target=\"_blank\"  href=\"$publication_url\">$match[1]</a>";
    }else{
-     $pub_link = "<a href=\"$publication_url\">$publication_url</a>";
+     $pub_link = "<a  target=\"_blank\"  href=\"$publication_url\">$publication_url</a>";
+   }
+   $pmid = $pub_link;
+   //$pmid = $each['c']['value'] ;
+   if ($each['c']['value']){
+     $pmid = "<div class=\"tt\">" . $pmid . "<span class=\"ttt\">" .($each['c']['value']) . "</span></div>";
    }
    $structure_class = $each['sc']['value'];
    $pieces = explode("/", $structure_class);
    $term_link = "/ontology/" . end($pieces);
    $genes = explode(";",$each['ref_gene']['value']);
+   $transcript_src = "<div class=\"tt\">" .($each['gene']['value'])   . "<span class=\"ttt\">transcriptome: ".($each['source']['value']) . "</span></div>";
    $ref_gene_models = '';
    foreach ($genes as $gene){
-      $ref_gene_models .= "<a target=\"_blank\" href=\"http://planmine.mpi-cbg.de/planmine/portal.do?externalids=$gene\">$gene</a> ";
+         $ref_gene_models .= "<a target=\"_blank\" href=\"http://planmine.mpi-cbg.de/planmine/portal.do?externalids=$gene\">$gene</a> ";
    }
-
-   $to_print .= "<tr><td><a href=\"$term_link\" target=\"_blank\">".  $each['tissue']['value'] .  "</a></td><td><a href=\"https://planosphere.stowers.org/feature/Schmitea/mediterranea-sexual/transcript/" . $each['ref']['value']  . "\">". $each['ref']['value'] . "</a></td><td>". $each['d']['value']    . "</td><td>" .      $ref_gene_models .   "</td><td>". urldecode($each['gene']['value']) .    "</td><td>". $each['source']['value']  .  "</td><td>". $pub_link    . "</td><td>". $each['s']['value']    . "</td><td>". $each['l']['value']    . "</td><td>". $each['e']['value']    . "</td></tr>"; 
-  }
+$path = '/pub/analysis/page/page_icons/';
+$specimen = $each['s']['value'];
+$lifecycle = $each['l']['value'];
+$evidence = $each['e']['value'];
+if ( array_key_exists($specimen,$page_icons)){
+  $img = $page_icons[$specimen];
+  $specimen = "<div class=\"tt\"><img src=\"$path/$img\"><span class=\"ttt\">specimen type: ".  $each['s']['value'] . "</span></div> ";
 }
-$to_print .= "</tbody>";
-$to_print .= "</table>" ;
+if ( array_key_exists($lifecycle,$page_icons)){
+  $img = $page_icons[$lifecycle];
+  $lifecycle = "<div class=\"tt\"><img src=\"$path/$img\"><span class=\"ttt\">lifecycle type: ".  $each['l']['value'] . "</span></div> ";
+}
+if ( array_key_exists($evidence,$page_icons)){
+  $img = $page_icons[$evidence];
+  $evidence =  "<div class=\"tt\"><img src=\"$path/$img\"><span class=\"ttt\">evidence type: ".  $each['e']['value'] . "</span></div> ";
+}
 
-print "<hr><div><h3>Search Details</h3><p>
+$columns = [];
+$columns[] = "<a  target=\"_blank\"  href=\"https://planosphere.stowers.org/feature/Schmitea/mediterranea-sexual/transcript/" . $each['ref']['value']  . "\">". $each['ref']['value'] . "</a>";
+$columns[] =  str_replace("'","&#39;", htmlspecialchars($each['d']['value']) ) ;
+$columns[] = $ref_gene_models;
+$columns[] = $transcript_src;
+$columns[] = "<a href=\"$term_link\" target=\"_blank\">".  $each['tissue']['value'] .  "</a>";
+$columns[] =  $specimen;
+$columns[] =  $lifecycle ; 
+$columns[] =  $evidence; 
+$columns[] =  $pmid;
+
+$thisRow = "['" . implode( "','",$columns) . "']";
+$rows[] = $thisRow;
+
+
+
+}
+}
+}
+$data = '[' . implode(",",$rows) . ']' ;
+//////SOFIA
+}
+
+print "<div class=\"se-pre-con\"></div>";
+print "<hr><div ><h3>Search Details for: $q</h3>
 Result count: $result_count<br>
-Search terms:  $q<br>
-searchType:  transcript search<br>
-specimenType: $specimenType <br>
-lifecycleType:  $lifecycleType<br>
-evidenceType: $evidenceType<br>
-</p></div>";
+specimenType: $specimenType &vert; lifecycleType: $lifecycleType  &vert; evidenceType: $evidenceType<br><br>
+</div>";
+
+
+
+$uniquenames_str =  implode(",", $uniquenames);
+$display_end = 100;
+if ($result_count <= 100 ){
+  $display_end = $result_count;
+}
 
 if($result_count > 0){
-
   print "
 <div id=\"outer\">
 
 <div class=\"inner\">
 <form action=\"/search/page/download\" method=\"post\">
   <input type=\"hidden\" name=\"sparql\" value=\"$expand_query\">
-  <input type=\"submit\" value=\"Download Results\">
+  <input class=\"button0\" type=\"submit\" value=\"Download Results\">
+</form>
+</div>
+<div class=\"inner\">
+<form action=\"/download/fasta\" method=\"post\">
+  <input type=\"hidden\" name=\"uniquenames\" value=\"$uniquenames_str\">
+  <input class=\"button0\" type=\"submit\" value=\"Download FASTA\">
 </form>
 </div>
 <div class=\"inner\">
 <form action=\"/download/sparql\" method=\"post\">
   <input type=\"hidden\" name=\"sparql\" value=\"$expand_query\">
-  <input type=\"submit\" value=\"Download SPARQL Query\">
+  <input class=\"button0\" type=\"submit\" value=\"Download SPARQL Query\">
 </form>
 </div>
 </div>
 ";
 
 
-
   print "<div class=\"views-table\">
 <hr>
-$to_print
+
+$table
 </div>
 ";
+
+print "
+<script>
+   var dataSet =  $data ;
+    $(document).ready(function() {
+          $('#pageResults').DataTable( {
+             data: dataSet,
+           });
+    });
+</script>
+";
+
+
+
 }
 }
 }
@@ -382,6 +619,10 @@ $to_print
 
 </body>
 </html>
+
+
+
+
 
 
 

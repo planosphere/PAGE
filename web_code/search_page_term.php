@@ -143,6 +143,8 @@ table.dataTable thead .sorting:before, table.dataTable thead .sorting:after, tab
 
 $c1 = '
 <div style="position: relative;left: 50px;font-size:1.2em"><br>
+<img src="/pub/images/PAGE_search_graphic_v2.png">
+<p><br></p>
 <p>Search expression patterns in the literature using PAGE.</p>
 <p>PAGE is a database of published transcripts and expression patterns.</p>
 <p>All data were manually curated from planarian manuscripts published between 2005-2019.</p>
@@ -152,6 +154,11 @@ $c1 = '
 <p>Use a location (anatomical term) to retrieve transcripts that are expressed in this location.</p>
 <p>The search can be modified to include other structures that are of the same type (<u>is a</u>) or only anatomical structures that are <u>part of</u>, <u>contained in</u>, or <u>develops from</u> your search term.</p>
 <p>In order to better understand the anatomical terms returned in your search you can browse the ontology here on <a style="color:#32821f;" target="_blank" href="https://planosphere.stowers.org/ontology">Planosphere</a> or at EBI <a style="color:#32821f;" target="_blank" href="https://www.ebi.ac.uk/ols/ontologies/plana">OLS</a>.</p><br><br><a style="color:#32821f;" target="_blank" href="/search/page/about">Read more about PAGE</a>
+<br>
+<h2>PAGE Query by Term Video Tutorial</h2>
+<iframe title="vimeo-player" src="https://player.vimeo.com/video/490442415" width="640" height="356" frameborder="0" allowfullscreen>PAGESearchTerm</iframe>
+<br><br>
+<p>Find more video tutorial help on our <a style="color:#32821f;" target="_blank"  href="allresources/tutorials">tutorials page</a>.</p>
 </div>
 <hr>
 
@@ -288,7 +295,7 @@ print("<p></p>");
 <hr>
 <div class="grid_10 omega" style="margin-left:30px">
 
-   <h2 style="font-size:1.9em;font-family:oswaldregular">Search expression data from publications by Anatomical term:</h2>
+
                 <form method="post">  
                     <fieldset>
 <div class="just_this_ols">
@@ -299,30 +306,43 @@ print("<p></p>");
         @import "/pub/OLS/OLS-autocomplete/css/typeaheadjs.css";
 
     </style>
-                        <label>
- <input style="font-weight: normal" size="35" type="text"  name="q" data-olswidget="select" data-olsontology="plana" data-selectpath="https://www.ebi.ac.uk/ols/"  id="local-searchbox" placeholder="Select term in list" ></input><div style="font-family=Oswald;font-weight: 300;font-style: normal;"> Start typing. Once you complete a few characters of a PLANA term, a list will appear. You must select one of these autocomplete terms for the search to function. Try 'neoblast' or 'cephalic ganglia'
-</div>
-                        </label>
-</div>
-                    <h2 style="font-size:1.9em;font-family:oswaldregular">Transcripts are expressed in:</h2> 
+<h2 style="font-size:1.9em;font-family:oswaldregular">Find transcripts expressed in:</h2>
+<div style="display:none" id="expandedSearch">
+ <h4 style="font-size:1em;font-family:oswaldregular">Relationship:</h4> 
 
-<div>
+
 <!-- <br><label for="searchType">Search Type</label><br>-->
-<select id="searchType" name="searchType">
+<select id="searchType" name="searchType" onchange="showSummary()">
   <option value="is_a">is a: any anatomical term that is a [Your Search Term]</option>
-  <option value="exact">exact:  only the anatomical term that is exactly [Your Search Term] </option>
   <option value="part_of">part of: any anatomical term that is part_of [Your Search Term]</option>
   <option value="contained_in">contained in: any anatomical term that is contained_in [Your Search Term]</option>
   <option value="develops_from">develops from:  any anatomical term that develops_from [Your Search Term]</option>
+  <option value="exact">exact:  only the anatomical term that is exactly [Your Search Term] </option>
 </select>
 <div style="font-family=Oswald;font-weight: 300;font-style: normal;">Try searching for transcripts that are expressed in any structure that is 'part of' the 'cephalic ganglia' (select 'cephalic ganglia' above and 'part of' here).</div>
 <div style="font-family=Oswald;font-weight: 300;font-style: normal;">Try searching for transcripts that are expressed in any structure that is 'contained in' the 'head' (select 'head' above and 'contained in' here).</div>
 </div>
+<br>
+
+                        <label>
+ <h4 style="font-size:1em;font-family:oswaldregular">Anatomical Term:</h4> 
+ <input style="font-weight: normal" size="35" type="text"  name="q" data-olswidget="select" data-olsontology="plana" data-selectpath="https://www.ebi.ac.uk/ols/"  id="local-searchbox" placeholder="Select term in list" onchange="showSummary()"></input><div style="font-family=Oswald;font-weight: 300;font-style: normal;"> &bull;&nbsp;Start typing.<br>
+&bull;&nbsp;Once you complete a few characters of a PLANA term, a list will appear.<br>
+&bull;&nbsp;You <strong>must select</strong> one of these autocomplete terms for the search to function.<br>
+&bull;&nbsp;Try 'neoblast' or 'cephalic ganglia'
+</div>
+                        </label>
+<br>
+<input type="checkbox" id="expandedCheck" onclick="viewExpandedSearch()"> Perform expanded search with relationships<br>
+<input type="checkbox" id="limitedCheck" onclick="viewLimitedSearch()"> Limit search by experimental details
+</div>
+
+<div style="display:none" id="limitedSearch" >
  <h2 style="font-size:1.9em;font-family:oswaldregular">Limit transcripts by experimental details:</h2> 
 
 <div>
 <br><label for="specimenType">Specimen Type</label><br>
-<select id="specimenType" name="specimenType">
+<select id="specimenType" name="specimenType"  onchange="showSummary()">
   <option value="any">any</option>
   <option value="PLANA_0000136">whole organism</option>
   <option value="PLANA_0002138">FACS sorted cell population</option>
@@ -331,7 +351,7 @@ print("<p></p>");
 </div>
 <div>
 <br><label for="lifecycleType">Life Cycle</label><br>
-<select id="lifecycleType" name="lifecycleType">
+<select id="lifecycleType" name="lifecycleType" onchange="showSummary()">
   <option value="any">any</option>
  <option value="PLANA_0004503">adult hermaphrodite</option>
   <option value="PLANA_0004504">asexual adult</option>
@@ -349,7 +369,7 @@ print("<p></p>");
 </div>
 <div>
 <br><label for="evidenceType">Evidence</label><br>
-<select id="evidenceType" name="evidenceType">
+<select id="evidenceType" name="evidenceType"  onchange="showSummary()">
   <option value="any">any</option>
   <option value="ECO_0000097">cDNA to DNA expression microarray evidence</option>
   <option value="ECO_0001836">in situ hybridization evidence</option>
@@ -360,13 +380,14 @@ print("<p></p>");
 </select>
 <div style="font-family=Oswald;font-weight: 300;font-style: normal;">Try limiting your search to single-cell RNA-sequencing results.</div>
 </div>
-
+</div>
 
 
 <div>
    <br>
                      <input type="hidden" id="select_iri" name="iri" value=""></input>        
-                     <input type="submit" value="Search" class="submit"></input> 
+                     <input id="submit" type="submit" value="Search" class="submit"></input>
+<p id="search-statement"></p>
 </div>
                   </fieldset>
                 </form>
@@ -462,7 +483,7 @@ PREFIX oban: <http://oban.org/oban/>
 PREFIX PAGE: <http://planosphere.stowers.org/page/>
 PREFIX dc: <http://purl.org/dc/elements/1.1/>
 PREFIX desc: <http://purl.obolibrary.org/obo/IAO_0000115>
-PREFIX ei: <http://purl.obolibrary.org/obo/RO_0002200>
+PREFIX ei: <http://purl.obolibrary.org/obo/RO_0002206>
 SELECT DISTINCT ?tissue ?sc ?gene ?ref ?ref_gene ?source ?pub ?s ?s_id ?l ?l_id ?e ?e_id ?d ?c
 WHERE 
 { 
@@ -689,6 +710,7 @@ print "
            });
     });
 </script>
+
 ";
 
 }
@@ -705,6 +727,108 @@ else{
   print '<br><div style="color:red;"><p>Select a term from the anatomy dropdown list for the search to work. If you are still having issues, see search tips in the "Click for search tips" at the top of the page.</p></div>';
 }
 } 
+
+print "
+<script>
+function viewExpandedSearch() {
+  // Get the checkbox
+  var checkBox = document.getElementById('expandedCheck');
+  // Get the output text
+  var text = document.getElementById('expandedSearch');
+
+  // If the checkbox is checked, display the output text
+  if (checkBox.checked == true){
+    text.style.display = 'block';
+  } else {
+    text.style.display = 'none';
+  }
+}
+
+function viewLimitedSearch() {
+  // Get the checkbox
+  var checkBox = document.getElementById('limitedCheck');
+  // Get the output text
+  var text = document.getElementById('limitedSearch');
+
+  // If the checkbox is checked, display the output text
+  if (checkBox.checked == true){
+    text.style.display = 'block';
+  } else {
+    text.style.display = 'none';
+  }
+}
+
+function showSummary(){
+
+  var ols_term = document.getElementById('local-searchbox').value;
+  var relationship = '';
+  var lifecycle = '';
+  var specimen = '';
+  var evidence = '';
+
+var limits = 
+{ 'PLANA_0000136' : 'whole organism',
+  'PLANA_0002138' : 'FACS sorted cell population',
+  'PLANA_0004503' : 'adult hermaphrodite',
+  'PLANA_0004504' : 'asexual adult',
+  'PLANA_0000214' : 'juvenile',
+  'UBERON_0000068' : 'embryo stage',
+  'PLANA_0000002' : 'Stage 2',
+  'PLANA_0000003' : 'Stage 3',
+  'PLANA_0000004' : 'Stage 4',
+  'PLANA_0000005' :' Stage 5',
+  'PLANA_0000006' : 'Stage 6',
+  'PLANA_0000007' : 'Stage 7',
+  'PLANA_0000008' : 'Stage 8',
+  'ECO_0000097' : 'cDNA to DNA expression microarray evidence',
+  'ECO_0001836' : 'in situ hybridization evidence',
+  'ECO_0001047' : ' fluorescence in situ hybridization evidence',
+  'ECO_0001839' : 'colorimetric in situ hybridization evidence',
+  'ECO_0000295' : 'RNA-sequencing evidence',
+  'ECO_0001560' : 'single-cell RNA-sequencing evidence'
+};
+
+  if (document.getElementById('searchType').value != 'is_a'){
+     relationship =  document.getElementById('searchType').value;
+  }
+ if (document.getElementById('specimenType').value != 'any'){
+    specimen =  document.getElementById('specimenType').value;
+    specimen = limits[specimen];
+  }
+ if (document.getElementById('lifecycleType').value != 'any'){
+   lifecycle =  document.getElementById('lifecycleType').value;
+   lifecycle = limits[lifecycle];
+ }
+ if (document.getElementById('evidenceType').value != 'any'){
+   evidence =  document.getElementById('evidenceType').value;
+   evidence = limits[evidence];
+ }
+
+
+    
+    if (!ols_term){
+        statement = 'Select an anatomy term from dropdown autocomplete list!!';
+        document.getElementById('submit').value = statement;
+    }  else {
+            ols_term = 'the ' + ols_term;
+            var statements = [];
+            if(relationship){statements.push(relationship)};
+            statements.push(ols_term);
+            var limit_statments = [];
+            if(specimen){limit_statments.push(specimen)};
+            if(lifecycle){limit_statments.push(lifecycle)};
+            if(evidence){limit_statments.push(evidence)};
+            var limit_statement = '';
+            if (specimen || lifecycle || evidence){
+                limit_statement =  ' and is limited to only ' + limit_statments.join(' and ');
+            }
+            var statement = 'Find all transcripts that are expressed in ' + statements.join(' ') + limit_statement;
+            document.getElementById('submit').value = statement;
+    }
+
+ }
+</script>
+";
 ?>
 
 </body>

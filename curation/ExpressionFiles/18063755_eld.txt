@@ -1,4 +1,4 @@
-Accession	Term	experimental evidence	biotype	life cycle stage	Sample Type	Curator (SIMR id)	PMID	Date
+Accession	Term	experimental evidence	biotype	life cycle stage	Sample Type	Curator (ORCID)	PMID	Date
 Smed-sFRP-1	PLANA:0000418: head	ECO:0001839	PLANA:0000024	PLANA:0004504	PLANA:0000136	eld	18063755	Wed Nov 13 14:51:19 2019
 Smed-sFRP-1	PLANA:0000016: pharynx	ECO:0001839	PLANA:0000024	PLANA:0004504	PLANA:0000136	eld	18063755	Wed Nov 13 14:51:19 2019
 Smed-sFRP-1	PLANA:0007524: anterior pole	ECO:0001839	PLANA:0000024	PLANA:0004504	PLANA:0000136	eld	18063755	Wed Nov 13 14:51:19 2019

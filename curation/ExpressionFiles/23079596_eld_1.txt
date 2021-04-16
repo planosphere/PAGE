@@ -1,4 +1,4 @@
-Accession	Term	experimental evidence	biotype	life cycle stage	Sample Type	Curator (SIMR id)	PMID	Date
+Accession	Term	experimental evidence	biotype	life cycle stage	Sample Type	Curator (ORCID)	PMID	Date
 Contig1	PLANA:0000070: intestinal phagocyte	ECO:0000104	PLANA:0000024	PLANA:0004504	PLANA:0002138	eld	23079596	Mon Nov 11 18:17:28 2019
 Contig100	PLANA:0000070: intestinal phagocyte	ECO:0000104	PLANA:0000024	PLANA:0004504	PLANA:0002138	eld	23079596	Mon Nov 11 18:17:28 2019
 Contig1015	PLANA:0000070: intestinal phagocyte	ECO:0000104	PLANA:0000024	PLANA:0004504	PLANA:0002138	eld	23079596	Mon Nov 11 18:17:28 2019

@@ -1,4 +1,4 @@
-Accession	Term	experimental evidence	biotype	life cycle stage	Sample Type	Curator (SIMR id)	PMID	Date
+Accession	Term	experimental evidence	biotype	life cycle stage	Sample Type	Curator (ORCID)	PMID	Date
 PL04022B1F07	PLANA:0000224: cement gland	ECO:0001839	PLANA:0000027	PLANA:0004503	PLANA:0000136	eld	279364	Sat Nov 23 10:20:59 2019
 dmg-1	PLANA:0000224: cement gland	ECO:0001839	PLANA:0000027	PLANA:0004503	PLANA:0000136	eld	279364	Sat Nov 23 10:20:59 2019
 dmg-2	PLANA:0000224: cement gland	ECO:0001839	PLANA:0000027	PLANA:0004503	PLANA:0000136	eld	279364	Sat Nov 23 10:20:59 2019

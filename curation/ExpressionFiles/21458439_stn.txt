@@ -1,4 +1,4 @@
-Accession	Term	experimental evidence	biotype	life cycle stage	Sample Type	Curator (SIMR id)	PMID	Date
+Accession	Term	experimental evidence	biotype	life cycle stage	Sample Type	Curator (ORCID)	PMID	Date
 HM777018	PLANA:0000026: gut	ECO:0001839	PLANA:0000024	PLANA:0004504	PLANA:0000136	stn	21458439	Thu Nov 14 10:41:06 2019
 HM777018	PLANA:0002142: parenchyma (Synonym = mesenchyme	ECO:0001839	PLANA:0000024	PLANA:0004504	PLANA:0000136	stn	21458439	Thu Nov 14 10:41:06 2019
 HM777018	PLANA:0000016: pharynx	ECO:0001839	PLANA:0000024	PLANA:0004504	PLANA:0000136	stn	21458439	Thu Nov 14 10:41:06 2019

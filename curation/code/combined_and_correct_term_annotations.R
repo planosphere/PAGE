@@ -17,7 +17,7 @@ library(tidyverse)
 
 
 # directory of text files from shiny app
-data_dir <- "ExpressionFiles/"
+data_dir <- here("ExpressionFiles/")
 file_list <- list.files(path=data_dir, pattern="*.txt")                              
 
 # read into data.frame
@@ -30,8 +30,7 @@ annots <- do.call("rbind", lapply(file_list, function(x) ({
 # INITIAL DATA CLEANING
 # a few accessions have spaces in them.
 terms <- annots %>%
-    mutate(Accession = str_replace_all(Accession, "\\s", ""))
-
+    mutate(Accession = str_replace_all(Accession, "\\s", "")) 
 
 
 ##### FROM Erin and Steph
@@ -61,8 +60,8 @@ terms_acc_pmid_terms <- left_join(terms_acc_pmid, corr_terms, by=c("Term" = "old
 
 # we are replacing user initials with ORCIDs
 corr_orcids <- read_tsv(here("manual_corrections",  "corrected_orcids.txt"))
-terms_acc_pmid_terms_orcid <- left_join(terms_acc_pmid_terms, corr_orcids, by=c("Curator (SIMR id)" = "curator"))%>% 
-    mutate(`Curator (SIMR id)` = ifelse(!is.na(orcid),orcid, `Curator (SIMR id)`)) %>%
+terms_acc_pmid_terms_orcid <- left_join(terms_acc_pmid_terms, corr_orcids, by=c("Curator (ORCID)" = "curator"))%>% 
+    mutate(`Curator (ORCID)` = ifelse(!is.na(orcid),orcid, `Curator (ORCID)`)) %>%
     select(-orcid)    
 #####
 
@@ -81,6 +80,30 @@ terms_acc_pmid_terms_orcid_del <- terms_acc_pmid_terms_orcid %>%
     select(-delete)
 
 
+# corrections to fincher
+# replace all single cell annotations with new files
+# PMID = 29674431
+# evidence = ECO:0001560
+
+# This mutate is a wierd way to filter, but it works.
+fincher_single_cell_removed <- terms_acc_pmid_terms_orcid_del %>%
+    mutate(fincher = ifelse(PMID == 29674431 & `experimental evidence` == "ECO:0001560", TRUE, FALSE) ) %>%
+    filter(fincher == FALSE) %>%
+    select(-fincher)
+
+fincher_update_dir <- here("ExpressionFiles/20201015_NewExpressionFiles/")
+file_list <- list.files(path=fincher_update_dir, pattern="*.txt")                              
+
+# read into data.frame
+new_fincher_single_cell <- do.call("rbind", lapply(file_list, function(x) ({
+    fread(paste(fincher_update_dir, x, sep=''), colClasses = c(rep("character", 9)))
+}))
+) 
+
+df <- rbind(fincher_single_cell_removed, new_fincher_single_cell) %>%
+    group_by(Accession,Term,`experimental evidence`, biotype,`life cycle stage`,`Sample Type`, `Curator (ORCID)`,PMID) %>%
+    summarise(Date = max(as.Date(Date, "%a %b %d %T %Y")))
+
 # OUTPUT
-write_tsv(terms_acc_pmid_terms_orcid_del, here("OUTPUT", "term_annotations.txt"))
+write_tsv(df, here("OUTPUT", paste0("term_annotations_", today(), ".txt")))
 

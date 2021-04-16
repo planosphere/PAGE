@@ -1,4 +1,4 @@
-Accession	Term	experimental evidence	biotype	life cycle stage	Sample Type	Curator (SIMR id)	PMID	Date
+Accession	Term	experimental evidence	biotype	life cycle stage	Sample Type	Curator (ORCID)	PMID	Date
 Smed_59sley	PLANA:0000017: photoreceptor neuron	ECO:0001839	PLANA:0000024	PLANA:0004504	PLANA:0000136	stn	22884275	Wed Nov 13 11:44:49 2019
 Smed_59sley	PLANA:0002075: pigment cell	ECO:0001839	PLANA:0000024	PLANA:0004504	PLANA:0000136	stn	22884275	Wed Nov 13 11:44:49 2019
 Smed_26962	PLANA:0000017: photoreceptor neuron	ECO:0001839	PLANA:0000024	PLANA:0004504	PLANA:0000136	stn	22884275	Wed Nov 13 11:44:49 2019
