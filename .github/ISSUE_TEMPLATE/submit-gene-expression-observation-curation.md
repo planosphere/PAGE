@@ -7,7 +7,11 @@ assignees: ''
 
 ---
 
-# PAGE Curations. Planarian Anatomy Gene Expression Observations are for this PMID:
+# Planarian Anatomy Gene Expression Observations (PAGE curations)
+
+To be sure your curations are accepted, familiarize yourself with  with our [curation rules](https://github.com/planosphere/PAGE/blob/master/curation_rules.md).
+
+# Curations are all for this one PMID:
 add the pubmed id of your observations
 
 # Are curations for a new publication or additions or corrections for existing curations?
