@@ -11,6 +11,8 @@ assignees: ''
 
 We will try to honor your request to curate this publication. We are not full time curators and it might take some time to get to this.
 
+If you would like this to happen more quickly, please consider curating the publication using these [rules](https://github.com/planosphere/PAGE/blob/master/curation_rules.md).
+
 ## PMID
 add Pubmed ID here
 
