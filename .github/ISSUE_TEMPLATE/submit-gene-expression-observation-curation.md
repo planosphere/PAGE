@@ -7,13 +7,18 @@ assignees: ''
 
 ---
 
-# Observations for this PMID
+# PAGE Curations. Planarian Anatomy Gene Expression Observations are for this PMID:
 add the pubmed id of your observations
+
+# Your Orcid ID 
+add your orcid ID. If you don't have one, get one [here](https://orcid.org/register).
+
+[Download this Excel Sheet\(https://github.com/planosphere/PAGE/raw/master/curation/PAGE_curation_table.xlsx), enter your curations, and copy and paste your resulting table below. Or fill in value in table provided below.
 
 ## Observations
 | PLANA Term ID| PLANA Term Label | transcript ID | Specimen Type  |  Life Cycle Type | Experiment Type |
 | ---| ----| --| ---| --|---|
-| PLANA:0000014 | zeta neoblast | dd_Smed_v4_5942_0_1 | PLANA:0002138 |  PLANA:0004504 | ECO:0001560 |
+|  PLANA:0000014 | zeta neoblast | dd_Smed_v4_5942_0_1 | PLANA:0002138 |  PLANA:0004504 | ECO:0001560 |
 
 # Select from these
 
