@@ -12,7 +12,6 @@ add the pubmed id of your observations
 
 ## Observations
 | PLANA Term ID| PLANA Term Label | transcript ID | Specimen Type  |  Life Cycle Type | Experiment Type |
-
 | ---| ----| --| ---| --|---|
 | PLANA:0000014 | zeta neoblast | dd_Smed_v4_5942_0_1 | PLANA:0002138 |  PLANA:0004504 | ECO:0001560 |
 
