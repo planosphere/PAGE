@@ -10,11 +10,19 @@ assignees: ''
 # PAGE Curations. Planarian Anatomy Gene Expression Observations are for this PMID:
 add the pubmed id of your observations
 
-# Your Orcid ID 
-add your orcid ID. If you don't have one, get one [here](https://orcid.org/register).
+# Are curations for a new publication or additions or corrections for existing curations?
+[ ] New Publication 
+[ ] Additions to exiting curations from a publication
+[ ] Corrections to exiting curations
+
+# Your Orcid
+Orcid are required. Add your Orcid here. If you don't have one, get one [here](https://orcid.org/register).
 
 # Add your curations  
-[Download this Excel Sheet](https://github.com/planosphere/PAGE/raw/master/curation/PAGE_curation_table.xlsx), enter your curations, and copy and paste your resulting table below. Or fill in value in table provided below.
+[Download this Excel Sheet](https://github.com/planosphere/PAGE/raw/master/curation/PAGE_curation_table.xlsx), enter your curations, and copy and paste your resulting table below. Paste whole sheet or just the table of observations. If you only have a few curations you can just fill in values in table provided below.
+
+If you are using the excel sheet, please save and retain for future questions we may have.
+
 
 ## Observations
 | PLANA Term ID| PLANA Term Label | transcript ID | Specimen Type  |  Life Cycle Type | Experiment Type |
