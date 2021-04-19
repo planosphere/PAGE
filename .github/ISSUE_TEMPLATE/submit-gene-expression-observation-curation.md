@@ -13,7 +13,8 @@ add the pubmed id of your observations
 # Your Orcid ID 
 add your orcid ID. If you don't have one, get one [here](https://orcid.org/register).
 
-[Download this Excel Sheet\(https://github.com/planosphere/PAGE/raw/master/curation/PAGE_curation_table.xlsx), enter your curations, and copy and paste your resulting table below. Or fill in value in table provided below.
+# Add your curations  
+[Download this Excel Sheet](https://github.com/planosphere/PAGE/raw/master/curation/PAGE_curation_table.xlsx), enter your curations, and copy and paste your resulting table below. Or fill in value in table provided below.
 
 ## Observations
 | PLANA Term ID| PLANA Term Label | transcript ID | Specimen Type  |  Life Cycle Type | Experiment Type |
