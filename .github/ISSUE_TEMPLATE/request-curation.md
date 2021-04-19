@@ -1,7 +1,7 @@
 ---
 name: Request Curation
 about: Request a curator to curate gene expression in a publication.
-title: ''
+title: Request Curation for [PMID]
 labels: ''
 assignees: ''
 
