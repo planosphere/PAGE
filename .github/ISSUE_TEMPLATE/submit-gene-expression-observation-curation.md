@@ -1,7 +1,7 @@
 ---
 name: Submit gene expression observation curation
 about: curate and submit your expression observations
-title: ''
+title: PAGE curations for [PMID]
 labels: ''
 assignees: ''
 
