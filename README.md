@@ -14,3 +14,8 @@ The PHP and HTML [code](web_code) that we use on Planosphere for our PAGE search
 
 ## PAGE: Make RDF Triplestore
 The [code](make_triplestore) for transforming curation and mapping data into a tripal store.
+
+## Contribute thoughts or curations
+Visit the [issue tracker](https://github.com/planosphere/PAGE/issues/new/choose) and create a bug report, feature request, add questions or comments, add curations, or request a publication to be curated.
+
+
