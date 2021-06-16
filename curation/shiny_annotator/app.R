@@ -8,6 +8,7 @@ library(tidyverse)
 library(ontologyIndex)
 library(jsonlite)
 library(shinythemes)
+library(lubridate)
 
 xyz <- "test"
 # LOAD CONFIGURATION FILE
@@ -56,12 +57,23 @@ df <- empty_df
 
 # UI
 ui <- fluidPage(
+    tags$head(
+      tags$style(HTML("
+        .shiny-output-error-validation {
+        color: #ff0000;
+        font-weight: bold;
+        }
+      "))
+    ),
+  
+  
     theme = shinytheme("superhero"),
     title = "Ontology Annotator",
     #titlePanel("Ontology Annotator"),
     sidebarLayout(
         sidebarPanel(
-
+                h4("Planarian Anatomy Gene Expression"),
+                a(href="https://github.com/planosphere/PAGE/blob/master/curation_rules.md", "curation help"),
                 uiOutput("inputs"),
                 actionButton("do", "Add Row(s)"),
                 actionButton("delete", "Delete Last Row"),
@@ -89,7 +101,7 @@ server <- function(input, output) {
         # fields are erased
       times <- input$reset_input
       div(id=letters[(times %% length(letters)) + 1],
-          textAreaInput("Accessions", "Accessions", value = "", width = NULL,
+          textAreaInput("Accessions", "Transcript Accessions", value = "", width = NULL,
                         height = NULL, cols = NULL, rows = 2, placeholder = NULL,
                         resize = NULL),
           selectizeInput('Terms', 'Terms (Where expressed)', selected='',
@@ -132,10 +144,10 @@ server <- function(input, output) {
                 }
                 
                 shiny::validate(
-                  need(input$PMID, message="missing PMID"),
+                  need(input$"Pubmed ID", message="missing Pubmed ID"),
                   need(input$Accessions, message="missing Accesssions"),
                   need(input$"Curator (ORCID)", message="missing Curator"),
-                  need(str_detect(input$PMID, "^\\d+$") , message="Invalid PUBMED ID"),
+                  need(str_detect(input$"Pubmed ID", "^\\d+$") , message="Invalid Pubmed ID"),
                   need(str_detect(input$"Curator (ORCID)", "^\\d\\d\\d\\d-\\d\\d\\d\\d-\\d\\d\\d\\d-\\d\\d\\d\\d$") , message="Invalid curator ID")
                 )
 
@@ -154,17 +166,17 @@ server <- function(input, output) {
     # generate table
     getTable <- reactive({
       shiny::validate(
-        need(input$PMID, message="missing PMID"),
+        need(input$"Pubmed ID", message="missing Pubmed ID"),
         need(input$Accessions, message="missing Accesssions"),
         need(input$"Curator (ORCID)", message="missing Curator"),
-        need(str_detect(input$PMID, "^\\d+$") , message="Invalid PUBMED ID"),
+        need(str_detect(input$"Pubmed ID", "^\\d+$") , message="Invalid Pubmed ID"),
         need(str_detect(input$"Curator (ORCID)", "^\\d\\d\\d\\d-\\d\\d\\d\\d-\\d\\d\\d\\d-\\d\\d\\d\\d$") , message="Invalid curator ID")
       )
       values$df_data 
     })
     
     getPMID <- reactive({
-      input$PMID 
+      input$"Pubmed ID" 
     })
     
     getORCID <- reactive({
@@ -174,7 +186,7 @@ server <- function(input, output) {
     # Download dataframe
     output$downloadData <- downloadHandler(
         filename =function() {
-          paste(getPMID(), "_", getORCID(), ".txt", sep="")
+          paste(getPMID(), "_", getORCID(), "_", date(today()), ".txt", sep="")
         },
         content = function(file) {
             write_tsv(getTable(), file)

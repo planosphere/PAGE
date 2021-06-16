@@ -4,8 +4,8 @@
 
      {
 
-        "field_id": "ECO:0000295",
-        "field": "experimental evidence",
+        "field_id": "ECO:0000006",
+        "field": "Experimental Evidence",
         "values": {
             "ECO:0001839": "colorimetric in situ hybridization evidence",
             "ECO:0001047": "fluorescence in situ hybridization evidence",
@@ -13,24 +13,24 @@
             "ECO:0001560": "single-cell RNA sequencing evidence",
             "ECO:0000097": "cDNA to DNA expression microarray"
         },
-        "default":"ECO:0001839",
-        "create":false,
-        "type":"dropdown"
+        "default": "ECO:0001839",
+        "create": false,
+        "type": "dropdown"
      },
      {
         "field_id": "PLANA:0000021",
-        "field":"biotype", 
+        "field": "Biotype", 
         "values": {
             "PLANA:0000024":"Smed asexual biotype",
             "PLANA:0000027":"Smed sexual biotype"
         },
-        "default":"PLANA:0000024",
-        "create":false,
-        "type":"dropdown"
+        "default": "PLANA:0000024",
+        "create": false,
+        "type": "dropdown"
      },
      {
-        "field_id": "UBERON:0000105",
-        "field":"life cycle stage", 
+        "field_id":"UBERON:0000105",
+        "field":"Life Cycle Stage", 
         "values": {
             "PLANA:0000098" : "zygote" ,
             "PLANA:0000001" : "Stage 1",
@@ -51,8 +51,8 @@
      },
      
     {
-        "field_id": "description",
-        "field":"Sample Type", 
+        "field_id": "OBI:0100051",
+        "field":"Specimen", 
         "values": {
             "PLANA:0000136" : "whole organism",
             "PLANA:0002138" : "FACS sorted cell population"
@@ -63,13 +63,13 @@
         "type":"dropdown"
      },
                   {
-        "field_id": "ORCID",
+        "field_id":"EFO:0009737",
         "field":"Curator (ORCID)", 
         "type":"textbox"
      },
      {
-        "field_id":"PMID",
-        "field":"PMID",
+        "field_id":"OBI:0001617",
+        "field":"Pubmed ID",
         "type":"textbox"
      }
     ]
