@@ -1,6 +1,6 @@
 #!/usr/bin/env Rscript
 # ejr: 2021-06-16
-# add annotations, post-publication
+# add annotations to PAGE from submission files
 
 library(tidyverse)
 library(lubridate)
@@ -11,10 +11,10 @@ v <- function(...) cat(sprintf(...), sep='', file=stderr())
 
 args <- commandArgs(trailingOnly = TRUE)
 
-filename <- here("submissions", "24737865_0000-0003-2569-1939_2021-06-16.txt")
-#filename = args[1]
 # Read in new annotations
 
+#filename <- here("submissions", "24737865_0000-0003-2569-1939_2021-06-16.txt")
+filename = args[1]
 new_annots <- read_tsv(filename, col_types = cols()) %>%
     mutate(Date = date(as.Date(Date, "%a %b %d %T %Y")))
 
