@@ -105,6 +105,11 @@ df <- rbind(fincher_single_cell_removed, new_fincher_single_cell) %>%
     group_by(Accession,Term,`experimental evidence`, biotype,`life cycle stage`,`Sample Type`, `Curator (ORCID)`,PMID) %>%
     summarise(Date = max(as.Date(Date, "%a %b %d %T %Y")))
 
+#### RENAME COLUMNS TO MAKE COMPATIBLE WITH LATER CHANGES
+
+colnames(df) <- c("Accession", "Term", "Experimental Evidence", "Biotype", 
+               "Life Cycle Stage", "Specimen", "Curator (ORCID)",
+               "Pubmed ID", "Date")
 # OUTPUT
 write_tsv(df, here("OUTPUT", paste0("term_annotations_", today(), ".txt")))
 
