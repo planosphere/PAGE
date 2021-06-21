@@ -1,4 +1,7 @@
 # PAGE Curation Rules 
+__PAGE Curation Web Tool:__ See info on how to use the [curation tool](PAGE_annotator_instruction.md).  
+
+
 __What we curated:__ wildtype intact expression data  
 __What was beyond the scope:__ wildtype regeneration time course expression data; gene expression in RNAi backgrounds or other experimental perturbations, any antibody data
 1.  __Only record expression in homeostatic, wildtype animals__
