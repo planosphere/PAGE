@@ -1,5 +1,5 @@
 # PAGE Curation Rules And Tool Info
-__PAGE Curation Web Tool:__ See [info](PAGE_annotator_instruction.md) on how to use the [curation tool](https://sanchezalvarado.shinyapps.io/PAGE_annotator/).  
+__PAGE Curation Web Tool:__ There is a [web tool](https://sanchezalvarado.shinyapps.io/PAGE_annotator/) for formatting expression observation curations. See [instuctions](PAGE_annotator_instruction.md) on how to use the curation tool. 
 
 
 __What we curated:__ wildtype intact expression data  
