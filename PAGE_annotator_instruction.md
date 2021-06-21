@@ -1,6 +1,6 @@
 # PAGE Annotator Instructions
 
-1. Access the [Curation tool](https://sanchezalvarado.shinyapps.io/PAGE_annotator/](https://sanchezalvarado.shinyapps.io/PAGE_annotator/) to create expression observation annotations for a SINGLE publication.
+1. Access the [Curation tool](https://sanchezalvarado.shinyapps.io/PAGE_annotator/) to create expression observation annotations for a SINGLE publication.
 2. For each instance of **homeostatic** expression fill out the following fields on the left hand side of the webpage (all fields require at least one input):
     - Transcript Accessions:  
       -  Accepts multiple inputs. Place unique transcript accessions on new lines.
