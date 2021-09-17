@@ -37,7 +37,7 @@ __What was beyond the scope:__ wildtype regeneration time course expression data
 With no negating function, anatomical areas lacking expression are not recorded.
 
  7. __When the authors fail to detect or articulate a discrete pattern then there are no entries recorded for that transcript.__ 
-     - Points X-X taken together describe important caveats in PAGE data that result in underreporting:  If authors do not (a)mention an expression pattern, (b) vaguely describe expression or (c) only describe areas that do not have expression  and still have an image in the text, then searching by pubmed id will not show that transcript as being a part of the expression data in that paper. 
+     - The above points taken together describe important caveats in PAGE data that result in underreporting:  If authors do not (a)mention an expression pattern, (b) vaguely describe expression or (c) only describe areas that do not have expression  and still have an image in the text, then searching by pubmed id will not show that transcript as being a part of the expression data in that paper. 
 
 
  8. __Annotate with the most granular class.__ 
