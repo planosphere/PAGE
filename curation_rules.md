@@ -65,6 +65,8 @@ With no negating function, anatomical areas lacking expression are not recorded.
 
    13. __DO NOT record references of expression in other papers.__ 
         - PMID 21937595- “No Eya expression in mature protonephridia cells was detected; however, Eya is expressed in eye and  parenchymal  cells  in  planarians  (Lapan  and  Reddien,  2011; Mannini  et  al.,  2004)...” Do not record Eya as expressed in eye and parenchymal cells in a record associated with PMID 21937595 
+   
+   14. For single cell data use cutoffs for enrichment/ expression as indicated in spreadsheets/ text. 
 
 
 
