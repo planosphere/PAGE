@@ -11,7 +11,7 @@ __What was beyond the scope:__ wildtype regeneration time course expression data
      - If another paper is cited for a transcript ID, go to that paper and get the appropriate ID.
      - If primers were the only identification provided, these were used to determine a SMED3000 id that corresponds using BLASTn on Planosphere.stowers.org 
      - A genomic contig also suffices. 
-     - If you can’t do any of the above, DO NOT report the transcript name as reported in the text as a solution!
+     - If authors have not reported an accession, referece ID, or transcript ID, and you cannot identify the SMED300 id using BLASTn, refrain from reporting transcript name or gene name as in the text. Do not record this instance.
      - **DO NOT annotate antibody localization (protein)**
 3. __Create records based only on text written by authors.__
      - This includes figure legends and supplemental figure legends. 
