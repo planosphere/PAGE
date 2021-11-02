@@ -18,11 +18,11 @@ $ git checkout -b new_branch_name
 $ git add your_file
 $ git commit -m 'your message'
 ```
-8. Push your branch up to the remote Repository
+7. Push your branch up to the remote Repository
 ```
 $ git push origin new_branch_name
 ```
-7. Navigate to [PAGE repository website](https://github.com/planosphere/PAGE)
-8. Create a new Pull Request
+8. Navigate to [PAGE repository website](https://github.com/planosphere/PAGE)
+9. Create a new Pull Request
 need to add more info about a pull request, i will do this when i create a pull request and all the steps are fresh in my mind
-9. At least one other editor will review your changes and merge in your pull request.
+10. At least one other editor will review your changes and merge in your pull request.
