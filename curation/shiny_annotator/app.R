@@ -1,7 +1,8 @@
 # Assign ontology terms to genes
 # ejr - 2019-09-12
 # 2019-11-11 (added reset inputs button)
-# v4
+# 2021-11-02 (Allowed final character to ORCID to be "X")
+# per: https://support.orcid.org/hc/en-us/articles/360006897674-Structure-of-the-ORCID-Identifier
 library(shiny)
 library(here)
 library(tidyverse)
@@ -148,7 +149,7 @@ server <- function(input, output) {
                   need(input$Accessions, message="missing Accesssions"),
                   need(input$"Curator (ORCID)", message="missing Curator"),
                   need(str_detect(input$"Pubmed ID", "^\\d+$") , message="Invalid Pubmed ID"),
-                  need(str_detect(input$"Curator (ORCID)", "^\\d\\d\\d\\d-\\d\\d\\d\\d-\\d\\d\\d\\d-\\d\\d\\d\\d$") , message="Invalid curator ID")
+                  need(str_detect(input$"Curator (ORCID)", "^\\d\\d\\d\\d-\\d\\d\\d\\d-\\d\\d\\d\\d-\\d\\d\\d(\\d|X)$") , message="Invalid curator ID")
                 )
 
                   
@@ -170,7 +171,7 @@ server <- function(input, output) {
         need(input$Accessions, message="missing Accesssions"),
         need(input$"Curator (ORCID)", message="missing Curator"),
         need(str_detect(input$"Pubmed ID", "^\\d+$") , message="Invalid Pubmed ID"),
-        need(str_detect(input$"Curator (ORCID)", "^\\d\\d\\d\\d-\\d\\d\\d\\d-\\d\\d\\d\\d-\\d\\d\\d\\d$") , message="Invalid curator ID")
+        need(str_detect(input$"Curator (ORCID)", "^\\d\\d\\d\\d-\\d\\d\\d\\d-\\d\\d\\d\\d-\\d\\d\\d(\\d|X)$") , message="Invalid curator ID")
       )
       values$df_data 
     })
