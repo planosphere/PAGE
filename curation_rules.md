@@ -6,12 +6,18 @@ __What we curated:__ wildtype intact expression data
 __What was beyond the scope:__ wildtype regeneration time course expression data; gene expression in RNAi backgrounds or other experimental perturbations, any antibody data
 1.  __Only record expression in homeostatic, wildtype animals__
      - Example: PMID 26525673 only uses trpA and serT + neurons in figure S10, however all panels in this figure are for animals that were amputated so they are not included because of the experimental perturbation.   
-2.  __For any transcripts identified in the text by a name ( Wnt, FoxA, etc), locate an accession number (if reported) and input annotations with the accession number.__
-     - If there is not an accession number available, use any reference ID used in the manuscript corresponding to a transcript or EST. 
+2. __Record the unique identifier of the trascript__
+     - If the authors list a unique identifier that we can use to track down the exact sequence, use this.
      - If another paper is cited for a transcript ID, go to that paper and get the appropriate ID.
-     - If primers were the only identification provided, these were used to determine a SMED3000 id that corresponds using BLASTn on Planosphere.stowers.org 
-     - A genomic contig also suffices. 
-     - If authors have not reported an accession, referece ID, or transcript ID, and you cannot identify the SMED300 id using BLASTn, refrain from reporting transcript name or gene name as in the text. Do not record this instance.
+     - If there is no unique id, but the author provided a sequence, use this to [BLASTn against NR](https://blast.ncbi.nlm.nih.gov/Blast.cgi?PAGE_TYPE=BlastSearch) to find and report a GenBank ID. 
+          -  The top hit should be at least 95% Identity with a numerator of at least 100. 
+          -  example: Identity= 2521/2525 (99.84%); 99.84% is => 95% and 2521 => 100.   
+      - If there is no unique id, and no full sequence, but there are primer sequences, you can use this to track down a unique sequence. Blast the primers against the genome assembly at Planmine to extract a virtual PCR product. Use this sequence to [BLASTn against NR](https://blast.ncbi.nlm.nih.gov/Blast.cgi?PAGE_TYPE=BlastSearch) to find and report a GenBank ID
+     - If you have sequence, but the sequence does not match to a GenBank Id in NR, blastn against the Rink lab Dresden v6 dd_Smed_v6 transcript models, or the Sánchez Lab smed_20140614 (SMED300X) transcripts. Use one of these IDs in the annotator.
+     - If you can't find any of the above blast/blat against any other lab's transcript models, and use matching unique ID
+          -     BLASTn: The top hit should be at least 95% Identity with a numerator of at least 100. 
+          -     BLAT: minScore >= 100 and minIdentity >= 95
+     - If authors have not reported an accession, referece ID, or transcript ID, and you cannot identify a unique ID using BLASTn, refrain from reporting transcript name or gene name as in the text. Do not record this instance. (gene names are not stored in any repository and we cannot link back to a unique nucleotide sequence)
      - **DO NOT annotate antibody localization (protein)**
 3. __Create records based only on text written by authors.__
      - This includes figure legends and supplemental figure legends. 
@@ -70,3 +76,4 @@ With no negating function, anatomical areas lacking expression are not recorded.
 
 
 
+Please post any questions about curation in the [issue tracker](https://github.com/planosphere/PAGE/issues/new/choose). We are happy to clarify, expand on explanations, or to help with specific curations issues.
