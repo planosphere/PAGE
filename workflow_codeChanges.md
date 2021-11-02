@@ -7,7 +7,7 @@ If you have permission to edit the repository here is how any changes to code or
 3. Verify that you have the most up to date version of the reposity
 ```
 $ git pull
-``
+```
 4. Create a new branch that for you to work on your changes or additions
 ```
 $ git checkout -b new_branch_name
