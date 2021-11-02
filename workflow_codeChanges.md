@@ -13,7 +13,12 @@ $ git pull
 $ git checkout -b new_branch_name
 ```
 5. Make your changes
-6. Push your branch up to the remote Repository
+6. Add you files and commit your changes
+```
+$ git add your_file
+$ git commit -m 'your message'
+```
+8. Push your branch up to the remote Repository
 ```
 $ git push origin new_branch_name
 ```
