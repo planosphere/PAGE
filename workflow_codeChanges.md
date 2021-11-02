@@ -2,7 +2,7 @@
 
 If you have permission to edit the repository here is how any changes to code or data files should be added to this repository.
 
-1. Clone the [PAGE](git@github.com:planosphere/PAGE.git) Repository
+1. Clone the PAGE Repository
 2. Navigte to your local cloned directory
 3. Verify that you have the most up to date version of the reposity
 ```
