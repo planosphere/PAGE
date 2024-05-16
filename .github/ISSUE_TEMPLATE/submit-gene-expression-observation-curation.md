@@ -14,7 +14,7 @@ To be sure your curations are accepted, familiarize yourself with  with our [cur
 # Are curations for a new publication or additions or corrections for existing curations?
 [ ] New Publication 
 [ ] Additions to exiting curations from a publication
-[ ] Corrections to exiting curations
+[ ] Corrections to existing curations
 
 # ORCID are required
 If you don't have one, get one [here](https://orcid.org/register).

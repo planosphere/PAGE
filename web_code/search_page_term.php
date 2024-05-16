@@ -159,6 +159,10 @@ $c1 = '
 <iframe title="vimeo-player" src="https://player.vimeo.com/video/490442415" width="640" height="356" frameborder="0" allowfullscreen>PAGESearchTerm</iframe>
 <br><br>
 <p>Find more video tutorial help on our <a style="color:#32821f;" target="_blank"  href="allresources/tutorials">tutorials page</a>.</p>
+<br><br>
+<p>
+Searching by anatomical term <strong>will only return transcripts that were annotated as being expressed in that specific anatomical term by the authors of the evidence</strong>. This search WILL NOT return expression annotation of all equivalent transcripts from other transcriptomes. If you are interested in equivalent transcripts, use <a style="color:#32821f;" target="_blank"  href="search/rosettastone/blaze">Rosetta Stone Transcript Mapper</a>  to determine them  and then run independent <a style="color:#32821f;" target="_blank"  href="search/page/transcript">search by transcripts</a> to determine anatomical terms associated with the equivalent transcripts.
+</p>
 </div>
 <hr>
 
@@ -413,7 +417,7 @@ jQuery(document).ready(function() {
 <div class="front-box bg-ltyellow" style="height:175px; float:right;"   onclick="document.location='/search/page/transcript'"><h4 class="gray" style="font-family:oswaldregular">Search Expression by Transcript</h4><h5 class="ltgray" style="font-family:oswaldregular">Find anatomical structures that express your transcript using PAGE search</h5></div>
 <div class="front-box bg-ltgreen" style="height:175px; float:right; "   onclick="document.location='/search/page/publication'"><h4 class="gray" style="font-family:oswaldregular">Search Expression by Publication</h4><h5 class="ltgray" style="font-family:oswaldregular">Find a manuscript’s transcripts and the structures they are expressed in using PAGE search</h5></div>
 <div class="front-box bg-ltgreenteal" style="height:125px; float:right;" onclick="document.location='/search/page/about'"><h4 class="gray" style="font-family:oswaldregular">Search the Literature</h4><h5 class="ltgray" style="font-family:oswaldregular">Read about Page</h5></div>
-<div class="front-box bg-lttealgreen" style="height:125px; float:right;" onclick="document.location='/search/page/about#contribute'"><h4 class="gray" style="font-family:oswaldregular">Contibute</h4><h5 class="ltgray" style="font-family:oswaldregular">Add Your Data to PAGE</h5></div>
+<div class="front-box bg-lttealgreen" style="height:125px; float:right;" onclick="document.location='https://github.com/planosphere/PAGE/issues/new/choose'"><h4 class="gray" style="font-family:oswaldregular">Contibute</h4><h5 class="ltgray" style="font-family:oswaldregular">Add Your Data to PAGE</h5></div>
 
     </div>
   </div>
@@ -456,7 +460,7 @@ if ($specimenType != 'any'){
 $userSearch_lifecycleType = '';
 if ($lifecycleType != 'any'){
   //$userSearch_lifecycleType = " .  VALUES ?l_id {OBO:$lifecycleType }  ";
-   $userSearch_lifecycleType = " . ?l_id rdfs:subClassOf \"OBO:$lifecycleType\"^^ow:omn " ;
+   $userSearch_lifecycleType = " . ?l_id rdfs:subClassOf  \"OBO:$lifecycleType\"^^ow:omn " ;
 }
 $userSearch_evidenceType = '';
 if ($evidenceType != 'any'){
@@ -500,10 +504,13 @@ WHERE
   ?s_id rdfs:label ?s . 
   ?l_id rdfs:label ?l . 
   ?e_id rdfs:label ?e 
-  $userSearch_evidenceType 
-  $userSearch_specimenType 
   $userSearch_lifecycleType 
+
+
 }";
+
+ // $userSearch_evidenceType 
+ // $userSearch_specimenType 
 
 
 
@@ -516,9 +523,18 @@ curl_setopt($ch, CURLOPT_RETURNTRANSFER, true);
 $expand_query = curl_exec($ch);
 curl_close ($ch);
 
+// add fixed queries
+$filters = $userSearch_evidenceType; 
+$filters .=  $userSearch_specimenType;
+$expand_query = preg_replace('/}$/', "$filters }", $expand_query);
+
 // add on the ref_source 
 $ref_transcript_source = ". ?a1 PAGE:has_reference_source 'smed_20140614'^^string:  ";
 $expand_query = preg_replace('/}$/', "$ref_transcript_source }", $expand_query);
+
+
+
+
 //add the optional gene model
 $ref_gene_models = " . OPTIONAL {?a2 oban:association_has_subject ?gene . ?a2 oban:association_has_object ?ref_gene . ?a2 PAGE:has_reference_source 'SMESG_dd_Smes_v2'^^string: }";
 $expand_query = preg_replace('/}\s*$/', "$ref_gene_models }", $expand_query);
@@ -540,6 +556,8 @@ curl_setopt($ch, CURLOPT_URL, $url);
 curl_setopt($ch, CURLOPT_RETURNTRANSFER, 1);
 curl_setopt($ch, CURLOPT_POST, 1);
 curl_setopt($ch, CURLOPT_POSTFIELDS, http_build_query($sparql));
+
+
 
 $expand_json = curl_exec($ch);
 curl_close ($ch);
@@ -833,7 +851,6 @@ var limits =
 
 </body>
 </html>
-
 
 
 
