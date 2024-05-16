@@ -1,0 +1,13 @@
+name: PAGE_annotator
+title: PAGE_annotator
+username:
+account: sanchezalvarado
+server: shinyapps.io
+hostUrl: https://api.shinyapps.io/v1
+appId: 4280345
+bundleId: 4724088
+url: https://sanchezalvarado.shinyapps.io/PAGE_annotator/
+when: 1623864014.87563
+asMultiple: FALSE
+asStatic: FALSE
+ignoredFiles: .config.json.swp|README.md
