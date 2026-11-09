@@ -1,0 +1,19 @@
+# Names, synonyms (with their kind), definitions and obsolete / replaced-by for every class.
+# Run by .github/workflows/plana-closure.yml with `robot query`; one row per value.
+PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
+PREFIX owl:  <http://www.w3.org/2002/07/owl#>
+PREFIX oio:  <http://www.geneontology.org/formats/oboInOwl#>
+PREFIX obo:  <http://purl.obolibrary.org/obo/>
+SELECT ?term ?field ?value WHERE {
+  ?term a owl:Class .
+  FILTER(isIRI(?term))
+  {        ?term rdfs:label            ?v . BIND("label"           AS ?field) }
+  UNION {  ?term oio:hasExactSynonym   ?v . BIND("exact_synonym"   AS ?field) }
+  UNION {  ?term oio:hasRelatedSynonym ?v . BIND("related_synonym" AS ?field) }
+  UNION {  ?term oio:hasNarrowSynonym  ?v . BIND("narrow_synonym"  AS ?field) }
+  UNION {  ?term oio:hasBroadSynonym   ?v . BIND("broad_synonym"   AS ?field) }
+  UNION {  ?term obo:IAO_0000115       ?v . BIND("definition"      AS ?field) }
+  UNION {  ?term owl:deprecated        ?v . BIND("obsolete"        AS ?field) }
+  UNION {  ?term obo:IAO_0100001       ?v . BIND("replaced_by"     AS ?field) }
+  BIND(STR(?v) AS ?value)
+}

@@ -1,18 +1,22 @@
-# PLANA relationship closure
+# Ontology files for PAGE search
 
-`plana-closure.tsv` lists every relationship that follows from PLANA, at any depth:
-one row per link, `subject  relation  object`, e.g.
+Generated, never edited by hand. The GitHub Action `.github/workflows/plana-closure.yml`
+downloads the published PLANA, BSPO and ECO every Monday and, when any of them has a new release,
+rewrites the files below and commits them. To refresh by hand: Actions tab -> "PLANA closure" ->
+Run workflow. Used by MOOP's PAGE search; replaces the Owlery and Blazegraph servers.
 
-    PLANA:0000044   BFO:0000050   PLANA:0000105     (cephalic ganglia  part of  ...)
+| File | What it holds |
+|---|---|
+| `plana-closure.tsv` | every relationship that follows from PLANA, at any depth: `subject  relation  object` |
+| `plana-terms.tsv`, `bspo-terms.tsv`, `eco-terms.tsv` | `term  field  value`: label, exact / related / narrow / broad synonyms, definition, obsolete, replaced_by |
+| `releases.txt` | which release of each ontology the files came from |
+| `terms.rq`, `tidy_terms.py` | the query and the small script that make the `*-terms.tsv` files |
 
-It includes links nobody wrote directly: `is a` through any number of levels, `is a`
-combined with a relationship (A is a B, B part of C, so A part of C), chains of a
-relationship, and links that follow from PLANA's logical definitions.
+`plana-closure.tsv` includes links nobody wrote directly: `is a` through any number of levels,
+`is a` combined with a relationship (A is a B, B part of C, so A part of C), chains of a
+relationship, and links that follow from PLANA's logical definitions -- computed by
+`relation-graph` in the same ODK image that builds PLANA.
 
-**It is generated, never edited by hand.** The GitHub Action
-`.github/workflows/plana-closure.yml` downloads the published `plana.owl` weekly and, when
-PLANA has a new release, recomputes this file with `relation-graph` (in the same ODK
-image that builds PLANA) and commits it. `plana-release.txt` records which release it came from.
+Example row (cephalic ganglia, exact synonym "brain"):
 
-Used by MOOP's PAGE search ("expressed in any part of X"), replacing the Owlery server.
-To refresh by hand: Actions tab -> "PLANA closure" -> Run workflow.
+    PLANA:0000044   exact_synonym   brain

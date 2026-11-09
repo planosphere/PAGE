@@ -1,13 +1,18 @@
-# Keep ontology/plana-closure.tsv in step with PLANA's latest release.
+# Keep the ontology files in ontology/ in step with the latest PLANA, BSPO and ECO releases.
 #
 # Runs weekly (and on demand: Actions tab -> "PLANA closure" -> Run workflow). It downloads the
-# published plana.owl, and ONLY IF its release differs from ontology/plana-release.txt, computes
-# every inferred relationship with relation-graph (any depth, is_a combined with part of /
-# contained in / develops from / ..., plus PLANA's logical definitions) and commits the result.
-# MOOP loads ontology/plana-closure.tsv; this replaces the Owlery server.
+# published plana.owl, bspo.owl and eco.owl, and ONLY IF any release differs from
+# ontology/releases.txt, it rewrites:
+#   plana-closure.tsv   every inferred PLANA relationship (relation-graph: any depth, is_a combined
+#                       with part of / contained in / develops from / ..., and PLANA's logical
+#                       definitions) -- replaces the Owlery server
+#   plana-terms.tsv     names, synonyms (with their kind), definitions, obsolete / replaced-by
+#   bspo-terms.tsv      the same for BSPO (spatial terms used in PAGE curations)
+#   eco-terms.tsv       the same for ECO (evidence codes)
+#   releases.txt        which release each file came from
+# MOOP loads these files. Nothing in the PLANA repository is touched.
 #
-# Uses the same ODK image as the PLANA build (obophenotype/planaria-ontology, ODK v1.4), so the
-# tools match. Nothing in the PLANA repository is touched.
+# Uses the same ODK image as the PLANA build (obophenotype/planaria-ontology, ODK v1.4).
 name: PLANA closure
 
 on:
@@ -25,20 +30,24 @@ jobs:
     steps:
       - uses: actions/checkout@v4
 
-      - name: Download PLANA and read its release
+      - name: Download the ontologies and read their releases
         id: release
         run: |
-          curl -sSfL -o plana.owl http://purl.obolibrary.org/obo/plana.owl
-          release=$(grep -o -m1 'plana/releases/[0-9-]*' plana.owl | cut -d/ -f3)
-          [ -n "$release" ] || { echo "no release found in plana.owl"; exit 1; }
-          echo "release=$release" >> "$GITHUB_OUTPUT"
-          if [ "$release" = "$(cat ontology/plana-release.txt 2>/dev/null)" ]; then
-            echo "PLANA $release already done"; echo "changed=no" >> "$GITHUB_OUTPUT"
+          : > releases.new
+          for o in plana bspo eco; do
+            curl -sSfL -o "$o.owl" "http://purl.obolibrary.org/obo/$o.owl"
+            r=$(grep -o -m1 "obo/$o/releases/[0-9-]*" "$o.owl" | cut -d/ -f4)
+            [ -n "$r" ] || { echo "no release found in $o.owl"; exit 1; }
+            echo "$o $r" >> releases.new
+          done
+          cat releases.new
+          if cmp -s releases.new ontology/releases.txt; then
+            echo "already done"; echo "changed=no" >> "$GITHUB_OUTPUT"
           else
             echo "changed=yes" >> "$GITHUB_OUTPUT"
           fi
 
-      - name: Compute every inferred relationship
+      - name: Compute every inferred PLANA relationship
         if: steps.release.outputs.changed == 'yes'
         run: |
           # Subject, relationship, object -- one row per inferred link. Subclass links are written
@@ -47,8 +56,16 @@ jobs:
             --output-subclasses true --reflexive-subclasses false --equivalence-as-subclass true \
             --obo-prefixes true
           { printf 'subject\trelation\tobject\n'; sort -u closure.tsv; } > ontology/plana-closure.tsv
-          echo "${{ steps.release.outputs.release }}" > ontology/plana-release.txt
           wc -l ontology/plana-closure.tsv
+
+      - name: Export names, synonyms, definitions, obsolete terms
+        if: steps.release.outputs.changed == 'yes'
+        run: |
+          for o in plana bspo eco; do
+            robot query --input "$o.owl" --query ontology/terms.rq "$o-raw.tsv"
+            python3 ontology/tidy_terms.py "$o-raw.tsv" "ontology/$o-terms.tsv"
+          done
+          cp releases.new ontology/releases.txt
 
       - name: Commit
         if: steps.release.outputs.changed == 'yes'
@@ -56,6 +73,8 @@ jobs:
           git config --global --add safe.directory "$GITHUB_WORKSPACE"
           git config user.name  "github-actions[bot]"
           git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
-          git add ontology/plana-closure.tsv ontology/plana-release.txt
-          git commit -m "PLANA closure for release ${{ steps.release.outputs.release }}"
+          git rm -q --ignore-unmatch ontology/plana-release.txt
+          git add ontology/plana-closure.tsv ontology/plana-terms.tsv ontology/bspo-terms.tsv \
+                  ontology/eco-terms.tsv ontology/releases.txt
+          git commit -m "Ontology files for: $(tr '\n' ' ' < ontology/releases.txt)"
           git push
