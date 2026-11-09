@@ -8,6 +8,7 @@ Run workflow. Used by MOOP's PAGE search; replaces the Owlery and Blazegraph ser
 | File | What it holds |
 |---|---|
 | `plana-closure.tsv` | every relationship that follows from PLANA, at any depth: `subject  relation  object` |
+| `eco-closure.tsv` | the same for ECO, so "any kind of in situ hybridization evidence" includes its subtypes |
 | `plana-terms.tsv`, `bspo-terms.tsv`, `eco-terms.tsv` | `term  field  value`: label, exact / related / narrow / broad synonyms, definition, obsolete, replaced_by |
 | `releases.txt` | which release of each ontology the files came from |
 | `terms.rq`, `tidy_terms.py` | the query and the small script that make the `*-terms.tsv` files |

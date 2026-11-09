@@ -6,6 +6,7 @@
 #   plana-closure.tsv   every inferred PLANA relationship (relation-graph: any depth, is_a combined
 #                       with part of / contained in / develops from / ..., and PLANA's logical
 #                       definitions) -- replaces the Owlery server
+#   eco-closure.tsv     every inferred ECO relationship (evidence types: "any kind of in situ")
 #   plana-terms.tsv     names, synonyms (with their kind), definitions, obsolete / replaced-by
 #   bspo-terms.tsv      the same for BSPO (spatial terms used in PAGE curations)
 #   eco-terms.tsv       the same for ECO (evidence codes)
@@ -41,22 +42,32 @@ jobs:
             echo "$o $r" >> releases.new
           done
           cat releases.new
-          if cmp -s releases.new ontology/releases.txt; then
+          # Also rebuild when an expected file is missing (a new file was added to this workflow,
+          # or one was deleted) -- otherwise unchanged releases would skip it forever.
+          missing=no
+          for f in plana-closure.tsv eco-closure.tsv plana-terms.tsv bspo-terms.tsv eco-terms.tsv; do
+            [ -s "ontology/$f" ] || { echo "missing: ontology/$f"; missing=yes; }
+          done
+          if [ "$missing" = no ] && cmp -s releases.new ontology/releases.txt; then
             echo "already done"; echo "changed=no" >> "$GITHUB_OUTPUT"
           else
             echo "changed=yes" >> "$GITHUB_OUTPUT"
           fi
 
-      - name: Compute every inferred PLANA relationship
+      - name: Compute every inferred PLANA and ECO relationship
         if: steps.release.outputs.changed == 'yes'
         run: |
           # Subject, relationship, object -- one row per inferred link. Subclass links are written
           # as rdfs:subClassOf. Reflexive links (X is_a X) are left out.
-          relation-graph --ontology-file plana.owl --output-file closure.tsv --mode tsv \
-            --output-subclasses true --reflexive-subclasses false --equivalence-as-subclass true \
-            --obo-prefixes true
-          { printf 'subject\trelation\tobject\n'; sort -u closure.tsv; } > ontology/plana-closure.tsv
-          wc -l ontology/plana-closure.tsv
+          # PLANA: anatomy and life-cycle stages (BSPO terms PLANA imports are included).
+          # ECO:   evidence types, so "any kind of in situ hybridization evidence" works.
+          for o in plana eco; do
+            relation-graph --ontology-file "$o.owl" --output-file "$o-closure.raw" --mode tsv \
+              --output-subclasses true --reflexive-subclasses false --equivalence-as-subclass true \
+              --obo-prefixes true
+            { printf 'subject\trelation\tobject\n'; sort -u "$o-closure.raw"; } > "ontology/$o-closure.tsv"
+            wc -l "ontology/$o-closure.tsv"
+          done
 
       - name: Export names, synonyms, definitions, obsolete terms
         if: steps.release.outputs.changed == 'yes'
@@ -74,7 +85,7 @@ jobs:
           git config user.name  "github-actions[bot]"
           git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
           git rm -q --ignore-unmatch ontology/plana-release.txt
-          git add ontology/plana-closure.tsv ontology/plana-terms.tsv ontology/bspo-terms.tsv \
-                  ontology/eco-terms.tsv ontology/releases.txt
+          git add ontology/plana-closure.tsv ontology/eco-closure.tsv ontology/plana-terms.tsv \
+                  ontology/bspo-terms.tsv ontology/eco-terms.tsv ontology/releases.txt
           git commit -m "Ontology files for: $(tr '\n' ' ' < ontology/releases.txt)"
           git push
