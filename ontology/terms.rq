@@ -8,7 +8,10 @@ PREFIX obo:  <http://purl.obolibrary.org/obo/>
 SELECT ?term ?field ?value WHERE {
   ?term a ?t .
   FILTER(isIRI(?term) && ?t IN (owl:Class, owl:ObjectProperty))
-  {        BIND("type" AS ?field) BIND(IF(?t = owl:Class, "class", "relation") AS ?v) }
+  # Each UNION branch is evaluated on its own, so the type rows must match the kind themselves
+  # (a branch with only BINDs cannot see ?t -- the first version wrote no type rows at all).
+  {        ?term a owl:Class .          BIND("type" AS ?field) BIND("class"    AS ?v) }
+  UNION {  ?term a owl:ObjectProperty . BIND("type" AS ?field) BIND("relation" AS ?v) }
   UNION {  ?term rdfs:label            ?v . BIND("label"           AS ?field) }
   UNION {  ?term oio:hasExactSynonym   ?v . BIND("exact_synonym"   AS ?field) }
   UNION {  ?term oio:hasRelatedSynonym ?v . BIND("related_synonym" AS ?field) }
