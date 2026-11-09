@@ -18,6 +18,14 @@ BFO:0000023	label	role
 BFO:0000034	label	function
 BFO:0000040	definition	An independent continuant that is spatially extended whose identity is independent of that of other entities and can be maintained through time.
 BFO:0000040	label	material entity
+BFO:0000050	definition	a core relation that holds between a part and its whole
+BFO:0000050	label	part of
+BFO:0000051	definition	a core relation that holds between a whole and its part
+BFO:0000051	label	has part
+BFO:0000062	definition	x is preceded by y if and only if the time point at which y ends is before or equivalent to the time point at which x starts. Formally: x preceded by y iff ω(y) <= α(x), where α is a function that maps a process to a start point, and ω is a function that maps a process to an end point.
+BFO:0000062	label	preceded by
+BFO:0000063	definition	x precedes y if and only if the time point at which x ends is before or equivalent to the time point at which y starts. Formally: x precedes y iff ω(x) <= α(y), where α is a function that maps a process to a start point, and ω is a function that maps a process to an end point.
+BFO:0000063	label	precedes
 BFO:0000141	label	immaterial entity
 BSPO:0000000	definition	The side of an organism that is left of the sagittal plane.
 BSPO:0000000	exact_synonym	left
@@ -276,10 +284,67 @@ BSPO:0000091	label	ventral compartment
 BSPO:0000092	label	anatomical compartment boundary
 BSPO:0000093	label	anterior/posterior compartment boundary
 BSPO:0000094	label	dorsal/ventral compartment boundary
+BSPO:0000095	label	anatomical relation
+BSPO:0000095	obsolete	true
+BSPO:0000096	definition	x anterior to y iff x is further along the antero-posterior axis than y, towards the head. An antero-posterior axis is an axis that extends through an organism from head end to opposite end of body or tail.
+BSPO:0000096	exact_synonym	rostral_to
+BSPO:0000096	label	anterior to
+BSPO:0000097	definition	x distal to y iff x is further along the proximo-distal axis than y, towards the appendage tip. A proximo-distal axis extends from tip of an appendage (distal) to where it joins the body (proximal).
+BSPO:0000097	label	distal to
+BSPO:0000098	definition	x dorsal to y iff x is further along the dorso-ventral axis than y, towards the back. A dorso-ventral axis is an axis that extends through an organism from back (e.g. spinal column) to front (e.g. belly).
+BSPO:0000098	label	dorsal to
+BSPO:0000099	definition	x posterior to y iff x is further along the antero-posterior axis than y, towards the body/tail. An antero-posterior axis is an axis that extends through an organism from head end to opposite end of body or tail.
+BSPO:0000099	label	posterior to
+BSPO:0000099	narrow_synonym	caudal to
+BSPO:0000100	definition	x proximal to y iff x is closer to the point of attachment with the body than y.
+BSPO:0000100	label	proximal to
+BSPO:0000101	label	obsolete surrounds
+BSPO:0000101	obsolete	true
+BSPO:0000101	replaced_by	RO:0002221
+BSPO:0000102	definition	x ventral to y iff x is further along the dorso-ventral axis than y, towards the front. A dorso-ventral axis is an axis that extends through an organism from back (e.g. spinal column) to front (e.g. belly).
+BSPO:0000102	label	ventral to
+BSPO:0000103	label	vicinity of
+BSPO:0000104	definition	Crosses at an angle that is 90 degrees, or close to 90 degrees. In any non-linear organism, the main axes are rarely perpendicular when taken through the organism as a whole.
+BSPO:0000104	label	approximately perpendicular to
+BSPO:0000105	definition	On the same side as. For example, the left arm is ipsilateral to the left leg.
+BSPO:0000105	label	ipsilateral to
+BSPO:0000106	definition	On the opposite side from. For example, the left arm is contralateral to the right arm (and the right leg).
+BSPO:0000106	label	contralateral to
+BSPO:0000107	definition	Further away from the surface of the organism. Thus, the muscular layer is deep to the skin, but superficial to the intestines.
+BSPO:0000107	label	deep to
+BSPO:0000108	definition	Near the outer surface of the organism. Thus, skin is superficial to the muscle layer.
+BSPO:0000108	label	superficial to
+BSPO:0000109	label	obsolete surrounded_by
+BSPO:0000109	obsolete	true
+BSPO:0000109	replaced_by	RO:0002219
+BSPO:0000110	definition	Closer to the left side of the organism. Example: The dorsal fin is right of the left pectoral fin, but is left of the right eye. On the type level: X left of Y <=> every instance x of X is left of some instance y of Y, and there exists some organism o such that x part of o and y part of o.
+BSPO:0000110	label	left of
+BSPO:0000111	definition	Closer to the right side of the organism. Example: The dorsal fin is right of the left pectoral fin, but is left of the right eye. On the type level: X left of Y <=> every instance x of X is right of some instance y of Y, and there exists some organism o such that x part of o and y part of o.
+BSPO:0000111	label	right of
 BSPO:0000112	definition	The region corresponding to the ventral region of the entity, towards the midline.
 BSPO:0000112	exact_synonym	medioventral region
 BSPO:0000112	exact_synonym	ventromedial region
 BSPO:0000112	label	ventro-medial region
+BSPO:0000113	definition	Direcly opposite to. i.e. on the opposite side through the axis.
+BSPO:0000113	label	opposite to
+BSPO:0000114	definition	X lateral to y if x is further from the midsagittal plane than y.
+BSPO:0000114	label	lateral to
+BSPO:0000115	label	X medial to y if x is closer to the midsagittal plane than y.
+BSPO:0000115	label	medial to
+BSPO:0000120	definition	X in left side of Y <=> if Y is subdivided into two left and right portions, X is part of the left portion.
+BSPO:0000120	label	in left side of
+BSPO:0000121	definition	X in right side of Y <=> if Y is subdivided into two left and right portions, X is part of the right portion.
+BSPO:0000121	label	in right side of
+BSPO:0000122	definition	X posterior side of Y <=> if Y is subdivided into two anterior and posterior portions, X is part of the posterior portion.
+BSPO:0000122	label	in posterior side of
+BSPO:0000123	definition	X anterior side of Y <=> if Y is subdivided into two anterior and posterior portions, X is part of the anterior portion.
+BSPO:0000123	label	in anterior side of
+BSPO:0000124	definition	x in proximal side of y <=> if y is subdivided into two proximal and distal portions, y is part of the proximal portion.
+BSPO:0000124	label	in proximal side of
+BSPO:0000125	definition	x in distal side of y <=> if y is subdivided into two proximal and distal portions, y is part of the distal portion.
+BSPO:0000125	label	in distal side of
+BSPO:0000126	definition	X in lateral side of Y <=> if X is in left side of Y or X is in right side of Y. X is often, but not always a paired structure
+BSPO:0000126	label	in lateral side of
 BSPO:0000127	definition	Anatomical region peripherally located on the body or body part.
 BSPO:0000127	label	peripheral region
 BSPO:0000128	label	axial region
@@ -389,6 +454,81 @@ BSPO:0001001	exact_synonym	medio-lateral axis
 BSPO:0001001	exact_synonym	mediolateral axis
 BSPO:0001001	label	medial-lateral axis
 BSPO:0001001	related_synonym	proximal-distal axis 
+BSPO:0001100	definition	X superficial part of Y <=> if Y is subdivided into two superficial and deep portions, X is part of the superficial portion.
+BSPO:0001100	label	in superficial part of
+BSPO:0001101	definition	X superficial part of Y <=> if Y is subdivided into two superficial and deep portions, X is part of the deep portion.
+BSPO:0001101	label	in deep part of
+BSPO:0001102	definition	x is parallel t y iff x and y are lines or planes which when extended indefinitely do not cross.
+BSPO:0001102	label	parallel to
+BSPO:0001106	definition	X proximalmost part of Y <=> X is in proximal side of Y and X is adjacent to the proximal boundary of Y
+BSPO:0001106	label	proximalmost part of
+BSPO:0001107	definition	x immediately deep to y iff x deep_to y and x is contiguous with y.
+BSPO:0001107	label	immediately deep to
+BSPO:0001108	definition	X distalmost part of Y <=> X is in distal side of Y and X is adjacent to the distal boundary of Y
+BSPO:0001108	label	distalmost part of
+BSPO:0001113	label	preaxialmost part of
+BSPO:0001114	definition	x preaxial to y iff x is further along the preaxial-postaxial axis than y, towards the postaxial side.
+BSPO:0001114	label	postaxial to
+BSPO:0001114	related_synonym	posterior to (developmentally)
+BSPO:0001115	label	postaxialmost part of
+BSPO:0005001	definition	X intersects median plane of iff X crosses the midine plane of Y.
+BSPO:0005001	label	intersects midsagittal plane of
+BSPO:0015001	label	finishes axis
+BSPO:0015002	label	follows axis
+BSPO:0015003	label	has axis
+BSPO:0015004	definition	A relation between an axis and a part of an organism, in which the part defines the initial point of the axis.
+BSPO:0015004	label	has end point
+BSPO:0015005	definition	crossing at right angles
+BSPO:0015005	label	orthogonal to
+BSPO:0015006	definition	Intersects at two points.
+BSPO:0015006	label	passes through
+BSPO:0015007	label	starts axis
+BSPO:0015008	label	surface of
+BSPO:0015009	definition	x immediately anterior to y iff x anterior to y and x is contiguous with y.
+BSPO:0015009	label	immediately anterior to
+BSPO:0015010	definition	x immediately distal to y iff x distal to y and x is contiguous with y.
+BSPO:0015010	label	immediately distal to
+BSPO:0015011	definition	x immediately dorsal to y iff x dorsal to y and x is contiguous with y.
+BSPO:0015011	label	immediately dorsal to
+BSPO:0015012	definition	x immediately posterior to y iff x posterior_to y and x is contiguous with y.
+BSPO:0015012	label	immediately posterior to
+BSPO:0015013	definition	x immediately proximal to y iff x proximal to y and x is contiguous with y.
+BSPO:0015013	label	immediately proximal to
+BSPO:0015014	definition	x immediately superficial to y iff x superficial to y and x is contiguous with y.
+BSPO:0015014	label	immediately superficial to
+BSPO:0015015	definition	x immediately ventral to y iff x ventral to y and x is contiguous with y.
+BSPO:0015015	label	immediately ventral to
+BSPO:0015016	definition	x immediately left of y iff x left_of y and x is contiguous with y.
+BSPO:0015016	label	immediately left of
+BSPO:0015017	definition	x immediately right of y iff x right of y and x is contiguous with y.
+BSPO:0015017	label	immediately right of
+BSPO:0015101	definition	X dorsal side of Y <=> if Y is subdivided into two dorsal and ventral portions, X is part of the dorsal portion.
+BSPO:0015101	label	in dorsal side of
+BSPO:0015102	definition	X ventral side of Y <=> if Y is subdivided into two dorsal and ventral portions, X is part of the ventral portion.
+BSPO:0015102	label	in ventral side of
+BSPO:0015201	definition	nearer to the oral opening of the organism, on the oral-aboral axis.
+BSPO:0015201	label	oral to
+BSPO:0015202	definition	nearer to the aboral opening of the organism, on the oral-aboral axis.
+BSPO:0015202	label	aboral to
+BSPO:0020001	definition	X in_central_side Y <=> if Y is subdivided into left and right portions around some median divisor, all parts of X are closer to the median divisor than the outermost lateral sides.
+BSPO:0020001	label	in central side of
+BSPO:0020002	definition	A relation between an axis and a part of an organism, in which the part defines the initial point of the axis.
+BSPO:0020002	label	has start point
+BSPO:0030003	definition	x dorsalmost_part_of y iff x part_of y and there is no z which is part_of y and is more dorsal than x but not part_of x; x is adjacent to the dorsal boundary of y
+BSPO:0030003	label	dorsalmost part of
+BSPO:0030004	definition	x anteriormost_part_of y iff x part_of y and there is no z which is part_of y and is more anterior than x but not part_of x; x is adjacent to the anterior boundary of y
+BSPO:0030004	label	anteriormost part of
+BSPO:0030005	definition	x lateralmost_part_of y iff x part_of y and there is no z which is part_of y and is more lateral than x but not part_of x; x is adjacent to the lateral boundary of y
+BSPO:0030005	label	lateralmost part of
+BSPO:0030006	definition	X medial side of Y <=> if Y is subdivided into two medial and lateral portions, X is part of the medial portion.
+BSPO:0030006	label	in medial side of
+BSPO:0030007	definition	x medialmost_part_of y iff x part_of y and there is no z which is part_of y and is more medial than x but not part_of x; x is adjacent to the medial boundary of y
+BSPO:0030007	label	medialmost part of
+BSPO:1000000	definition	x preaxial to y iff x is further along the preaxial-postaxial axis than y, towards the front.
+BSPO:1000000	label	preaxial to
+BSPO:1000000	related_synonym	anterior to (developmentally)
+BSPO:1000000	related_synonym	lateral (radial) to
+BSPO:1000000	related_synonym	medial (tibial) to
 CARO:0000000	definition	A part of a cellular organism that is either an immaterial entity or a material entity with granularity above the level of a protein complex.  Or, a substance produced by a cellular organism with granularity above the level of a protein complex.
 CARO:0000000	definition	Biological entity that is either an individual member of a biological species or constitutes the structural organization of an individual member of a biological species.
 CARO:0000000	label	anatomical entity
@@ -428,3 +568,196 @@ IAO:0000409	definition	A denotator type indicates how a term should be interpret
 IAO:0000409	label	denotator type
 PATO:0000001	definition	A dependent entity that inheres in a bearer by virtue of how the bearer is related to other entities
 PATO:0000001	label	quality
+RO:0000052	definition	a relation between a specifically dependent continuant (the characteristic) and any other entity (the bearer), in which the characteristic depends on the bearer for its existence.
+RO:0000052	label	characteristic of
+RO:0000053	definition	Inverse of characteristic_of
+RO:0000053	label	has characteristic
+RO:0000056	definition	a relation between a continuant and a process, in which the continuant is somehow involved in the process
+RO:0000056	label	participates in
+RO:0000057	definition	a relation between a process and a continuant, in which the continuant is somehow involved in the process
+RO:0000057	label	has participant
+RO:0000079	definition	a relation between a function and an independent continuant (the bearer), in which the function specifically depends on the bearer for its existence
+RO:0000079	label	function of
+RO:0000080	definition	a relation between a quality and an independent continuant (the bearer), in which the quality specifically depends on the bearer for its existence
+RO:0000080	label	quality of
+RO:0000081	definition	a relation between a role and an independent continuant (the bearer), in which the role specifically depends on the bearer for its existence
+RO:0000081	label	role of
+RO:0000085	definition	a relation between an independent continuant (the bearer) and a function, in which the function specifically depends on the bearer for its existence
+RO:0000085	label	has function
+RO:0000086	definition	a relation between an independent continuant (the bearer) and a quality, in which the quality specifically depends on the bearer for its existence
+RO:0000086	label	has quality
+RO:0000087	definition	a relation between an independent continuant (the bearer) and a role, in which the role specifically depends on the bearer for its existence
+RO:0000087	label	has role
+RO:0000091	definition	a relation between an independent continuant (the bearer) and a disposition, in which the disposition specifically depends on the bearer for its existence
+RO:0000091	label	has disposition
+RO:0000092	definition	inverse of has disposition
+RO:0000092	label	disposition of
+RO:0002013	definition	A 'has regulatory component activity' B if A and B are GO molecular functions (GO_0003674), A has_component B and A is regulated by B.
+RO:0002013	label	has regulatory component activity
+RO:0002014	definition	A relationship that holds between a GO molecular function and a component of that molecular function that negatively regulates the activity of the whole.  More formally, A 'has regulatory component activity' B iff :A and B are GO molecular functions (GO_0003674), A has_component B and A is negatively regulated by B.
+RO:0002014	label	has negative regulatory component activity
+RO:0002015	definition	A relationship that holds between a GO molecular function and a component of that molecular function that positively regulates the activity of the whole.  More formally, A 'has regulatory component activity' B iff :A and B are GO molecular functions (GO_0003674), A has_component B and A is positively regulated by B.
+RO:0002015	label	has positive regulatory component activity
+RO:0002017	label	has component activity
+RO:0002018	definition	w 'has process component' p if p and w are processes,  w 'has part' p and w is such that it can be directly disassembled into into n parts p, p2, p3, ..., pn, where these parts are of similar type.
+RO:0002018	label	has component process
+RO:0002022	label	directly regulated by
+RO:0002023	definition	Process(P2) is directly negatively regulated by process(P1) iff: P1 negatively regulates P2 via direct physical interaction between an agent executing P1 (or some part of P1) and an agent executing P2 (or some part of P2).  For example, if protein A has protein binding activity(P1) that targets protein B and this binding  negatively regulates the kinase activity (P2) of protein B then P2 directly negatively regulated by P1.
+RO:0002023	label	directly negatively regulated by
+RO:0002024	definition	Process(P2) is directly postively regulated by process(P1) iff: P1 positively regulates P2 via direct physical interaction between an agent executing P1 (or some part of P1) and an agent executing P2 (or some part of P2).  For example, if protein A has protein binding activity(P1) that targets protein B and this binding positively regulates the kinase activity (P2) of protein B then P2 is directly postively regulated by P1.
+RO:0002024	label	directly positively regulated by
+RO:0002025	definition	A 'has effector activity' B if A and B are GO molecular functions (GO_0003674),  A 'has component activity' B and B is the effector (output function) of B.  Each compound function has only one effector activity.
+RO:0002025	label	has effector activity
+RO:0002086	label	ends after
+RO:0002087	label	immediately preceded by
+RO:0002090	label	immediately precedes
+RO:0002131	definition	x overlaps y if and only if there exists some z such that x has part z and z part of y
+RO:0002131	definition	x overlaps y iff they have some part in common.
+RO:0002131	label	overlaps
+RO:0002163	definition	A is spatially_disjoint_from B if and only if they have no parts in common
+RO:0002163	label	spatially disjoint from
+RO:0002180	definition	w 'has component' p if w 'has part' p and w is such that it can be directly disassembled into into n parts p, p2, p3, ..., pn, where these parts are of similar type.
+RO:0002180	label	has component
+RO:0002211	definition	p regulates q iff p is causally upstream of q, the execution of p is not constant and varies according to specific conditions, and p influences the rate or magnitude of execution of q due to an effect either on some enabler of q or some enabler of a part of q.
+RO:0002211	label	regulates
+RO:0002212	definition	p negatively regulates q iff p regulates q, and p decreases the rate or magnitude of execution of q.
+RO:0002212	label	negatively regulates
+RO:0002213	definition	p positively regulates q iff p regulates q, and p increases the rate or magnitude of execution of q.
+RO:0002213	label	positively regulates
+RO:0002215	definition	A relation between a material entity (such as a cell) and a process, in which the material entity has the ability to carry out the process. 
+RO:0002215	label	capable of
+RO:0002216	definition	c stands in this relationship to p if and only if there exists some p' such that c is capable_of p', and p' is part_of p.
+RO:0002216	label	capable of part of
+RO:0002220	definition	x adjacent to y if and only if x and y share a boundary.
+RO:0002220	label	adjacent to
+RO:0002222	label	temporally related to
+RO:0002233	definition	p has input c iff: p is a process, c is a material entity, c is a participant in p, c is present at the start of p, and the state of c is modified during p.
+RO:0002233	label	has input
+RO:0002263	definition	c acts upstream of p if and only if c enables some f that is involved in p' and p' occurs chronologically before p, is not part of p, and affects the execution of p. c is a material entity and f, p, p' are processes.
+RO:0002263	label	acts upstream of
+RO:0002264	definition	c acts upstream of or within p if c is enables f, and f is causally upstream of or within p. c is a material entity and p is an process.
+RO:0002264	label	acts upstream of or within
+RO:0002264	related_synonym	affects
+RO:0002304	definition	p is causally upstream of, positive effect q iff p is casually upstream of q, and the execution of p is required for the execution of q.
+RO:0002304	label	causally upstream of, positive effect
+RO:0002305	definition	p is causally upstream of, negative effect q iff p is casually upstream of q, and the execution of p decreases the execution of q.
+RO:0002305	label	causally upstream of, negative effect
+RO:0002314	definition	q characteristic of part of w if and only if there exists some p such that q inheres in p and p part of w.
+RO:0002314	label	characteristic of part of
+RO:0002323	definition	A mereological relationship or a topological relationship
+RO:0002323	label	mereotopologically related to
+RO:0002327	definition	c enables p iff c is capable of p and c acts to execute p.
+RO:0002327	label	enables
+RO:0002328	definition	A grouping relationship for any relationship directly involving a function, or that holds because of a function of one of the related entities.
+RO:0002328	label	functionally related to
+RO:0002329	definition	this relation holds between c and p when c is part of some c', and c' is capable of p.
+RO:0002329	label	part of structure that is capable of
+RO:0002331	definition	c involved_in p if and only if c enables some process p', and p' is part of p
+RO:0002331	label	involved in
+RO:0002333	definition	inverse of enables
+RO:0002333	label	enabled by
+RO:0002334	definition	inverse of regulates
+RO:0002334	label	regulated by
+RO:0002335	definition	inverse of negatively regulates
+RO:0002335	label	negatively regulated by
+RO:0002336	definition	inverse of positively regulates
+RO:0002336	label	positively regulated by
+RO:0002352	definition	inverse of has input
+RO:0002352	label	input of
+RO:0002404	definition	inverse of upstream of
+RO:0002404	label	causally downstream of
+RO:0002405	label	immediately causally downstream of
+RO:0002407	definition	p indirectly positively regulates q iff p is indirectly causally upstream of q and p positively regulates q.
+RO:0002407	label	indirectly positively regulates
+RO:0002409	definition	p indirectly negatively regulates q iff p is indirectly causally upstream of q and p negatively regulates q.
+RO:0002409	label	indirectly negatively regulates
+RO:0002410	definition	relation that links two events, processes, states, or objects such that one event, process, state, or object (a cause) contributes to the production of another event, process, state, or object (an effect) where the cause is partly or wholly responsible for the effect, and the effect is partly or wholly dependent on the cause.
+RO:0002410	label	causally related to
+RO:0002411	definition	p is causally upstream of q iff p is causally related to q, the end of p precedes the end of q, and p is not an occurrent part of q.
+RO:0002411	label	causally upstream of
+RO:0002412	definition	p is immediately causally upstream of q iff p is causally upstream of q, and the end of p is coincident with the beginning of q.
+RO:0002412	label	immediately causally upstream of
+RO:0002418	definition	p is 'causally upstream or within' q iff p is causally related to q, and the end of p precedes, or is coincident with, the end of q.
+RO:0002418	label	causally upstream of or within
+RO:0002418	related_synonym	affects
+RO:0002427	definition	inverse of causally upstream of or within
+RO:0002427	label	causally downstream of or within
+RO:0002428	definition	c involved in regulation of p if c is involved in some p' and p' regulates some p
+RO:0002428	label	involved in regulation of
+RO:0002429	definition	c involved in regulation of p if c is involved in some p' and p' positively regulates some p
+RO:0002429	label	involved in positive regulation of
+RO:0002430	definition	c involved in regulation of p if c is involved in some p' and p' negatively regulates some p
+RO:0002430	label	involved in negative regulation of
+RO:0002431	definition	c involved in or regulates p if and only if either (i) c is involved in p or (ii) c is involved in regulation of p
+RO:0002431	label	involved in or involved in regulation of
+RO:0002434	definition	A relationship that holds between two entities in which the processes executed by the two entities are causally connected.
+RO:0002434	exact_synonym	in pairwise interaction with
+RO:0002434	label	interacts with
+RO:0002436	definition	An interaction relationship in which the two partners are molecular entities that directly physically interact with each other for example via a stable binding interaction or a brief interaction during which one modifies the other.
+RO:0002436	label	molecularly interacts with
+RO:0002447	label	phosphorylates
+RO:0002448	definition	The entity A, immediately upstream of the entity B, has an activity that regulates an activity performed by B. For example, A and B may be gene products and binding of B by A regulates the kinase activity of B.\n\nA and B can be physically interacting but not necessarily. Immediately upstream means there are no intermediate entity between A and B.
+RO:0002448	exact_synonym	molecularly controls
+RO:0002448	label	directly regulates activity of
+RO:0002449	definition	The entity A, immediately upstream of the entity B, has an activity that negatively regulates an activity performed by B. \nFor example, A and B may be gene products and binding of B by A negatively regulates the kinase activity of B.
+RO:0002449	exact_synonym	molecularly decreases activity of
+RO:0002449	label	directly negatively regulates activity of
+RO:0002450	definition	The entity A, immediately upstream of the entity B, has an activity that positively regulates an activity performed by B. \nFor example, A and B may be gene products and binding of B by A positively regulates the kinase activity of B.
+RO:0002450	exact_synonym	molecularly increases activity of
+RO:0002450	label	directly positively regulates activity of
+RO:0002464	label	helper property (not for use in curation)
+RO:0002481	label	is kinase activity
+RO:0002500	definition	A relationship between a material entity and a process where the material entity has some causal role that influences the process
+RO:0002500	label	causal agent in process
+RO:0002501	definition	p is causally related to q if and only if p or any part of p and q or any part of q are linked by a chain of events where each event pair is one where the execution of p influences the execution of q. p may be upstream, downstream, part of, or a container of q.
+RO:0002501	label	causal relation between processes
+RO:0002502	label	depends on
+RO:0002506	label	causal relation between entities
+RO:0002559	label	causally influenced by
+RO:0002563	label	interaction relation helper property
+RO:0002564	label	molecular interaction relation helper property
+RO:0002566	definition	The entity or characteristic A is causally upstream of the entity or characteristic B, A having an effect on B. An entity corresponds to any biological type of entity as long as a mass is measurable. A characteristic corresponds to a particular specificity of an entity (e.g., phenotype, shape, size).
+RO:0002566	label	causally influences
+RO:0002578	definition	p directly regulates q iff p is immediately causally upstream of q and p regulates q.
+RO:0002578	label	directly regulates
+RO:0002584	definition	s 'has part structure that is capable of' p if and only if there exists some part x such that s 'has part' x and x 'capable of' p
+RO:0002584	label	has part structure that is capable of
+RO:0002595	definition	A relationship that holds between a material entity and a process in which causality is involved, with either the material entity or some part of the material entity exerting some influence over the process, or the process influencing some aspect of the material entity.
+RO:0002595	label	causal relation between material entity and a process
+RO:0002596	definition	Holds between c and p if and only if c is capable of some activity a, and a regulates p.
+RO:0002596	label	capable of regulating
+RO:0002597	definition	Holds between c and p if and only if c is capable of some activity a, and a negatively regulates p.
+RO:0002597	label	capable of negatively regulating
+RO:0002598	definition	Holds between c and p if and only if c is capable of some activity a, and a positively regulates p.
+RO:0002598	label	capable of positively regulating
+RO:0002608	definition	Inverse of 'causal agent in process'
+RO:0002608	label	process has causal agent
+RO:0002629	definition	p directly positively regulates q iff p is immediately causally upstream of q, and p positively regulates q.
+RO:0002629	label	directly positively regulates
+RO:0002630	definition	p directly negatively regulates q iff p is immediately causally upstream of q, and p negatively regulates q.
+RO:0002630	label	directly negatively regulates
+RO:0004031	definition	Holds between an entity and an process P where the entity enables some larger compound process, and that larger process has-part P.
+RO:0004031	label	enables subfunction
+RO:0004032	label	acts upstream of or within, positive effect
+RO:0004033	label	acts upstream of or within, negative effect
+RO:0004034	definition	c 'acts upstream of, positive effect' p if c is enables f, and f is causally upstream of p, and the direction of f is positive
+RO:0004034	label	acts upstream of, positive effect
+RO:0004035	definition	c 'acts upstream of, negative effect' p if c is enables f, and f is causally upstream of p, and the direction of f is negative
+RO:0004035	label	acts upstream of, negative effect
+RO:0004046	label	causally upstream of or within, negative effect
+RO:0004047	label	causally upstream of or within, positive effect
+RO:0011002	definition	The entity A has an activity that regulates an activity of the entity B. For example, A and B are gene products where the catalytic activity of A regulates the kinase activity of B.
+RO:0011002	label	regulates activity of
+RO:0012011	definition	p is indirectly causally upstream of q iff p is causally upstream of q and there exists some process r such that p is causally upstream of r and r is causally upstream of q.
+RO:0012011	label	indirectly causally upstream of
+RO:0012012	definition	p indirectly regulates q iff p is indirectly causally upstream of q and p regulates q.
+RO:0012012	label	indirectly regulates
+RO:0017001	broad_synonym	utilizes
+RO:0017001	definition	X device utilizes material Y means X and Y are material entities, and X is capable of some process P that has input Y.
+RO:0017001	label	device utilizes material
+RO:0019000	definition	A relationship that holds between a process and a characteristic in which process (P) regulates characteristic (C) iff: P results in the existence of C OR affects the intensity or magnitude of C.
+RO:0019000	label	regulates characteristic
+RO:0019001	definition	A relationship that holds between a process and a characteristic in which process (P) positively regulates characteristic (C) iff: P results in an increase in the intensity or magnitude of C.
+RO:0019001	label	positively regulates characteristic
+RO:0019002	definition	A relationship that holds between a process and a characteristic in which process (P) negatively regulates characteristic (C) iff: P results in a decrease in the intensity or magnitude of C.
+RO:0019002	label	negatively regulates characteristic

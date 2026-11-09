@@ -23,6 +23,14 @@ BFO:0000031	label	generically dependent continuant
 BFO:0000034	label	function
 BFO:0000040	definition	An independent continuant that is spatially extended whose identity is independent of that of other entities and can be maintained through time.
 BFO:0000040	label	material entity
+BFO:0000050	definition	a core relation that holds between a part and its whole
+BFO:0000050	label	part of
+BFO:0000051	definition	a core relation that holds between a whole and its part
+BFO:0000051	label	has part
+BFO:0000054	label	realized in
+BFO:0000055	label	realizes
+BFO:0000062	label	preceded by
+BFO:0000063	label	precedes
 BFO:0000140	label	continuant fiat boundary
 BFO:0000141	label	immaterial entity
 CHEBI:15422	definition	An adenosine 5'-phosphate in which the 5'-phosphate is a triphosphate group. It is involved in the transportation of chemical energy during metabolic pathways.
@@ -5774,6 +5782,10 @@ ECO:0008196	label	single-molecule fluorescence resonance energy transfer evidenc
 ECO:0008197	definition	A type of single-molecule fluorescence resonance energy transfer evidence that is used in an automatic assertion.
 ECO:0008197	exact_synonym	smFRET evidence
 ECO:0008197	label	single-molecule fluorescence resonance energy transfer evidence used in automatic assertion
+ECO:9000000	definition	A relation connecting an evidence type to an assertion method where the assertion method describes the type of process employed to evaluate the evidence.
+ECO:9000000	label	used_in
+ECO:9000001	definition	A relation that is an inverse of "used_in" relation.
+ECO:9000001	label	uses
 GO:0000737	label	DNA catabolic process, endonucleolytic
 GO:0000785	definition	The ordered and organized complex of DNA, protein, and sometimes RNA, that forms the chromosome.
 GO:0000785	label	chromatin
@@ -6386,6 +6398,7 @@ IAO:0000032	definition	A scalar measurement datum is a measurement datum that is
 IAO:0000032	label	scalar measurement datum
 IAO:0000033	definition	An information content entity whose concretizations indicate to their bearer how to realize them in a process.
 IAO:0000033	label	directive information entity
+IAO:0000039	label	has measurement unit label
 IAO:0000064	definition	A plan specification which describes the inputs and output of mathematical functions as well as workflow of execution for achieving an predefined objective. Algorithms are realized usually by means of implementation as computer programs for execution by automata.
 IAO:0000064	label	algorithm
 IAO:0000078	definition	The curation status of the term. The allowed values come from an enumerated list of predefined terms. See the specification of these instances for more detailed definitions of each enumerated value.
@@ -6398,8 +6411,12 @@ IAO:0000104	definition	A directive information entity with action specifications
 IAO:0000104	label	plan specification
 IAO:0000109	definition	A measurement datum is an information content entity that is a recording of the output of a measurement such as produced by a device.
 IAO:0000109	label	measurement datum
+IAO:0000136	definition	A (currently) primitive relation that relates an information artifact to an entity.
+IAO:0000136	label	is about
 IAO:0000178	definition	A material entity in which a concretization of an information content entity inheres.
 IAO:0000178	label	material information bearer
+IAO:0000221	definition	m is a quality measurement of q at t. When q is a quality, there is a measurement process p that has specified output m, a measurement datum, that is about q
+IAO:0000221	label	is quality measurement of
 IAO:0000225	definition	The reason for which a term has been deprecated. The allowed values come from an enumerated list of predefined terms. See the specification of these instances for more detailed definitions of each enumerated value.
 IAO:0000225	label	obsolescence reason specification
 IAO:0000308	definition	An information content entity consisting of a two dimensional arrangement of information content entities such that the arrangement itself is about something.
@@ -6408,6 +6425,8 @@ IAO:0000409	definition	A denotator type indicates how a term should be interpret
 IAO:0000409	label	denotator type
 IAO:0000414	definition	A scalar measurement datum that is the result of measurement of mass quality
 IAO:0000414	label	mass measurement datum
+IAO:0000417	definition	inverse of the relation of is quality measurement of
+IAO:0000417	label	is quality measured as
 IDO:0000586	definition	A part of an extended organism that itself has as part a population of one or more infectious agents and that (1) exists as a result of processes initiated by members of the infectious agent population and is (2) clinically abnormal in virtue of the presence of this infectious agent population, or (3) has a disposition to bring clinical abnormality to immunocompetent organisms of the same Species as the host (the organism corresponding to the extended organism) through transmission of a member or offspring of a member of the infectious agent population.
 IDO:0000586	label	infection
 NCBITaxon:10239	label	Viruses
@@ -6454,6 +6473,8 @@ OBI:0000113	definition	Sequence_feature_identification_objective is a biological
 OBI:0000113	label	sequence feature identification objective
 OBI:0000115	definition	An intervention design is a study design in which a controlled process applied to the subjects (the intervention) serves as the independent variable manipulated by the experimentalist. The treatment (perturbation or intervention) defined can be defined as a combination of values taken by independent variable manipulated by the experimentalists are applied to the recruited subjects assigned (possibly by applying specific methods) to treatment groups. The specificity of intervention design is the fact that independent variables are being manipulated and a response of the biological system is evaluated via response variables as monitored by possibly a series of assays.
 OBI:0000115	label	intervention design
+OBI:0000124	definition	The relation between a data item and a conclusion where the conclusion is the output of a data interpreting process and the data item is used as an input to that process
+OBI:0000124	label	is_supported_by_data
 OBI:0000131	definition	Molecular_feature_identification_objective is a biological_feature_identification_objective role describing a study designed to examine or characterize molecular features of a biological system, e.g. expression profiling, copy number of molecular components, epigenetic modifications.
 OBI:0000131	label	molecular feature identification objective
 OBI:0000151	definition	A device manufacture with the intent to provide a porous unsized paper used for filtering.
@@ -6490,6 +6511,14 @@ OBI:0000275	definition	A measurand role borne by a molecular entity or an atom a
 OBI:0000275	label	analyte role
 OBI:0000288	definition	An assay that determines interactions between proteins, such as protein-protein binding.
 OBI:0000288	label	protein-protein interaction detection assay
+OBI:0000293	definition	The inverse property of is_specified_input_of
+OBI:0000293	label	has_specified_input
+OBI:0000295	definition	A relation between a planned process and a continuant participating in that process that is not created during  the process. The presence of the continuant during the process is explicitly specified in the plan specification which the process realizes the concretization of.
+OBI:0000295	label	is_specified_input_of
+OBI:0000299	definition	The inverse property of is_specified_output_of
+OBI:0000299	label	has_specified_output
+OBI:0000312	definition	A relation between a planned process and a continuant participating in that process. The presence of the continuant at the end of the process is explicitly specified in the objective specification which the process realizes the concretization of.
+OBI:0000312	label	is_specified_output_of
 OBI:0000318	definition	a eluate is a material entity which results from an elution, e.g. from a chromatography column. it has as part a material entity with role mobile phase
 OBI:0000318	label	eluate
 OBI:0000319	definition	material to be added role is a protocol participant role realized by a material which is added into a material bearing the target of material addition role in a material addition process
@@ -6554,6 +6583,8 @@ OBI:0000415	definition	PCR is the process in which a DNA polymerase is used to a
 OBI:0000415	label	polymerase chain reaction
 OBI:0000416	definition	cloning insert role is a role which inheres in DNA or RNA and is realized by the process of being inserted into a cloning vector in a cloning process.
 OBI:0000416	label	cloning insert role
+OBI:0000417	definition	This relation obtains between a planned process and a objective specification when the criteria specified in the objective specification are met at the end of the planned process.
+OBI:0000417	label	achieves_planned_objective
 OBI:0000419	definition	enzyme and has_function some GO:0003964 (RNA-directed DNA polymerase\nactivity)
 OBI:0000419	label	reverse transcriptase
 OBI:0000423	definition	an extract is a material entity which results from an extraction process
@@ -6612,6 +6643,8 @@ OBI:0000634	definition	An assay that measures the state of methylation of DNA mo
 OBI:0000634	label	DNA methylation profiling assay
 OBI:0000639	definition	is an objective to transform a material entity into spatially separated components.
 OBI:0000639	label	material separation objective
+OBI:0000643	definition	the relation of the cells in the finger of the skin to the finger, in which an indeterminate number of grains are parts of the whole by virtue of being grains in a collective that is part of the whole, and in which removing one granular part does not nec- essarily damage or diminish the whole. Ontological Whether there is a fixed, or nearly fixed number of parts - e.g. fingers of the hand, chambers of the heart, or wheels of a car - such that there can be a notion of a single one being missing, or whether, by contrast, the number of parts is indeterminate - e.g., cells in the skin of the hand, red cells in blood, or rubber molecules in the tread of the tire of the wheel of the car.
+OBI:0000643	label	has grain
 OBI:0000650	definition	A differential expression analysis data transformation is a data transformation that has an objective of differential expression analysis.  Frequently this data transformation involves summarizing or otherwise aggregating signals from various samples categorized into groups, and calculating measures of group differences from these aggregated signals.
 OBI:0000650	label	differential expression analysis data transformation
 OBI:0000651	definition	a portion of urine collected from an organism
@@ -6678,6 +6711,8 @@ OBI:0000816	definition	An electrode of very fine caliber consisting usually of a
 OBI:0000816	label	micro electrode
 OBI:0000832	definition	A device in which a measure function inheres.
 OBI:0000832	label	measurement device
+OBI:0000833	definition	This relation obtains between an objective specification and a planned process when the criteria specified in the objective specification are met at the end of the planned process.
+OBI:0000833	label	objective_achieved_by
 OBI:0000834	definition	The output of an extraction process in which DNA molecules above a molecular weight cutoff are purified in order to exclude DNA from organellas.
 OBI:0000834	label	high molecular weight DNA extract
 OBI:0000838	definition	a process with that achieves the objective to maintain some or all of the characteristics of an input material over time
@@ -6990,6 +7025,8 @@ OBI:0001933	definition	An information content entity that specifies a value with
 OBI:0001933	label	value specification
 OBI:0001936	definition	a material entity that is the specified output of an addition of molecular label process that aims to label some molecular target to allow for its detection in a detection of molecular label assay
 OBI:0001936	label	molecular-labeled material
+OBI:0001938	definition	A relation between an information content entity and a value specification that specifies its value.
+OBI:0001938	label	has value specification
 OBI:0001954	definition	An assay in which portions of chromatin, the ordered and organized complex of DNA and its interaction partners that make up a chormosome, is extracted and purified by immunoprecipitation with antibodies or tags, and subsequently analyzed
 OBI:0001954	label	ChIP assay
 OBI:0001955	definition	A positive reference substance role that inheres in a material entity that is known to bind to a target entity, and that is realized in a competitive binding assay that has as specified input the target entity, an evaluant and the positive reference substance, where the binding of the evaluant to the target is measured based on the evaluant's ability to compete with the positive reference substance for binding to the target.
@@ -7288,6 +7325,8 @@ OBI:1110045	definition	Is the disposition borne by a material entity that is rea
 OBI:1110045	label	disposition to be bound by an adaptive immune receptor
 OBI:1110057	definition	a process of an MHC molecule binding to an entity playing the role of epitope to create an MHC:epitope complex which is then bound by a TCR molecule.
 OBI:1110057	label	MHC:epitope complex binding to TCR
+OBI:1110060	definition	is a relationship between a process and a preceding occurrent that directly caused the later one to occur
+OBI:1110060	label	process is result of
 OBI:1110086	definition	The role played by an MHC molecule by binding a material entity playing the role of epitope when that epitope/MHC molecule pair are recognized (bound) by a TCR molecule on the surface of a cell playing the role of effector cell.
 OBI:1110086	label	restricting MHC role
 OBI:1110093	definition	Is a role borne by an agent, and realized when in contact with or inside another organism in which it is capable of replicating and causing disease
@@ -7296,6 +7335,8 @@ OBI:1110108	definition	a material that is added to another one in a material com
 OBI:1110108	label	material to be added
 OBI:1110109	definition	A material entity into which another is being added in a material combinatino process
 OBI:1110109	label	target of material addition
+OBI:1110119	definition	A relationship between two material entities that form a complex based on a selective, non-covalent interaction.
+OBI:1110119	label	bound_to
 OBI:1110120	definition	Any molecule recognized by the adaptive immune receptors? Recognized means bound with a certain affinity? From GO ag binding:Interacting selectively with an antigen, any substance which is capable of inducing a specific immune response and of reacting with the products of that response, the specific antibody or specifically sensitized T-lymphocytes, or both. Binding may counteract the biological activity of the antigen. see OBI_1110120 below
 OBI:1110120	label	assay antigen role
 OBI:1110122	definition	abnormal, harmful processes caused by or associated with a disease
@@ -7346,6 +7387,48 @@ PR:000023089	definition	A protein that is a translation product of the Escherich
 PR:000023089	label	DNA ligase
 PR:000025471	definition	A protein that is a translation product of the Aspergillus oryzae RIB40 nucS gene or a 1:1 ortholog thereof.
 PR:000025471	label	nuclease S1
+RO:0000052	definition	a relation between a specifically dependent continuant (the dependent) and an independent continuant (the bearer), in which the dependent specifically depends on the bearer for its existence
+RO:0000052	label	inheres in
+RO:0000053	definition	a relation between an independent continuant (the bearer) and a specifically dependent continuant (the dependent), in which the dependent specifically depends on the bearer for its existence
+RO:0000053	label	bearer of
+RO:0000056	definition	a relation between a continuant and a process, in which the continuant is somehow involved in the process
+RO:0000056	label	participates in
+RO:0000057	definition	a relation between a process and a continuant, in which the continuant is somehow involved in the process
+RO:0000057	label	has participant
+RO:0000058	definition	A relationship between a generically dependent continuant and a specifically dependent continuant, in which the generically dependent continuant depends on some independent continuant in virtue of the fact that the specifically dependent continuant also depends on that same independent continuant. A generically dependent continuant may be concretized as multiple specifically dependent continuants.
+RO:0000058	label	is concretized as
+RO:0000059	definition	A relationship between a specifically dependent continuant and a generically dependent continuant, in which the generically dependent continuant depends on some independent continuant in virtue of the fact that the specifically dependent continuant also depends on that same independent continuant. Multiple specifically dependent continuants can concretize the same generically dependent continuant.
+RO:0000059	label	concretizes
+RO:0000079	definition	a relation between a function and an independent continuant (the bearer), in which the function specifically depends on the bearer for its existence
+RO:0000079	label	function of
+RO:0000080	definition	a relation between a quality and an independent continuant (the bearer), in which the quality specifically depends on the bearer for its existence
+RO:0000080	label	quality of
+RO:0000081	definition	a relation between a role and an independent continuant (the bearer), in which the role specifically depends on the bearer for its existence
+RO:0000081	label	role of
+RO:0000085	definition	a relation between an independent continuant (the bearer) and a function, in which the function specifically depends on the bearer for its existence
+RO:0000085	label	has function
+RO:0000086	definition	a relation between an independent continuant (the bearer) and a quality, in which the quality specifically depends on the bearer for its existence
+RO:0000086	label	has quality
+RO:0000087	definition	a relation between an independent continuant (the bearer) and a role, in which the role specifically depends on the bearer for its existence
+RO:0000087	label	has role
+RO:0001000	definition	a relation between two distinct material entities, the new entity and the old entity, in which the new entity begins to exist when the old entity ceases to exist, and the new entity inherits the significant portion of the matter of the old entity
+RO:0001000	label	derives from
+RO:0001001	definition	a relation between two distinct material entities, the old entity and the new entity, in which the new entity begins to exist when the old entity ceases to exist, and the new entity inherits the significant portion of the matter of the old entity
+RO:0001001	label	derives into
+RO:0001015	definition	a relation between two independent continuants, the location and the target, in which the target is entirely within the location
+RO:0001015	label	location of
+RO:0001025	definition	a relation between two independent continuants, the target and the location, in which the target is entirely within the location
+RO:0001025	label	located in
+RO:0002087	label	immediately preceded by
+RO:0002090	label	immediately precedes
+RO:0002211	label	regulates
+RO:0002212	label	negatively regulates
+RO:0002213	label	positively regulates
+RO:0002222	label	temporal relation
+RO:0002350	definition	is member of is a mereological relation between a item and a collection.
+RO:0002350	label	member of
+RO:0002351	definition	has member is a mereological relation between a collection and an item.
+RO:0002351	label	has member
 SO:0000001	definition	A sequence_feature with an extent greater than zero. A nucleotide region is composed of bases and a polypeptide region is composed of amino acids.
 SO:0000001	label	region
 UBERON:0000178	definition	A fluid that is composed of blood plasma and erythrocytes.
