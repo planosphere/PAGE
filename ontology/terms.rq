@@ -1,13 +1,15 @@
-# Names, synonyms (with their kind), definitions and obsolete / replaced-by for every class.
-# Run by .github/workflows/plana-closure.yml with `robot query`; one row per value.
+# Names, synonyms (with their kind), definitions and obsolete / replaced-by for every class AND
+# every relationship (object property, e.g. BFO:0000050 "part of"), plus a "type" row saying
+# which it is. Run by .github/workflows/plana-closure.yml with `robot query`; one row per value.
 PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
 PREFIX owl:  <http://www.w3.org/2002/07/owl#>
 PREFIX oio:  <http://www.geneontology.org/formats/oboInOwl#>
 PREFIX obo:  <http://purl.obolibrary.org/obo/>
 SELECT ?term ?field ?value WHERE {
-  ?term a owl:Class .
-  FILTER(isIRI(?term))
-  {        ?term rdfs:label            ?v . BIND("label"           AS ?field) }
+  ?term a ?t .
+  FILTER(isIRI(?term) && ?t IN (owl:Class, owl:ObjectProperty))
+  {        BIND("type" AS ?field) BIND(IF(?t = owl:Class, "class", "relation") AS ?v) }
+  UNION {  ?term rdfs:label            ?v . BIND("label"           AS ?field) }
   UNION {  ?term oio:hasExactSynonym   ?v . BIND("exact_synonym"   AS ?field) }
   UNION {  ?term oio:hasRelatedSynonym ?v . BIND("related_synonym" AS ?field) }
   UNION {  ?term oio:hasNarrowSynonym  ?v . BIND("narrow_synonym"  AS ?field) }

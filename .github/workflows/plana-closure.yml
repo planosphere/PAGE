@@ -41,6 +41,9 @@ jobs:
             [ -n "$r" ] || { echo "no release found in $o.owl"; exit 1; }
             echo "$o $r" >> releases.new
           done
+          # A fingerprint of how the files are made: editing terms.rq or tidy_terms.py rebuilds
+          # them even when no ontology has a new release.
+          echo "recipe $(cat ontology/terms.rq ontology/tidy_terms.py | sha256sum | cut -c1-12)" >> releases.new
           cat releases.new
           # Also rebuild when an expected file is missing (a new file was added to this workflow,
           # or one was deleted) -- otherwise unchanged releases would skip it forever.
