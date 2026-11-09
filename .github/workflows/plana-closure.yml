@@ -1,0 +1,61 @@
+# Keep ontology/plana-closure.tsv in step with PLANA's latest release.
+#
+# Runs weekly (and on demand: Actions tab -> "PLANA closure" -> Run workflow). It downloads the
+# published plana.owl, and ONLY IF its release differs from ontology/plana-release.txt, computes
+# every inferred relationship with relation-graph (any depth, is_a combined with part of /
+# contained in / develops from / ..., plus PLANA's logical definitions) and commits the result.
+# MOOP loads ontology/plana-closure.tsv; this replaces the Owlery server.
+#
+# Uses the same ODK image as the PLANA build (obophenotype/planaria-ontology, ODK v1.4), so the
+# tools match. Nothing in the PLANA repository is touched.
+name: PLANA closure
+
+on:
+  schedule:
+    - cron: '17 6 * * 1'        # Mondays 06:17 UTC
+  workflow_dispatch: {}
+
+permissions:
+  contents: write                # to commit the refreshed files
+
+jobs:
+  closure:
+    runs-on: ubuntu-latest
+    container: obolibrary/odkfull:v1.4
+    steps:
+      - uses: actions/checkout@v4
+
+      - name: Download PLANA and read its release
+        id: release
+        run: |
+          curl -sSfL -o plana.owl http://purl.obolibrary.org/obo/plana.owl
+          release=$(grep -o -m1 'plana/releases/[0-9-]*' plana.owl | cut -d/ -f3)
+          [ -n "$release" ] || { echo "no release found in plana.owl"; exit 1; }
+          echo "release=$release" >> "$GITHUB_OUTPUT"
+          if [ "$release" = "$(cat ontology/plana-release.txt 2>/dev/null)" ]; then
+            echo "PLANA $release already done"; echo "changed=no" >> "$GITHUB_OUTPUT"
+          else
+            echo "changed=yes" >> "$GITHUB_OUTPUT"
+          fi
+
+      - name: Compute every inferred relationship
+        if: steps.release.outputs.changed == 'yes'
+        run: |
+          # Subject, relationship, object -- one row per inferred link. Subclass links are written
+          # as rdfs:subClassOf. Reflexive links (X is_a X) are left out.
+          relation-graph --ontology-file plana.owl --output-file closure.tsv --mode tsv \
+            --output-subclasses true --reflexive-subclasses false --equivalence-as-subclass true \
+            --obo-prefixes true
+          { printf 'subject\trelation\tobject\n'; sort -u closure.tsv; } > ontology/plana-closure.tsv
+          echo "${{ steps.release.outputs.release }}" > ontology/plana-release.txt
+          wc -l ontology/plana-closure.tsv
+
+      - name: Commit
+        if: steps.release.outputs.changed == 'yes'
+        run: |
+          git config --global --add safe.directory "$GITHUB_WORKSPACE"
+          git config user.name  "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add ontology/plana-closure.tsv ontology/plana-release.txt
+          git commit -m "PLANA closure for release ${{ steps.release.outputs.release }}"
+          git push
