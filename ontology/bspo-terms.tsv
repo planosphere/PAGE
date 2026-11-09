@@ -1,0 +1,430 @@
+term	field	value
+BFO:0000002	definition	An entity that exists in full at any time in which it exists at all, persists through time while maintaining its identity and has no temporal parts.
+BFO:0000002	label	continuant
+BFO:0000003	definition	An entity that has temporal parts and that happens, unfolds or develops through time.
+BFO:0000003	label	occurrent
+BFO:0000004	definition	A continuant that is a bearer of quality and realizable entity entities, in which other entities inhere and which itself cannot inhere in anything.
+BFO:0000004	label	independent continuant
+BFO:0000015	definition	An occurrent that has temporal proper parts and for some time t, p s-depends_on some material entity at t.
+BFO:0000015	label	process
+BFO:0000016	label	disposition
+BFO:0000017	definition	A specifically dependent continuant  that inheres in continuant  entities and are not exhibited in full at every time in which it inheres in an entity or group of entities. The exhibition or actualization of a realizable entity is a particular manifestation, functioning or process that occurs under certain circumstances.
+BFO:0000017	label	realizable entity
+BFO:0000019	label	quality
+BFO:0000020	definition	A continuant that inheres in or is borne by other entities. Every instance of A requires some specific instance of B which must always be the same.
+BFO:0000020	label	specifically dependent continuant
+BFO:0000023	definition	A realizable entity  the manifestation of which brings about some result or end that is not essential to a continuant  in virtue of the kind of thing that it is but that can be served or participated in by that kind of continuant  in some kinds of natural, social or institutional contexts.
+BFO:0000023	label	role
+BFO:0000034	label	function
+BFO:0000040	definition	An independent continuant that is spatially extended whose identity is independent of that of other entities and can be maintained through time.
+BFO:0000040	label	material entity
+BFO:0000141	label	immaterial entity
+BSPO:0000000	definition	The side of an organism that is left of the sagittal plane.
+BSPO:0000000	exact_synonym	left
+BSPO:0000000	label	left side
+BSPO:0000001	exact_synonym	upper
+BSPO:0000001	label	upper side
+BSPO:0000002	exact_synonym	lower
+BSPO:0000002	label	lower side
+BSPO:00000021	label	deep-superficial gradient (obsolete)
+BSPO:00000021	obsolete	true
+BSPO:00000021	replaced_by	BSPO:0000021
+BSPO:0000003	exact_synonym	deep
+BSPO:0000003	label	deep side
+BSPO:0000004	exact_synonym	superficial
+BSPO:0000004	label	superficial side
+BSPO:0000005	definition	A 2D surface of an anatomical continuant.
+BSPO:0000005	exact_synonym	surface
+BSPO:0000005	label	anatomical surface
+BSPO:0000006	definition	Fiat anatomical region extending a short distance from the boundary of an object inwards.
+BSPO:0000006	exact_synonym	edge
+BSPO:0000006	exact_synonym	margin
+BSPO:0000006	label	anatomical margin
+BSPO:0000007	definition	The side of an organism that is right of the sagittal plane.
+BSPO:0000007	exact_synonym	right
+BSPO:0000007	label	right side
+BSPO:0000008	definition	Sagittal plane that divides a bilateral body into unequal left and right parts.
+BSPO:0000008	exact_synonym	parasagittal section
+BSPO:0000008	label	parasagittal plane
+BSPO:0000009	definition	Sagittal plane that divides bilateral body into equal left and right parts.
+BSPO:0000009	exact_synonym	median sagittal plane
+BSPO:0000009	exact_synonym	midline plane
+BSPO:0000009	exact_synonym	midsagittal section
+BSPO:0000009	label	midsagittal plane
+BSPO:0000009	related_synonym	median plane
+BSPO:0000010	definition	A straight line through space, intersecting an anatomical entity.
+BSPO:0000010	label	anatomical axis
+BSPO:0000011	definition	An anatomical axis determined by gravity.
+BSPO:0000011	label	upper-lower axis
+BSPO:0000011	related_synonym	superior-inferior axis
+BSPO:0000012	definition	An axis that extends from an internal position to a more external position in the body or body part.
+BSPO:0000012	label	deep-superficial axis
+BSPO:0000013	definition	An axis that extends through an organism from head end to opposite end of body or tail.
+BSPO:0000013	exact_synonym	A-P axis
+BSPO:0000013	exact_synonym	AP axis
+BSPO:0000013	exact_synonym	anteroposterior axis
+BSPO:0000013	label	anterior-posterior axis
+BSPO:0000013	narrow_synonym	cephalocaudal axis
+BSPO:0000013	narrow_synonym	craniocaudal axis
+BSPO:0000013	narrow_synonym	rostral/caudal
+BSPO:0000013	narrow_synonym	rostrocaudal axis
+BSPO:0000013	related_synonym	longitudinal axis
+BSPO:0000014	definition	An axis that extends through an organism or organism part from the part of the organism or organism part attached to a substrate (basal) to the furthest from the attachment (apical). Note that the apical-basal axis is often used for organismal parts where there is attachment via a basal lamina or other structure.
+BSPO:0000014	exact_synonym	apical/basal
+BSPO:0000014	label	apical-basal axis relative to substrate
+BSPO:0000014	related_synonym	longitudinal axis
+BSPO:0000015	definition	An axis that extends from the point of attachment of a structure (proximal) to the  point furthest away from the plane of attachment (distal).
+BSPO:0000015	exact_synonym	proximal/distal
+BSPO:0000015	exact_synonym	proximodistal
+BSPO:0000015	label	proximal-distal axis
+BSPO:0000016	definition	An axis that is approximately perpendicular to the anterior-posterior axis and that extends through the horizontal plane of the body.
+BSPO:0000016	exact_synonym	D-V axis
+BSPO:0000016	exact_synonym	DV axis
+BSPO:0000016	exact_synonym	dorsoventral axis
+BSPO:0000016	label	dorsal-ventral axis
+BSPO:0000016	narrow_synonym	anterior-posterior axis
+BSPO:0000017	definition	An axis that bisects an organism from left to right sides of body, through a sagittal plane.
+BSPO:0000017	exact_synonym	L-R axis
+BSPO:0000017	exact_synonym	LR axis
+BSPO:0000017	exact_synonym	R-L axis
+BSPO:0000017	exact_synonym	RL axis
+BSPO:0000017	exact_synonym	dextro-sinister axis
+BSPO:0000017	exact_synonym	left to right axis
+BSPO:0000017	exact_synonym	right to left axis
+BSPO:0000017	exact_synonym	right-left axis
+BSPO:0000017	label	left-right axis
+BSPO:0000018	definition	Anatomical plane that divides body into anterior and posterior parts.
+BSPO:0000018	exact_synonym	axial plane
+BSPO:0000018	exact_synonym	axial section
+BSPO:0000018	exact_synonym	transverse section
+BSPO:0000018	label	transverse plane
+BSPO:0000018	related_synonym	cross-section
+BSPO:0000019	definition	Anatomical plane that divides bilateral body into dorsal and ventral parts.
+BSPO:0000019	exact_synonym	frontal plane
+BSPO:0000019	exact_synonym	horizontal anatomical plane
+BSPO:0000019	exact_synonym	horizontal section
+BSPO:0000019	label	horizontal plane
+BSPO:0000019	related_synonym	coronal section
+BSPO:0000019	related_synonym	frontal section
+BSPO:0000020	definition	Anatomical gradient that is distributed along the upper-lower axis.
+BSPO:0000020	label	upper-lower gradient
+BSPO:0000021	definition	Anatomical gradient that is distributed along the deep-superficial axis.
+BSPO:0000021	label	deep-superficial gradient
+BSPO:0000022	definition	The side that is higher relative to the substrate.
+BSPO:0000022	exact_synonym	superior
+BSPO:0000022	label	superior side
+BSPO:0000022	related_synonym	cranial
+BSPO:0000023	definition	Anatomical gradient that is distributed along the apical-basal axis.
+BSPO:0000023	label	apical-basal gradient
+BSPO:0000024	definition	Anatomical gradient that is distributed along the proximal-distal axis.
+BSPO:0000024	label	proximal-distal gradient
+BSPO:0000025	definition	The side that is lower relative to the substrate.
+BSPO:0000025	exact_synonym	inferior
+BSPO:0000025	label	inferior side
+BSPO:0000025	related_synonym	caudal
+BSPO:0000026	definition	Anatomical region that overlaps the anterior and dorsal regions of a body or body part.
+BSPO:0000026	exact_synonym	anterodorsal region 
+BSPO:0000026	label	antero-dorsal region
+BSPO:0000027	definition	Anatomical region that overlaps the anterior and ventral regions of a body or body part.
+BSPO:0000027	exact_synonym	anteroventral region 
+BSPO:0000027	label	antero-ventral region
+BSPO:0000028	definition	Anatomical region that overlaps the posterior and lateral regions of the body or body part.
+BSPO:0000028	exact_synonym	posterolateral region
+BSPO:0000028	label	postero-lateral region
+BSPO:0000029	definition	Anatomical region that overlaps the anterior and lateral regions of a body or body part.
+BSPO:0000029	exact_synonym	anterolateral region
+BSPO:0000029	label	antero-lateral region
+BSPO:0000030	definition	Anatomical region that overlaps the posterior and dorsal regions of the body or body part.
+BSPO:0000030	exact_synonym	posterodorsal region
+BSPO:0000030	label	postero-dorsal region
+BSPO:0000031	label	upper region
+BSPO:0000032	label	lower region
+BSPO:0000033	definition	Anatomical region located deep within an organism or structure.
+BSPO:0000033	label	deep region
+BSPO:0000034	definition	Anatomical region superficially located on the body or body part.
+BSPO:0000034	label	superficial region
+BSPO:0000035	definition	Anatomical region that overlaps the posterior and ventral regions of a body or body part.
+BSPO:0000035	exact_synonym	posteroventral region
+BSPO:0000035	label	postero-ventral region
+BSPO:0000036	exact_synonym	anterior-most
+BSPO:0000036	exact_synonym	anteriormost
+BSPO:0000036	label	anterior-most region
+BSPO:0000037	exact_synonym	posterior-most
+BSPO:0000037	exact_synonym	posteriormost
+BSPO:0000037	label	posterior-most region
+BSPO:0000038	exact_synonym	dorsal-most
+BSPO:0000038	exact_synonym	dorsalmost
+BSPO:0000038	label	dorsal-most region
+BSPO:0000039	exact_synonym	ventral-most
+BSPO:0000039	exact_synonym	ventralmost
+BSPO:0000039	label	ventral-most region
+BSPO:0000040	label	upper/lower compartment boundary
+BSPO:0000041	label	deep/superficial compartment boundary
+BSPO:0000042	definition	Anatomical margin that is located on the antero-medial region of the body or body part.
+BSPO:0000042	exact_synonym	anteromedial margin
+BSPO:0000042	label	antero-medial margin
+BSPO:0000043	label	apical/basal compartment boundary
+BSPO:0000044	label	proximal/distal compartment boundary
+BSPO:0000045	definition	Anatomical margin that is located on the antero-lateral region of the body or body part.
+BSPO:0000045	exact_synonym	anterolateral margin
+BSPO:0000045	label	antero-lateral margin
+BSPO:0000046	definition	Anatomical margin that is located on the postero-medial region of the body or body part.
+BSPO:0000046	exact_synonym	posteromedial margin
+BSPO:0000046	label	postero-medial margin
+BSPO:0000047	definition	Anatomical margin that is located on the postero-lateral region of the body or body part.
+BSPO:0000047	exact_synonym	posterolateral margin
+BSPO:0000047	label	postero-lateral margin
+BSPO:0000048	definition	Anatomical margin that is located on the dorso-medial region of the body or body part.
+BSPO:0000048	exact_synonym	dorso-medial margin
+BSPO:0000048	label	dorso-medial margin
+BSPO:0000049	definition	Anatomical margin that is located on the ventro-medial region of the body or body part.
+BSPO:0000049	exact_synonym	ventromedial margin
+BSPO:0000049	label	ventro-medial margin
+BSPO:0000050	definition	Anatomical region that overlaps the anterior and medial regions of the body or body part.
+BSPO:0000050	exact_synonym	anteromedial region
+BSPO:0000050	label	antero-medial region
+BSPO:0000051	definition	Material anatomical entity defined by change in the value of some quantity per unit of distance across some spatial axis.
+BSPO:0000051	label	anatomical gradient
+BSPO:0000052	definition	Anatomical gradient that is distributed along the anterior-posterior axis.
+BSPO:0000052	label	anterior-posterior gradient
+BSPO:0000053	definition	Anatomical gradient that is distributed along the dorsal-ventral axis.
+BSPO:0000053	label	dorsal-ventral gradient
+BSPO:0000054	definition	An anatomical region bounded by a plane perpendicular to an axis through the middle.
+BSPO:0000054	label	anatomical side
+BSPO:0000055	definition	An anatomical region that is the entire part of an anatomical structure anterior to a transverse plane and bounded on one side by the same transverse plane.
+BSPO:0000055	exact_synonym	anterior
+BSPO:0000055	exact_synonym	rostral
+BSPO:0000055	label	anterior side
+BSPO:0000056	definition	An anatomical region that is the entire part of an anatomical structure posterior to a transverse plane and bounded on one side by the same transverse plane.
+BSPO:0000056	exact_synonym	posterior
+BSPO:0000056	label	posterior side
+BSPO:0000056	narrow_synonym	caudal
+BSPO:0000057	definition	Anatomical side that is located on the apical end of an organism or structure.
+BSPO:0000057	exact_synonym	apical
+BSPO:0000057	label	apical side
+BSPO:0000058	definition	Anatomical side that is located on the basal end of an organism or structure.
+BSPO:0000058	exact_synonym	basal
+BSPO:0000058	label	basal side
+BSPO:0000059	definition	Anatomical side that is centrally located on an organism or structure.
+BSPO:0000059	exact_synonym	central
+BSPO:0000059	label	central side
+BSPO:0000060	definition	On the opposite side.
+BSPO:0000060	exact_synonym	contralateral
+BSPO:0000060	label	contralateral side
+BSPO:0000061	exact_synonym	proximal
+BSPO:0000061	label	proximal side
+BSPO:0000062	definition	Anatomical side that is distally located on an organism or structure.
+BSPO:0000062	exact_synonym	distal
+BSPO:0000062	label	distal side
+BSPO:0000063	definition	An anatomical region that is the entire part of an anatomical structure dorsal to a horizontal plane and bounded on one side by the same transverse plane.
+BSPO:0000063	exact_synonym	dorsal
+BSPO:0000063	label	dorsal side
+BSPO:0000064	definition	Anatomical region that overlaps the posterior and medial regions of the body or body part.
+BSPO:0000064	exact_synonym	posteromedial region
+BSPO:0000064	label	postero-medial region
+BSPO:0000065	definition	On the same side
+BSPO:0000065	exact_synonym	ipsilateral
+BSPO:0000065	label	ipsilateral side
+BSPO:0000066	exact_synonym	lateral
+BSPO:0000066	label	lateral side
+BSPO:0000067	exact_synonym	medial
+BSPO:0000067	label	medial side
+BSPO:0000068	definition	An anatomical region that is the entire part of an anatomical structure ventral to a horizontal plane and bounded on one side by the same horizontal plane.
+BSPO:0000068	exact_synonym	ventral
+BSPO:0000068	label	ventral side
+BSPO:0000069	definition	Anatomical region that overlaps the dorsal and medial regions of the body or body part.
+BSPO:0000069	exact_synonym	dorsomedial region
+BSPO:0000069	label	dorso-medial region
+BSPO:0000070	definition	A 3D region in space without well-defined compartmental boundaries; for example, the dorsal region of an ectoderm.
+BSPO:0000070	label	anatomical region
+BSPO:0000071	definition	Anatomical region anteriorly located on the body or body part.
+BSPO:0000071	label	anterior region
+BSPO:0000072	definition	Anatomical region posteriorly located on the body or body part.
+BSPO:0000072	label	posterior region
+BSPO:0000073	definition	Anatomical region located on the apical end on the body or body part.
+BSPO:0000073	label	apical region
+BSPO:0000074	definition	Anatomical region located basally on the body or body part.
+BSPO:0000074	label	basal region
+BSPO:0000075	definition	Anatomical region centrally located on the body or body part.
+BSPO:0000075	label	central region
+BSPO:0000076	label	contralateral region
+BSPO:0000077	definition	Anatomical region proximally located on the body or body part.
+BSPO:0000077	label	proximal region
+BSPO:0000078	definition	Anatomical region distally located on the body or body part.
+BSPO:0000078	label	distal region
+BSPO:0000079	definition	Anatomical region dorsally located on the body or body part.
+BSPO:0000079	label	dorsal region
+BSPO:0000080	definition	Anatomical region that overlaps the dorsal and lateral regions of a body or body part.
+BSPO:0000080	exact_synonym	dorsolateral region
+BSPO:0000080	label	dorso-lateral region
+BSPO:0000081	label	ipsilateral region
+BSPO:0000082	definition	Anatomical region laterally located on the body or body part.
+BSPO:0000082	label	lateral region
+BSPO:0000083	definition	Anatomical region medially located on the body or body part.
+BSPO:0000083	label	medial region
+BSPO:0000084	definition	Anatomical region ventrally located on the body or body part.
+BSPO:0000084	label	ventral region
+BSPO:0000085	definition	Anatomical region that overlaps the ventral and lateral regions of a body or body part.
+BSPO:0000085	exact_synonym	ventrolateral region
+BSPO:0000085	label	ventro-lateral region
+BSPO:0000086	label	anatomical compartment
+BSPO:0000087	label	anterior compartment
+BSPO:0000088	label	compartment boundary
+BSPO:0000089	label	dorsal compartment
+BSPO:0000090	label	posterior compartment
+BSPO:0000091	label	ventral compartment
+BSPO:0000092	label	anatomical compartment boundary
+BSPO:0000093	label	anterior/posterior compartment boundary
+BSPO:0000094	label	dorsal/ventral compartment boundary
+BSPO:0000112	definition	The region corresponding to the ventral region of the entity, towards the midline.
+BSPO:0000112	exact_synonym	medioventral region
+BSPO:0000112	exact_synonym	ventromedial region
+BSPO:0000112	label	ventro-medial region
+BSPO:0000127	definition	Anatomical region peripherally located on the body or body part.
+BSPO:0000127	label	peripheral region
+BSPO:0000128	label	axial region
+BSPO:0000129	label	peripheral side
+BSPO:0000130	label	axial side
+BSPO:0000195	definition	An anatomical axis that extends from the side of the anatomical entity that is closer to an axis (adaxial) to the side that is further from the same axis (abaxial).
+BSPO:0000195	exact_synonym	AA axis
+BSPO:0000195	label	adaxial-abaxial axis
+BSPO:0000195	related_synonym	dorsal-ventral axis
+BSPO:0000196	definition	An anatomical axis that extends from the center of the body outwards or externally.
+BSPO:0000196	label	medial-external axis
+BSPO:0000196	related_synonym	proximal-distal axis
+BSPO:0000197	definition	An anatomical axis that is perpendicular to an apical/basal axis or proximal/distal axis and extends from the center of an axis (shoot axis or root in the case of plants) to any point on the exterior of the axis.
+BSPO:0000197	exact_synonym	M-R axis
+BSPO:0000197	exact_synonym	MR axis
+BSPO:0000197	label	medial-radial axis
+BSPO:0000198	definition	An axis that extends from the oral opening to the furthest point in an organism that is directly opposite.
+BSPO:0000198	label	oral-aboral axis
+BSPO:0000199	definition	An axis that extends from the animal end of an egg or early embryo to the opposite, vegetal end. In animals with yolk-bearing eggs, the vegetal end is the yolk bearing pole. (pertains to animals only - both vertebrate and invertebrate embryos).
+BSPO:0000199	exact_synonym	A-V axis
+BSPO:0000199	exact_synonym	AV axis
+BSPO:0000199	exact_synonym	animal/vegetal axis
+BSPO:0000199	label	animal-vegetal axis
+BSPO:0000200	definition	An axis of a plant structure that is determined by the direction of apical growth, either by an apical meristem or an apical cell. Apical is toward the direction of apical growth: toward the tip of a growing shoot axis, root, thallus, or non-vascular leaf. Basal is away from the direction of apical growth: toward the root-shoot junction in the case of the primary root or stem, toward the primary root or stem for higher order roots or branches, toward the point of attachment for non-vascular leaves, and toward the original point of growth (as determined in the embryo) for thalli.
+BSPO:0000200	label	apical-basal axis relative to direction of growth
+BSPO:0000201	definition	Anatomical plane that is perpendicular to a radial plane.
+BSPO:0000201	label	tangential plane
+BSPO:0000202	definition	Anatomical plane that follows the two dimensions specified by an apical-basal axis relative to direction of growth and a medial-lateral axis.
+BSPO:0000202	label	radial plane
+BSPO:0000371	definition	Anatomical surface that is located on the anterior side of the body or body part.
+BSPO:0000371	label	anterior surface
+BSPO:0000372	definition	Anatomical surface that is located on the posterior side of the body or body part.
+BSPO:0000372	label	posterior surface
+BSPO:0000373	definition	Anatomical surface that is located on the apical side of the body or body part.
+BSPO:0000373	label	apical surface
+BSPO:0000374	definition	Anatomical surface that is located on the basal side of the body or body part.
+BSPO:0000374	label	basal surface
+BSPO:0000376	label	contralateral surface
+BSPO:0000377	definition	Anatomical surface that is located on the proximal side of the body or body part.
+BSPO:0000377	label	proximal surface
+BSPO:0000378	definition	Anatomical surface that is located on the distal side of the body or body part.
+BSPO:0000378	label	distal surface
+BSPO:0000379	definition	Anatomical surface that located on the dorsal side of the body or body part.
+BSPO:0000379	label	dorsal surface
+BSPO:0000381	definition	Anatomical surface that is located on the same side of an organism or structure.
+BSPO:0000381	label	ipsilateral surface
+BSPO:0000382	definition	Anatomical surface that located on the lateral side of the body or body part.
+BSPO:0000382	label	lateral surface
+BSPO:0000383	definition	Anatomical surface that located on the medial side of the body or body part.
+BSPO:0000383	label	medial surface
+BSPO:0000384	definition	Anatomical surface that is located on the ventral side of the body or body part.
+BSPO:0000384	label	ventral surface
+BSPO:0000400	definition	A flat 2D plane intersecting an anatomical continuant, dividing it into two adjacent portions.
+BSPO:0000400	exact_synonym	anatomical cross-section
+BSPO:0000400	exact_synonym	anatomical section
+BSPO:0000400	exact_synonym	plane
+BSPO:0000400	exact_synonym	section
+BSPO:0000400	label	anatomical plane
+BSPO:0000400	related_synonym	cross-section
+BSPO:0000417	definition	Anatomical plane that divides a bilateral body into left and right parts, not necessarily of even size.
+BSPO:0000417	exact_synonym	left/right plane
+BSPO:0000417	exact_synonym	median plane
+BSPO:0000417	exact_synonym	sagittal section
+BSPO:0000417	label	sagittal plane
+BSPO:0000671	definition	Anatomical margin that is located on the anterior side of a body or body part.
+BSPO:0000671	label	anterior margin
+BSPO:0000672	definition	Anatomical margin that is located on the posterior side of the body or body part.
+BSPO:0000672	label	posterior margin
+BSPO:0000673	definition	Anatomical margin that is located on the apical side of the body or body part.
+BSPO:0000673	label	apical margin
+BSPO:0000674	definition	Anatomical margin that is located on the basal side of the body or body part.
+BSPO:0000674	label	basal margin
+BSPO:0000677	definition	Anatomical margin that is located on the proximal region of the body or body part.
+BSPO:0000677	label	proximal margin
+BSPO:0000678	definition	Anatomical margin that is located on the distal side of the body or body part.
+BSPO:0000678	label	distal margin
+BSPO:0000679	definition	Anatomical margin that is located on the dorsal side of body or body part.
+BSPO:0000679	label	dorsal margin
+BSPO:0000680	definition	Anatomical margin that is located on the dorso-lateral region of the body or body part.
+BSPO:0000680	exact_synonym	dorsolateral margin
+BSPO:0000680	label	dorso-lateral margin
+BSPO:0000682	definition	Anatomical margin that is located on the lateral side of the body or body part.
+BSPO:0000682	label	lateral margin
+BSPO:0000683	definition	Anatomical margin that is located on the medial side of the body or body part.
+BSPO:0000683	label	medial margin
+BSPO:0000684	definition	Anatomical margin that is located on the ventral side of the body or body part.
+BSPO:0000684	label	ventral margin
+BSPO:0000685	definition	Anatomical margin that is located on the ventro-lateral region of the body or body part.
+BSPO:0000685	exact_synonym	ventrolateral margin
+BSPO:0000685	label	ventro-lateral margin
+BSPO:0000686	definition	Anatomical margin that is located on the antero-dorso region of the body or body part.
+BSPO:0000686	exact_synonym	anterodorsal margin
+BSPO:0000686	label	antero-dorsal margin
+BSPO:0000687	definition	Anatomical margin that is located on the postero-dorsal region of the body or body part.
+BSPO:0000687	exact_synonym	posterodorsal margin
+BSPO:0000687	label	postero-dorsal margin
+BSPO:0000688	definition	Anatomical margin that is located on the antero-ventral region of the body or body part.
+BSPO:0000688	exact_synonym	anteroventral margin
+BSPO:0000688	label	antero-ventral margin
+BSPO:0000689	definition	Anatomical margin that is located on the postero-ventral region of the body or body part.
+BSPO:0000689	exact_synonym	posteroventral margin
+BSPO:0000689	label	postero-ventral margin
+BSPO:0001001	definition	An axis that extends from the center of organism to one or other side.
+BSPO:0001001	exact_synonym	M-L axis
+BSPO:0001001	exact_synonym	ML axis
+BSPO:0001001	exact_synonym	medio-lateral axis
+BSPO:0001001	exact_synonym	mediolateral axis
+BSPO:0001001	label	medial-lateral axis
+BSPO:0001001	related_synonym	proximal-distal axis 
+CARO:0000000	definition	A part of a cellular organism that is either an immaterial entity or a material entity with granularity above the level of a protein complex.  Or, a substance produced by a cellular organism with granularity above the level of a protein complex.
+CARO:0000000	definition	Biological entity that is either an individual member of a biological species or constitutes the structural organization of an individual member of a biological species.
+CARO:0000000	label	anatomical entity
+CARO:0000003	definition	Material anatomical entity that is a single connected structure with inherent 3D shape generated by coordinated expression of the organism's own genome.
+CARO:0000003	label	anatomical structure
+CARO:0000003	label	connected anatomical structure
+CARO:0000006	definition	An anatomical entity that has mass.
+CARO:0000006	label	material anatomical entity
+CARO:0000007	definition	An anatomical entity that has no mass.
+CARO:0000007	definition	Anatomical entity that has no mass.
+CARO:0000007	label	immaterial anatomical entity
+CARO:0000008	definition	A one dimensional, immaterial anatomical entity.
+CARO:0000008	label	anatomical line
+CARO:0000010	definition	A non-material anatomical entity of two dimensions. Anatomical boundaries are contiguous structures.
+CARO:0000010	label	anatomical boundary
+GO:0003674	definition	A molecular process that can be carried out by the action of a single macromolecular machine, usually via direct physical interactions with other molecular entities. Function in this sense denotes an action, or activity, that a gene product (or a complex) performs. These actions are described from two distinct but related perspectives: (1) biochemical activity, and (2) role as a component in a larger system/process.
+GO:0003674	exact_synonym	molecular function
+GO:0003674	label	molecular_function
+GO:0008150	definition	A biological process represents a specific objective that the organism is genetically programmed to achieve. Biological processes are often described by their outcome or ending state, e.g., the biological process of cell division results in the creation of two daughter cells (a divided cell) from a single parent cell. A biological process is accomplished by a particular set of molecular functions carried out by specific gene products (or macromolecular complexes), often in a highly regulated manner and in a particular temporal sequence.
+GO:0008150	exact_synonym	biological process
+GO:0008150	exact_synonym	physiological process
+GO:0008150	label	biological_process
+GO:0008150	related_synonym	single organism process
+GO:0008150	related_synonym	single-organism process
+GO:0016301	definition	Catalysis of the transfer of a phosphate group, usually from ATP, to a substrate molecule.
+GO:0016301	exact_synonym	phosphokinase activity
+GO:0016301	label	kinase activity
+IAO:0000027	label	data item
+IAO:0000030	label	information content entity
+IAO:0000078	definition	The curation status of the term. The allowed values come from an enumerated list of predefined terms. See the specification of these instances for more detailed definitions of each enumerated value.
+IAO:0000078	label	curation status specification
+IAO:0000102	definition	Data about an ontology part is a data item about a part of an ontology, for example a term
+IAO:0000102	label	data about an ontology part
+IAO:0000225	definition	The reason for which a term has been deprecated. The allowed values come from an enumerated list of predefined terms. See the specification of these instances for more detailed definitions of each enumerated value.
+IAO:0000225	label	obsolescence reason specification
+IAO:0000409	definition	A denotator type indicates how a term should be interpreted from an ontological perspective.
+IAO:0000409	label	denotator type
+PATO:0000001	definition	A dependent entity that inheres in a bearer by virtue of how the bearer is related to other entities
+PATO:0000001	label	quality
