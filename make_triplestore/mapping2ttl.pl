@@ -21,8 +21,8 @@ open MAP, $mapping_file or die "Can't open mapping file: $mapping_file $!\n";
 <MAP>;
 while (my $line = <MAP>){
   chomp $line;
-  #seq_id	ref_id	transcriptome_id	alias_mod
-  #dd_Smed_v4_10001_0_1	SMED30030721	dd_Smed_v4	original
+  #seq_id	ref_id	transcriptome_id
+  #dd_Smed_v4_10001_0_1	SMED30030721	dd_Smed_v4
   my ($acc,$ref,$accSource) = split "\t", $line;
   next if $ref eq '"NA"';
   my $md5 = (md5_hex($line));
