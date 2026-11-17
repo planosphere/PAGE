@@ -1,15 +1,17 @@
-# Keep the ontology files in ontology/ in step with the latest PLANA, BSPO and ECO releases.
+# Keep the ontology files in ontology/ in step with the latest PLANA, BSPO, ECO and GO releases.
 #
 # Runs weekly (and on demand: Actions tab -> "PLANA closure" -> Run workflow). It downloads the
-# published plana.owl, bspo.owl and eco.owl, and ONLY IF any release differs from
+# published plana.owl, bspo.owl, eco.owl and go.owl, and ONLY IF any release differs from
 # ontology/releases.txt, it rewrites:
 #   plana-closure.tsv   every inferred PLANA relationship (relation-graph: any depth, is_a combined
 #                       with part of / contained in / develops from / ..., and PLANA's logical
 #                       definitions) -- replaces the Owlery server
 #   eco-closure.tsv     every inferred ECO relationship (evidence types: "any kind of in situ")
+#   go-closure.tsv      every inferred GO relationship (is a, part of, regulates, has part, occurs in...)
 #   plana-terms.tsv     names, synonyms (with their kind), definitions, obsolete / replaced-by
 #   bspo-terms.tsv      the same for BSPO (spatial terms used in PAGE curations)
 #   eco-terms.tsv       the same for ECO (evidence codes)
+#   go-terms.tsv        the same for GO (MOOP's ontology browser and gene counts per GO term)
 #   releases.txt        which release each file came from
 # MOOP loads these files. Nothing in the PLANA repository is touched.
 #
@@ -28,6 +30,11 @@ jobs:
   closure:
     runs-on: ubuntu-latest
     container: obolibrary/odkfull:v1.4
+    # GO is the big one: a trial run (2026-11-17) peaked at 3.2 GB (relation-graph) and 4 GB
+    # (robot) with a 7 GB heap -- set it, rather than rely on the JVM default (1/4 of the runner).
+    env:
+      JAVA_OPTS: -Xmx7g
+      ROBOT_JAVA_ARGS: -Xmx7g
     steps:
       - uses: actions/checkout@v4
 
@@ -35,7 +42,7 @@ jobs:
         id: release
         run: |
           : > releases.new
-          for o in plana bspo eco; do
+          for o in plana bspo eco go; do
             curl -sSfL -o "$o.owl" "http://purl.obolibrary.org/obo/$o.owl"
             r=$(grep -o -m1 "obo/$o/releases/[0-9-]*" "$o.owl" | cut -d/ -f4)
             [ -n "$r" ] || { echo "no release found in $o.owl"; exit 1; }
@@ -48,7 +55,7 @@ jobs:
           # Also rebuild when an expected file is missing (a new file was added to this workflow,
           # or one was deleted) -- otherwise unchanged releases would skip it forever.
           missing=no
-          for f in plana-closure.tsv eco-closure.tsv plana-terms.tsv bspo-terms.tsv eco-terms.tsv; do
+          for f in plana-closure.tsv eco-closure.tsv go-closure.tsv plana-terms.tsv bspo-terms.tsv eco-terms.tsv go-terms.tsv; do
             [ -s "ontology/$f" ] || { echo "missing: ontology/$f"; missing=yes; }
           done
           if [ "$missing" = no ] && cmp -s releases.new ontology/releases.txt; then
@@ -57,14 +64,15 @@ jobs:
             echo "changed=yes" >> "$GITHUB_OUTPUT"
           fi
 
-      - name: Compute every inferred PLANA and ECO relationship
+      - name: Compute every inferred PLANA, ECO and GO relationship
         if: steps.release.outputs.changed == 'yes'
         run: |
           # Subject, relationship, object -- one row per inferred link. Subclass links are written
           # as rdfs:subClassOf. Reflexive links (X is_a X) are left out.
           # PLANA: anatomy and life-cycle stages (BSPO terms PLANA imports are included).
           # ECO:   evidence types, so "any kind of in situ hybridization evidence" works.
-          for o in plana eco; do
+          # GO:    gene function terms (MOOP's ontology browser; genes counted per term).
+          for o in plana eco go; do
             relation-graph --ontology-file "$o.owl" --output-file "$o-closure.raw" --mode tsv \
               --output-subclasses true --reflexive-subclasses false --equivalence-as-subclass true \
               --obo-prefixes true
@@ -75,7 +83,7 @@ jobs:
       - name: Export names, synonyms, definitions, obsolete terms
         if: steps.release.outputs.changed == 'yes'
         run: |
-          for o in plana bspo eco; do
+          for o in plana bspo eco go; do
             robot query --input "$o.owl" --query ontology/terms.rq "$o-raw.tsv"
             python3 ontology/tidy_terms.py "$o-raw.tsv" "ontology/$o-terms.tsv"
           done
@@ -88,7 +96,8 @@ jobs:
           git config user.name  "github-actions[bot]"
           git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
           git rm -q --ignore-unmatch ontology/plana-release.txt
-          git add ontology/plana-closure.tsv ontology/eco-closure.tsv ontology/plana-terms.tsv \
-                  ontology/bspo-terms.tsv ontology/eco-terms.tsv ontology/releases.txt
+          git add ontology/plana-closure.tsv ontology/eco-closure.tsv ontology/go-closure.tsv \
+                  ontology/plana-terms.tsv ontology/bspo-terms.tsv ontology/eco-terms.tsv \
+                  ontology/go-terms.tsv ontology/releases.txt
           git commit -m "Ontology files for: $(tr '\n' ' ' < ontology/releases.txt)"
           git push
